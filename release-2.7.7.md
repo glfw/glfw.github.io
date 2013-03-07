@@ -57,15 +57,15 @@ example and test programs.
 
 Currently supported compilers and systems are:
 
-- Microsoft Visual C++ 2008 and 2010
+- Microsoft Visual C++ 2008, 2010 and 2012
 - MinGW with or without MSYS
 - MinGW cross-compilation for Unix-like systems
 - OpenWatcom for Windows
 - Unix or Unix-like systems running the X Window System
 - Apple GCC or Clang on Mac OS X
 
-There are also project files available for Microsoft Visual C++ 2008 and
-2010 in the `support/msvc90` and `support/msvc100`
+There are also project files available for Microsoft Visual C++ 2008, 2010 and
+2012 in the `support/msvc90`, `support/msvc100` and `support/msvc110`
 directories.
 
 If your compiler/system is not in the list, you may have to create new
@@ -89,11 +89,11 @@ listed below already does this, but you need to do it yourself if you are
 making a custom build.  Without this macro, the GLFW DLL will not export
 functions correctly and code calling the DLL will be incorrectly generated.
 
-#### 2.1.1 Microsoft Visual C++ 2008 and 2010
+#### 2.1.1 Microsoft Visual C++
 
-Project files for both the static and dynamic versions of the GLFW library
-are provided in the `support/msvc90` and
-`support/msvc100` directories.
+Project files for both the static and dynamic versions of the GLFW library are
+provided in the `support/msvc90`, `support/msvc100` and `support/msvc110`
+directories.
 
 
 #### 2.1.2 MinGW on Windows
@@ -1060,6 +1060,7 @@ Here is an overview of the directory structure of the GLFW distribution:
 | support/d       | D support                              |
 | support/msvc90  | Project files for Visual C++ 2008      |
 | support/msvc100 | Project files for Visual C++ 2010      |
+| support/msvc110 | Project files for Visual C++ 2012      |
 | support/pascal  | Pascal support                         |
 | tests           | Several test programs in C             |
 

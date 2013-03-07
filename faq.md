@@ -379,8 +379,8 @@ callbacks and use it to call methods on your object.
 
 ### 3.1 - What compilers are supported by GLFW?
 
-Currently, GLFW releases are tested with Visual C++ 2008 and 2010, standalone
-MinGW, MinGW with MSYS, and the Cygwin packages for MinGW.
+Currently, GLFW releases are tested with Visual C++ 2008, 2010 and 2012,
+standalone MinGW, MinGW with MSYS, and the Cygwin packages for MinGW.
 
 The Windows binary distribution of GLFW contains pre-compiled libraries
 for all of the compilers mentioned above.

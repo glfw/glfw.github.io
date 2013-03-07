@@ -22,7 +22,7 @@ Each of these contain:
 - The complete source code for the GLFW library
 - A collection of example and test programs
 - Makefiles for many different compilers and systems
-- Project files for Microsoft Visual C++ 2008 and 2010
+- Project files for Microsoft Visual C++ 2008, 2010 and 2012
 - Bindings and examples for Pascal and D
 - The [User Guide](GLFWUsersGuide277.pdf) (PDF)
 - The [Reference Manual](GLFWReference277.pdf) (PDF)
