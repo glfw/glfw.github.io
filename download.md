@@ -11,7 +11,7 @@ released on November 8, 2012.
 ---
 ### Source archive
 
-<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.zip/download">Download glfw-2.7.7.zip</a>
+<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.zip/download">Download Source (ZIP)</a>
 
 This contains:
 
@@ -20,38 +20,35 @@ This contains:
 - Makefiles for many different compilers and systems
 - Project files for Microsoft Visual C++ 2008, 2010 and 2012
 - Bindings and examples for Pascal and D
-- The [User Guide](GLFWUsersGuide277.pdf) (PDF)
-- The [Reference Manual](GLFWReference277.pdf) (PDF)
+- The [User Guide and Reference Manual](documentation.html)
 - The [readme and release notes](release-2.7.7.html)
 
 This is the recommended version for all platforms.
 
 ---
-### Binary archive for 32-bit Windows
+### Binaries for 32-bit Windows
 
-<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN32.zip/download">Download glfw-2.7.7.bin.WIN32.zip</a>
+<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN32.zip/download">Download Win32 Binaries (ZIP)</a>
 
 This contains:
 
 - The GLFW header file
 - 32-bit DLLs and static libraries for Microsoft&trade; Visual C++ 2008, Visual
   C++ 2010, Visual C++ 2012 and MinGW
-- The [User Guide](GLFWUsersGuide277.pdf) (PDF)
-- The [Reference Manual](GLFWReference277.pdf) (PDF)
+- The [User Guide and Reference Manual](documentation.html)
 - An abbreviated version of the release notes
 
 ---
-### Binary archive for 64-bit Windows
+### Binaries for 64-bit Windows
 
-<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN64.zip/download">Download glfw-2.7.7.bin.WIN64.zip</a>
+<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN64.zip/download">Download Win64 Binaries (ZIP)</a>
 
 This contains:
 
 - The GLFW header file
 - 64-bit DLL and static library for Microsoft&trade; Visual C++ 2012 and
   MinGW-w64
-- The [User Guide](GLFWUsersGuide277.pdf) (PDF)
-- The [Reference Manual](GLFWReference277.pdf) (PDF)
+- The [User Guide and Reference Manual](documentation.html)
 - An abbreviated version of the release notes
 
 ---

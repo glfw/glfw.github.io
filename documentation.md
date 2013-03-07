@@ -5,6 +5,23 @@ title: Documentation
 
 ## Documentation
 
+### User guide
+
+<a class="download" href="GLFWUsersGuide277.pdf">Download User Guide (PDF)</a>
+
+The user guide is a task-oriented guide to the API.  It does not describe every
+detail of GLFW, but instead attempts to get you started in the areas of your
+interest.
+
+---
+### Reference manual
+
+<a class="download" href="GLFWReference277.pdf">Download Reference Manual (PDF)</a>
+
+The reference manual describes every function and constant of the API, but isn't
+necessarily the best way to get started using GLFW.
+
+---
 ### Example code
 
 This short example shows how the GLFW API looks and how easy it is to create and
@@ -38,21 +55,7 @@ int main(void)
 {% endhighlight %}
 
 To learn about these and all other GLFW functions, see the user guide and
-reference manual below.
-
----
-### User guide
-
-The [user guide](GLFWUsersGuide277.pdf) (PDF) is a task-oriented guide to the
-API.  It does not describe every detail of GLFW, but instead attempts to get you
-started in the areas of your interest.
-
----
-### Reference manual
-
-The [reference manual](GLFWReference277.pdf) (PDF) describes every function and
-constant of the API, but isn't necessarily the best way to get started using
-GLFW.
+reference manual.
 
 ---
 ### Wiki
