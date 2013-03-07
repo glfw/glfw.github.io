@@ -5,9 +5,8 @@ title: Download
 
 ## Download
 
-The current version is 2.7.7
-([release notes](release-2.7.7.html)),
-which was released on November 8, 2012.
+The current version is 2.7.7 ([release notes](release-2.7.7.html)), which was
+released on November 8, 2012.
 
 ---
 ### Source archive
@@ -37,9 +36,10 @@ This is the recommended version for all platforms.
 [glfw-2.7.7.bin.WIN32.zip](http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN32.zip/download)
 
 - The GLFW header file
-- 32-bit DLLs and static libraries for Microsoft&trade; Visual C++ 2008, Visual C++ 2010, Visual C++ 2012 and MinGW
-- The [User Guide](GLFWUsersGuide277.pdf) (PDF).
-- The [Reference Manual](GLFWReference277.pdf) (PDF).
+- 32-bit DLLs and static libraries for Microsoft&trade; Visual C++ 2008, Visual
+  C++ 2010, Visual C++ 2012 and MinGW
+- The [User Guide](GLFWUsersGuide277.pdf) (PDF)
+- The [Reference Manual](GLFWReference277.pdf) (PDF)
 - An abbreviated version of the release notes
 
 ---
@@ -48,9 +48,10 @@ This is the recommended version for all platforms.
 [glfw-2.7.7.bin.WIN64.zip](http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN64.zip/download)
 
 - The GLFW header file
-- 64-bit DLL and static library for Microsoft&trade; Visual C++ 2012 and MinGW-w64
-- The [User Guide](GLFWUsersGuide277.pdf) (PDF).
-- The [Reference Manual](GLFWReference277.pdf) (PDF).
+- 64-bit DLL and static library for Microsoft&trade; Visual C++ 2012 and
+  MinGW-w64
+- The [User Guide](GLFWUsersGuide277.pdf) (PDF)
+- The [Reference Manual](GLFWReference277.pdf) (PDF)
 - An abbreviated version of the release notes
 
 ---
@@ -59,7 +60,6 @@ This is the recommended version for all platforms.
 The latest version of the 2.x source code is always available in our
 [Subversion repository](http://sourceforge.net/scm/?type=svn&group_id=72569).
 
-**Note** that the Subversion version may or may not be
-usable, depending on when you do the checkout. If you wish to know more about
-the development version, please
-[contact the developers](community.html).
+**Note** that the Subversion version may or may not be usable, depending on when
+you do the checkout. If you wish to know more about the development version,
+please [contact the developers](community.html).

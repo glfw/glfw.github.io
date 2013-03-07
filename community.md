@@ -7,8 +7,7 @@ title: Community
 
 If you have questions related to the use of GLFW, we have a
 [users web forum](https://sourceforge.net/projects/glfw/forums/forum/247562)
-and the IRC channel `#glfw` on
-[Freenode](http://freenode.net/).
+and the IRC channel `#glfw` on [Freenode](http://freenode.net/).
 
 If you have a bug to report, a feature you'd like to request or a patch
 you wish to submit, please file it in one of our

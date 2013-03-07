@@ -7,12 +7,11 @@ title: Patch submitter's guide
 
 ### Introduction
 
-This is an introductory guide for people wishing to contribute code to the
-GLFW project.
-
-Following the advice in this guide will both help getting your patch
-reviewed quicker and will make it more likely to be accepted into the
+This is an introductory guide for people wishing to contribute code to the GLFW
 project.
+
+Following the advice in this guide will both help getting your patch reviewed
+quicker and will make it more likely to be accepted into the project.
 
 ---
 ### Important points
@@ -42,6 +41,5 @@ The naming of patch files for GLFW follows this pattern:
 glfw-<version>_<platform>_<key>.patch
 {% endhighlight %}
 
-For instance, if your patch is against GLFW version 2.6 and it adds
-support for Foo on Win32, it would be called
-`glfw-2.6_win32_foo.patch`.
+For instance, if your patch is against GLFW version 2.6 and it adds support for
+Foo on Win32, it would be called `glfw-2.6_win32_foo.patch`.
