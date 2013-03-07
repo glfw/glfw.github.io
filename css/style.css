@@ -11,11 +11,22 @@ code, code span {
   font-size: 90%;
 }
 
+.download {
+  border-radius: 2px;
+  color: #ffffff;
+  padding: 0.25em;
+  background-color: #e85d00;
+  font-size: 90%;
+  font-weight: bold;
+  margin-top: -2em;
+  float: right;
+}
+
 .date {
   border-radius: 2px;
   color: #ffffff;
   padding: 0.25em;
-  background-color: #ff6600;
+  background-color: #e85d00;
   font-size: 90%;
   font-weight: bold;
   margin-top: -2em;

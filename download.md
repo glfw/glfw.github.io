@@ -11,13 +11,9 @@ released on November 8, 2012.
 ---
 ### Source archive
 
-[glfw-2.7.7.zip](http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.zip/download)
+<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.zip/download">Download glfw-2.7.7.zip</a>
 
-[glfw-2.7.7.tar.gz](http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.tar.gz/download)
-
-[glfw-2.7.7.tar.bz2](http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.tar.bz2/download)
-
-Each of these contain:
+This contains:
 
 - The complete source code for the GLFW library
 - A collection of example and test programs
@@ -33,7 +29,9 @@ This is the recommended version for all platforms.
 ---
 ### Binary archive for 32-bit Windows
 
-[glfw-2.7.7.bin.WIN32.zip](http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN32.zip/download)
+<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN32.zip/download">Download glfw-2.7.7.bin.WIN32.zip</a>
+
+This contains:
 
 - The GLFW header file
 - 32-bit DLLs and static libraries for Microsoft&trade; Visual C++ 2008, Visual
@@ -45,7 +43,9 @@ This is the recommended version for all platforms.
 ---
 ### Binary archive for 64-bit Windows
 
-[glfw-2.7.7.bin.WIN64.zip](http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN64.zip/download)
+<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN64.zip/download">Download glfw-2.7.7.bin.WIN64.zip</a>
+
+This contains:
 
 - The GLFW header file
 - 64-bit DLL and static library for Microsoft&trade; Visual C++ 2012 and

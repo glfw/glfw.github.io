@@ -30,7 +30,7 @@ If GLFW isn't what you are looking for, there are [alternatives](links.html#alte
 {% for post in site.posts %}
 ---
 ### {{ post.title }}
-<span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+<a class="date" href="{{ post.url }}">{{ post.date | date: "%b %d, %Y" }}</a>
 {{ post.content }}
 {% endfor %}
 
