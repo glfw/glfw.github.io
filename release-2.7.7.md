@@ -183,8 +183,7 @@ variable before building the library.  This will also be stored in the
 generated `Makefile.x11` files.
 
 If you have already configured your source tree, you can reset it to an
-un-configured state by running make with the <code>x11-dist-clean</code>
-target.
+un-configured state by running make with the `x11-dist-clean` target.
 
 If you are making your own build setup for GLFW, you need to be aware of the
 various preprocessor symbols that the bundled makefiles use to enable various
