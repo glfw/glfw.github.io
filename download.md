@@ -33,8 +33,8 @@ This is the recommended version for all platforms.
 This contains:
 
 - The GLFW header file
-- 32-bit DLLs and static libraries for Microsoft&trade; Visual C++ 2008, Visual
-  C++ 2010, Visual C++ 2012 and MinGW
+- 32-bit release mode DLLs and static libraries for Microsoft&trade; Visual C++
+  2008, Visual C++ 2010, Visual C++ 2012 and MinGW
 - The [User Guide and Reference Manual](documentation.html)
 - An abbreviated version of the release notes
 
@@ -46,8 +46,8 @@ This contains:
 This contains:
 
 - The GLFW header file
-- 64-bit DLL and static library for Microsoft&trade; Visual C++ 2012 and
-  MinGW-w64
+- 64-bit release mode DLL and static library for Microsoft&trade; Visual C++
+  2012 and MinGW-w64
 - The [User Guide and Reference Manual](documentation.html)
 - An abbreviated version of the release notes
 
