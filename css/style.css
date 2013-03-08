@@ -11,18 +11,7 @@ code, code span {
   font-size: 90%;
 }
 
-.download {
-  border-radius: 2px;
-  color: #ffffff;
-  padding: 0.25em;
-  background-color: #e85d00;
-  font-size: 90%;
-  font-weight: bold;
-  margin-top: -2em;
-  float: right;
-}
-
-.date {
+.date, .download {
   border-radius: 2px;
   color: #ffffff;
   padding: 0.25em;
@@ -87,13 +76,13 @@ td, th {
   background-color: #4d4d4d;
 }
 
-a, .navbar a:hover, .navbar a#active_tab, .footer a:hover, tr:hover {
+a, .navbar a:hover, .footer a:hover, tr:hover {
   color: #ffb380;
   text-decoration: none;
   transition: .35s ease-in-out;
 }
 
-a:hover, .navbar a#active_tab {
+a:hover {
   text-shadow: 0px 0px 8px #ff7f2a;
 }
 
