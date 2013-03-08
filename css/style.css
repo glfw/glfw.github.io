@@ -18,8 +18,23 @@ code, code span {
   background-color: #e85d00;
   font-size: 90%;
   font-weight: bold;
-  margin-top: -2em;
   float: right;
+}
+
+.date {
+  margin-top: -2em;
+  margin-left: -3.5em;
+  float: left;
+  text-align: center;
+  width: 28px;
+}
+
+.dateday {
+  font-size: 150%;
+}
+
+.dateyear {
+  font-size: 75%;
 }
 
 body {
