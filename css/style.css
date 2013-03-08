@@ -18,15 +18,14 @@ code, code span {
   background-color: #e85d00;
   font-size: 90%;
   font-weight: bold;
-  float: right;
+  text-align: center;
 }
 
 .date {
   margin-top: -2em;
-  margin-left: -3.5em;
+  margin-left: -3em;
   float: left;
-  text-align: center;
-  width: 28px;
+  width: 2em;
 }
 
 .dateday {
@@ -35,6 +34,18 @@ code, code span {
 
 .dateyear {
   font-size: 75%;
+}
+
+.download {
+  margin-top: -2em;
+  float: right;
+  width: 8em;
+  transition: .35s ease;
+}
+
+.download:hover {
+  background-color: #ff6600;
+  box-shadow: 0px 0px 8px #ff6600;
 }
 
 body {
@@ -97,11 +108,11 @@ td, th {
 a, .navbar a:hover, .footer a:hover, tr:hover {
   color: #ffb380;
   text-decoration: none;
-  transition: .35s ease-in-out;
+  transition: .35s ease;
 }
 
 a:hover {
-  text-shadow: 0px 0px 8px #ff7f2a;
+  text-shadow: 0px 0px 8px #ff6600;
 }
 
 .navbar a, .footer a {
