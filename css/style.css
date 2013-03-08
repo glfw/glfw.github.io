@@ -11,26 +11,41 @@ code, code span {
   font-size: 90%;
 }
 
-.download {
+.date, .download {
   border-radius: 2px;
   color: #ffffff;
   padding: 0.25em;
   background-color: #e85d00;
   font-size: 90%;
   font-weight: bold;
-  margin-top: -2em;
-  float: right;
+  text-align: center;
 }
 
 .date {
-  border-radius: 2px;
-  color: #ffffff;
-  padding: 0.25em;
-  background-color: #e85d00;
-  font-size: 90%;
-  font-weight: bold;
+  margin-top: -2em;
+  margin-left: -3em;
+  float: left;
+  width: 2em;
+}
+
+.dateday {
+  font-size: 150%;
+}
+
+.dateyear {
+  font-size: 75%;
+}
+
+.download {
   margin-top: -2em;
   float: right;
+  width: 8em;
+  transition: .35s ease;
+}
+
+.download:hover {
+  background-color: #ff6600;
+  box-shadow: 0px 0px 8px #ff6600;
 }
 
 body {
@@ -60,6 +75,9 @@ p, blockquote, table, .highlight {
 
 blockquote, .highlight {
   padding: 0.5em;
+  border-width: 0px 0px 0px 4px;
+  border-style: solid;
+  border-color: #333333;
   overflow: auto;
 }
 
@@ -87,14 +105,14 @@ td, th {
   background-color: #4d4d4d;
 }
 
-a, .navbar a:hover, .navbar a#active_tab, .footer a:hover, tr:hover {
+a, .navbar a:hover, .footer a:hover, tr:hover {
   color: #ffb380;
   text-decoration: none;
-  transition: .35s ease-in-out;
+  transition: .35s ease;
 }
 
-a:hover, .navbar a#active_tab {
-  text-shadow: 0px 0px 8px #ff7f2a;
+a:hover {
+  text-shadow: 0px 0px 8px #ff6600;
 }
 
 .navbar a, .footer a {
