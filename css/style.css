@@ -49,6 +49,9 @@ p, blockquote, table, .highlight {
 
 blockquote, .highlight {
   padding: 0.5em;
+  border-width: 0px 0px 0px 4px;
+  border-style: solid;
+  border-color: #333333;
   overflow: auto;
 }
 
