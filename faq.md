@@ -27,7 +27,7 @@ If your questions are not answered here, please do
 
 - [2.1 Why use separate red/green/blue bit depths?](#21__why_use_separate_redgreenblue_bit_depths)
 - [2.2 Why is it not possible to change video modes after a window has been opened?](#22__why_is_it_not_possible_to_change_video_modes_after_a_window_has_been_opened)
-- [2.3 What texture file formats does GLFW support?](#23__what_texture_file_formats_does_glfw_support)
+- [2.3 Will image or texture loading support be added to GLFW?](#23__will_image_or_texture_loading_support_be_added_to_glfw)
 - [2.4 Will sound support be added to GLFW?](#24__will_sound_support_be_added_to_glfw)
 - [2.5 Will font or text rendering support be added to GLFW?](#25__will_font_or_text_rendering_support_be_added_to_glfw)
 - [2.6 Will pop-up menu support be added to GLFW?](#26__will_popup_menu_support_be_added_to_glfw)
@@ -40,8 +40,7 @@ If your questions are not answered here, please do
 - [2.13 Why doesn't your gl.h have the functions I need?](#213__why_doesnt_your_glh_have_the_functions_i_need)
 - [2.14 Why do my objects look all wrong?](#214__why_do_my_objects_look_all_wrong)
 - [2.15 Can I use GLEW with GLFW?](#215__can_i_use_glew_with_glfw)
-- [2.16 Can any of the parameters to glfwOpenWindow be zero?](#216__can_any_of_the_parameters_to_glfwopenwindow_be_zero)
-- [2.17 How do I use C++ methods as callbacks?](#217_how_do_i_use_c_methods_as_callbacks)
+- [2.16 How do I use C++ methods as callbacks?](#216_how_do_i_use_c_methods_as_callbacks)
 
 
 ### Windows Specific Questions
@@ -58,8 +57,6 @@ If your questions are not answered here, please do
 
 
 ### Unix/X11 Specific Questions
-
-- [5.1 Why doesn't glfwOpenWindow work in my private build?](#51__why_doesnt_glfwopenwindow_work_in_my_private_build)
 
 
 ---
@@ -89,10 +86,10 @@ first paragraph):
 
 GLFW matches the description of *other mechanisms* quite well.
 
+
 ### 1.2 - What is GLFW not?
 
 GLFW is *by design* not...
-
 
 - a user interface library.  It allows you to create a single, OpenGL-capable
   window.  No menus, no buttons.
@@ -127,6 +124,7 @@ never had OpenGL as its main focus.
 We therefore believe that there is room for a lightweight, modern library for
 managing OpenGL contexts, windows and input.
 
+
 ### 1.4 - What platforms are supported by GLFW?
 
 Currently, GLFW supports Windows, Mac OS X and Unix-like operating systems with
@@ -134,6 +132,7 @@ the X Window System, such as Linux and FreeBSD.
 
 GLFW is designed to be as portable as possible, and the code has been written
 with portability in mind.
+
 
 ### 1.5 - What versions of OpenGL are supported by GLFW?
 
@@ -163,6 +162,7 @@ OpenGL 3.0 contexts on Mac OS X.
 The first version to support creation of OpenGL 3.2 contexts on OS X Lion was
 GLFW 2.7.2.
 
+
 ---
 ## General Questions
 
@@ -178,6 +178,7 @@ specified can be passed nearly unmodified to the window system.
 This doesn't, of course, prevent you from presenting the familiar, single value
 color depths to the user.
 
+
 ### 2.2 - Why is it not possible to change video modes after a window has been opened?
 
 There is limited support for mode switching in the form of `glfwSetWindowSize`.
@@ -189,19 +190,11 @@ window has been opened.  Also, under X Window System it is only possible to set
 the color depth of an OpenGL window at the time of creating the OpenGL context
 (i.e. when opening the window).
 
-### 2.3 - What texture file formats does GLFW support?
 
-**Note that the image and texture loading facilities are deprecated and have
-been [removed](http://www.glfw.org/docs/3.0/moving.html#moving_image) in GLFW
-3.0.**
+### 2.3 - Will image or texture loading support be added to GLFW?
 
-Through the `glfwReadImage` and `glfwLoadTexture2D` functions, GLFW supports the
-Truevision Targa version 1 (TGA) file format.
+No.
 
-Supported pixel formats are: 8-bit gray-scale, 24-bit RGB, 32-bit RGBA and
-colormap (24/32-bit colors). Note that colormap images are always converted to
-24-bit or 32-bit true color. Files that are RLE encoded (compressed) are also
-supported.
 
 ### 2.4 - Will sound support be added to GLFW?
 
@@ -209,6 +202,7 @@ No.
 
 However, if you are looking for an OpenGL-like API for sound, have a look at
 [OpenAL](http://connect.creativelabs.com/openal/).
+
 
 ### 2.5 - Will font or text rendering support be added to GLFW?
 
@@ -218,9 +212,11 @@ There are already several competent font rendering toolkits available for
 OpenGL, none of which require integration with a context or window management
 library.
 
+
 ### 2.6 - Will pop-up menu support be added to GLFW?
 
 No.
+
 
 ### 2.7 - Will message box support be added to GLFW?
 
@@ -233,6 +229,7 @@ of code not necessarily present on the user's machine.
 
 As there is no reason why message box code has to be integrated into GLFW,
 it is better to leave that functionality to a separate library.
+
 
 ### 2.8 - What is Unicode and ISO 8859-1?
 
@@ -258,23 +255,11 @@ codes 160-255, ISO 8859-1 is able to support many European languages.
 *See also
 [Wikipedia on ISO 8859-1](http://en.wikipedia.org/wiki/ISO/IEC_8859-1).*
 
+
 ### 2.9 - Is GLFW thread safe?
 
-No.  However, neither is OpenGL.
+Some parts are, specifically those needed to allow rendering from secondary threads.
 
-**Note that the threading facilities are deprecated and have been
-[removed](http://www.glfw.org/docs/3.0/moving.html#moving_threads) in GLFW
-3.0.**
-
-The threading part of the GLFW API (threads, mutexes and condition variables) is
-thread safe, as is the `glfwSleep` function.  Other functions are NOT thread
-safe, and calling them from different threads may result in an inconsistent GLFW
-state.
-
-It is strongly recommended that all OpenGL and GLFW calls (except for thread
-management and synchronization calls) are made from the main thread, which
-should not be a big problem since only a single window is supported. This method
-is also compatible with the future direction of GLFW.
 
 ### 2.10 - Can I check several keys at once?
 
@@ -284,8 +269,9 @@ The function `glfwGetKey` lets you check the state of any keyboard key
 (including special keys). You can even call the function from within a callback
 function, which makes it possible to check for things like CTRL+F3 key events
 (when you get a `GLFW_KEY_F3` key press event, check the state of the left or
-right CTRL key with `glfwGetKey(GLFW_KEY_LCTRL)` or
-`glfwGetKey(GLFW_KEY_RCTRL)`, or both).
+right CTRL key with `glfwGetKey(window, GLFW_KEY_LEFT_CONTROL)` or
+`glfwGetKey(window, GLFW_KEY_RIGHT_CONTROL)`, or both).
+
 
 ### 2.11 - What timer APIs does GLFW use?
 
@@ -297,6 +283,7 @@ uses `gettimeofday`.
 
 On Unix-like operating systems using the X11 port, the POSIX `CLOCK_MONOTONIC`
 time source is used if available, with `gettimeofday` as a fallback.
+
 
 ### 2.12 - What window system APIs does GLFW use?
 
@@ -310,13 +297,10 @@ On Unix-like systems using the X Window System, the Xlib API is used for window
 and input management, the XRandR or XF86VidMode extension (if available) for
 display mode management, and GLX (with extensions) for context creation.
 
-There is also a legacy Carbon port available for use on older versions of
-Mac OS X, using AGL for windowed context creation and CGL for fullscreen
-context creation.  Note that this port only allows 32-bit applications.
 
 ### 2.13 - Why doesn't your gl.h have the functions I need?
 
-GLFW does not provide any version of either `gl.h` or `glu.h`.  The `glfw.h`
+GLFW does not provide any version of either `gl.h` or `glu.h`.  The `glfw3.h`
 header file includes the versions already present in your development
 environment.
 
@@ -326,6 +310,7 @@ very rudimentary, we recommend that you use a dedicated extension loading
 library such as
 [GLEW](http://glew.sourceforge.net/) or
 [GLee](http://elf-stone.com/glee.php).
+
 
 ### 2.14 - Why do my objects look all wrong?
 
@@ -338,47 +323,22 @@ The OpenGL.org wiki has an extensive article on
 [common mistakes](https://www.opengl.org/wiki/Common_Mistakes) that may be
 able to help you locate the problem.
 
+
 ### 2.15 - Can I use GLEW with GLFW?
 
 Yes, as long as you include the GLEW header before the GLFW one.  The GLEW
 header defines all the necessary magic macros to make sure the `gl.h` that GLFW
 attempts to include doesn't interfere.
 
-### 2.16 - Can any of the parameters to glfwOpenWindow be zero?
 
-Yes.  In fact, all parameters except the window mode can be zero, i.e.  this is
-perfectly legal:
-
-{% highlight c %}
-glfwOpenWindow(0, 0, 0, 0, 0, 0, 0, 0, GLFW_WINDOW);
-{% endhighlight %}
-
-Any parameter that is zero gets its desired value chosen by GLFW.  Then, all
-parameters except the window mode are matched as closely as possible to what is
-available on the system.  However, only the following parameters and hints are
-required to match exactly:
-
-
-- The window mode (i.e. the last parameter to `glfwOpenWindow`)
-- The `GLFW_STEREO` hint
-- The `GLFW_OPENGL_PROFILE` hint, if set to a non-zero value
-- The `GLFW_OPENGL_FORWARD_COMPAT` hint
-
-
-To find out the actual properties of the window and OpenGL context, use the
-`glfwGetWindowParam` function after the window has been opened.
-
-To see what you get on your machine using only default values, you can use the
-`defaults` test in the GLFW source distribution.
-
-
-### 2.17 How do I use C++ methods as callbacks?
+### 2.16 How do I use C++ methods as callbacks?
 
 You cannot use regular methods as callbacks, as GLFW is a C library and doesn't
 know about objects and `this` pointers.  If you wish to receive callbacks to
 a C++ object, use static methods or regular functions as callbacks, store the
 pointer to the object you wish to call in some location reachable from the
 callbacks and use it to call methods on your object.
+
 
 ---
 ## Windows Specific Questions
@@ -394,17 +354,19 @@ for all of the compilers mentioned above.
 If your compiler is not supported, please don't hesitate to
 [contact us](community.html).
 
+
 ### 3.2 - Why do I get link errors when trying to build my program?
 
 If you get errors like this one when you try to compile a program using GLFW:
 
-> `error LNK2001: unresolved external symbol _glfwGetWindowParam`
+> `error LNK2001: unresolved external symbol _glfwGetWindowAttrib`
 
 *(Example from Microsoft Visual C++)*
 
 then you have most likely not linked your program against GLFW correctly.  How
 to do this is described in section 4.2.2 of the `readme.html` file that is
 included in the GLFW source and binary distributions.
+
 
 ### 3.3 - Why doesn't glfwSwapInterval work?
 
@@ -424,36 +386,25 @@ forcibly disabled, please report this as a bug in GLFW.
 
 Your program most likely lacks an application bundle.
 
-A simple shell script for creating application bundles sufficient for running
-GLFW applications can be found in the source distribution as
-`examples/bundle.sh`.
-
 To learn more about bundles, see the
 [Bundle Programming Guide](http://developer.apple.com/mac/library/documentation/CoreFoundation/Conceptual/CFBundles/)
 on the Apple Developer Connection.
 
-### 4.2 - How do I create an OpenGL 3.0+ context?
 
-Firstly, you need GLFW 2.7.2 or later and Mac OS X 10.7 or later.
+### 4.2 - How do I create an OpenGL 3.0+ context?
 
 The only OpenGL 3.0+ context configuration currently supported by Mac OS X is
 forward-compatible, core profile OpenGL 3.2.  To create such a context, you
 should set the following hints:
 
 {% highlight c %}
-glfwOpenWindowHint(GLFW_OPENGL_VERSION_MAJOR, 3);
-glfwOpenWindowHint(GLFW_OPENGL_VERSION_MINOR, 2);
-glfwOpenWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-glfwOpenWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
+glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 {% endhighlight %}
+
 
 ---
 ## Unix/X11 Specific Questions
 
-### 5.1 - Why doesn't glfwOpenWindow work in my private build?
-
-You most likely did not specify a mechanism for OpenGL extension entry point
-retrieval.  If no mechanism was selected, `glfwGetProcAddress` always returns
-false, which causes `glfwOpenWindow` to fail.
-
-See `readme.html` section 2.2 for more details. 

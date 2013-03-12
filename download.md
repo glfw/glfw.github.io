@@ -7,8 +7,8 @@ title: Download
 
 ## Download
 
-The current version is {{ post.title }} ([release notes](release-{{ post.title }}.html)), which was
-released on {{ post.date | date: "%B %e, %Y" }}.
+The current version is {{ post.title }}, which was released on
+{{ post.date | date: "%B %e, %Y" }}.
 
 ---
 ### Source archive
@@ -19,11 +19,8 @@ This contains:
 
 - The complete source code for the GLFW library
 - A collection of example and test programs
-- Makefiles for many different compilers and systems
-- Project files for Microsoft Visual C++ 2008, 2010 and 2012
-- Bindings and examples for Pascal and D
-- The [User Guide and Reference Manual](documentation.html)
-- The [readme and release notes](release-{{ post.title }}.html)
+- CMake project files for the library and all programs
+- Full [documentation](documentation.html)
 
 This is the recommended version for all platforms.
 
@@ -37,8 +34,7 @@ This contains:
 - The GLFW header file
 - 32-bit release mode DLLs and static libraries for Microsoft&trade; Visual C++
   2008, Visual C++ 2010, Visual C++ 2012 and MinGW
-- The [User Guide and Reference Manual](documentation.html)
-- An abbreviated version of the release notes
+- Full [documentation](documentation.html)
 
 ---
 ### Binaries for 64-bit Windows
@@ -50,13 +46,12 @@ This contains:
 - The GLFW header file
 - 64-bit release mode DLL and static library for Microsoft&trade; Visual C++
   2012 and MinGW-w64
-- The [User Guide and Reference Manual](documentation.html)
-- An abbreviated version of the release notes
+- Full [documentation](documentation.html)
 
 ---
-## GitHub repository
+## Git repository
 
-The latest version of the 2.x source code is always available in our
-[GitHub repository](https://github.com/glfw/glfw-legacy).
+The latest version of the 3.0 source code is always available in our
+[Git repository](https://github.com/glfw/glfw).
 
 {% endfor %}

@@ -22,7 +22,6 @@ GLFW is licensed under the [zlib/libpng license](license.html).
 - Basic Unicode character input
 - Supports both static and dynamic linking
 - Open Source with a liberal OSI-certified [license](license.html)
-- Makefiles or project files for most popular C/C++ compilers
 - Examples and comprehensive [documentation](documentation.html)
 
 If GLFW isn't what you are looking for, there are

@@ -5,21 +5,13 @@ title: Documentation
 
 ## Documentation
 
-### User guide
+### Guides and reference manual
 
-<a class="download" href="GLFWUsersGuide279.pdf" title="Download User Guide (PDF)">Download</a>
+<a class="download" href="/docs/3.0/" title="View documentation">View</a>
 
-The user guide is a task-oriented guide to the API.  It does not describe every
-detail of GLFW, but instead attempts to get you started in the areas of your
-interest.
-
----
-### Reference manual
-
-<a class="download" href="GLFWReference279.pdf" title="Download Reference Manual (PDF)">Download</a>
-
-The reference manual describes every function and constant of the API, but isn't
-necessarily the best way to get started using GLFW.
+GLFW is documented using [Doxygen](http://www.stack.nl/~dimitri/doxygen/), with
+both reference documentation and guides both for new users and those who have
+used earlier versions.
 
 ---
 ### Example code
@@ -29,27 +21,39 @@ a window and OpenGL context with it.  There are many more functions than those
 used here, but these are all you need to get started.
 
 {% highlight c %}
-#include <GL/glfw.h>
+#include <GLFW/glfw3.h>
 
 int main(void)
 {
+    GLFWwindow* window;
+
     /* Initialize the library */
     if (!glfwInit())
         return -1;
 
     /* Create a windowed mode window and its OpenGL context */
-    if (!glfwOpenWindow(640, 480, 8, 8, 8, 0, 24, 0, GLFW_WINDOW))
+    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    if (!window)
+    {
+        glfwTerminate();
         return -1;
+    }
+
+    glfwMakeContextCurrent(window);
 
     /* Loop until the user closes the window */
-    while (glfwGetWindowParam(GLFW_OPENED))
+    while (!glfwWindowShouldClose(window))
     {
         /* Render here */
 
-        /* Swap front and back buffers and process events */
-        glfwSwapBuffers();
+        /* Swap front and back buffers */
+        glfwSwapBuffers(window);
+
+        /* Poll for and process events */
+        glfwPollEvents();
     }
 
+    glfwTerminate();
     return 0;
 }
 {% endhighlight %}
