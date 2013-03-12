@@ -11,7 +11,7 @@ released on November 8, 2012.
 ---
 ### Source archive
 
-<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.zip/download" title="Download Source (ZIP)">DOWNLOAD</a>
+<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.zip/download" title="Download Source (ZIP)">Download</a>
 
 This contains:
 
@@ -28,7 +28,7 @@ This is the recommended version for all platforms.
 ---
 ### Binaries for 32-bit Windows
 
-<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN32.zip/download" title="Download Win32 Binaries (ZIP)">DOWNLOAD</a>
+<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN32.zip/download" title="Download Win32 Binaries (ZIP)">Download</a>
 
 This contains:
 
@@ -41,7 +41,7 @@ This contains:
 ---
 ### Binaries for 64-bit Windows
 
-<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN64.zip/download" title="Download Win64 Binaries (ZIP)">DOWNLOAD</a>
+<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN64.zip/download" title="Download Win64 Binaries (ZIP)">Download</a>
 
 This contains:
 

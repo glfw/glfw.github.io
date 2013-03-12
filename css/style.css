@@ -41,6 +41,7 @@ code, code span {
   float: right;
   width: 8em;
   transition: .35s ease;
+  text-transform: uppercase;
 }
 
 .download:hover {
