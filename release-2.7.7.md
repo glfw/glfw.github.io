@@ -531,7 +531,7 @@ version of GLFW.
   the pkg-config file
 
 For the full change log since version 1.0, see the [version
-history](changelog.md) page.
+history](changelog.html) page.
 
 
 ## 6. Directory structure of the GLFW distribution
