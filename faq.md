@@ -121,8 +121,8 @@ available for aiding OpenGL development.  The most commonly used are
 implementation of GLUT, and [SDL](http://www.libsdl.org/).
 
 However, GLUT is getting quite old and freeglut is mostly concerned with
-providing a stable clone of it, while SDL is sometimes tricky to integrate into
-existing code and has never had OpenGL as its main focus.
+providing a stable clone of it, while SDL is too large for some people and has
+never had OpenGL as its main focus.
 
 We therefore believe that there is room for a lightweight, modern library for
 managing OpenGL contexts, windows and input.
