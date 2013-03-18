@@ -27,9 +27,10 @@ title: Version history
 - \[X11\] Bugfix: The detected link flags for `clock_gettime` were not added to
   the pkg-config file
 
+---
 ### Version 2.7.6
+- Added new joystick test (backported from 3.0)
 - \[Cocoa\] Added joystick support (backported from 3.0)
-- \[Cocoa\] Added new joystick test (backported from 3.0)
 - \[Cocoa\] Bugfix: Fullscreen windows with OpenGL 3.2 core contexts failed to
   open
 - \[Cocoa\] Bugfix: The cursor position was incorrectly rounded during
@@ -50,12 +51,14 @@ title: Version history
 - \[X11\] Bugfix: The VirtualBox OpenGL implementation does not set the window
   bit for GLX framebuffer configs
 
+---
 ### Version 2.7.5
 - \[Cocoa\] Replaced `NSDate` time source with `mach_absolute_time` (backported
   from 3.0)
 - \[Cocoa\] Bugfix: A header needed for `MAXPATHLEN` on some systems was not
   included
 
+---
 ### Version 2.7.4
 - \[X11\] Bugfix: The library containing `clock_gettime` was not detected
 - \[X11\] Bugfix: The POSIX monotonic clock was detected using a non-POSIX macro
@@ -69,6 +72,7 @@ title: Version history
   zero
 - \[Win32\] Bugfix: The `GLFW_WINDOW_NO_RESIZE` window parameter was always zero
 
+---
 ### Version 2.7.3
 - Added `GLFW_INCLUDE_GL3` macro for including the new `gl3.h` instead of `gl.h`
 - Bugfix: The returned desktop mode did not reflect the display mode as it was
@@ -91,6 +95,7 @@ title: Version history
   clearer separation between Cygwin and MSYS 
 - \[Win32\] Bugfix: Alt+F4 hot key was not translated into `WM_CLOSE`
 
+---
 ### Version 2.7.2
 - Added library version check to dynamic linking test
 - \[Cocoa\] Added support for OpenGL 3.2 core profile in 10.7 Lion and above
@@ -100,6 +105,7 @@ title: Version history
 - \[Cocoa\] Bugfix: The Cocoa layer was not notified that the application may be
   multithreaded
 
+---
 ### Version 2.7.1
 - Clarified language in the Reference Manual concerning window hint resetting
 - Bugfix: The OpenGL profile and forward-compatibility window parameters were
@@ -138,6 +144,7 @@ title: Version history
 - \[Win32\] Bugfix: Window focus was not handled correctly when using
   `glfwInconifyWindow`
 
+---
 ### Version 2.7
 - Added `GLFW_OPENGL_VERSION_MAJOR` and `GLFW_OPENGL_VERSION_MINOR` hints for
   versioned context creation
@@ -233,6 +240,7 @@ title: Version history
 - \[Win32\] Bugfix: `DllMain` performed a number of forbidden actions (by
   calling `glfwTerminate`)
 
+---
 ### Version 2.6
 - Added `GLFW_FSAA_SAMPLES` multisampling hint
 - Added `GLFW_WINDOW_NO_RESIZE` hint for non-resizable windows
@@ -290,6 +298,7 @@ title: Version history
   interest
 - \[DOS\] Obsoleted platform due to lack of maintainer and community interest
 
+---
 ### Version 2.5
 - Added the function `glfwWaitEvents`
 - Added window close callback, which enables a program to prevent a user from
@@ -307,7 +316,7 @@ title: Version history
 - \[Win32\] Fix: The GLFW window is now placed in the upper left corner of the
   desktop working area
 - \[Win32/X11\] Bugfix: More robust check for `SwapInterval`
-- \[X11\] Added support for USB joysticks under Linux (`/dev/input/js\*`)
+- \[X11\] Added support for USB joysticks under Linux (`/dev/input/js*`)
 - \[X11\] Bugfix: Added support for GLX extensions in `glfwExtensionSupported`
 - \[X11\] Bugfix: More robust fullscreen mode (?)
 - \[X11\] Bugfix: Runtime check of XF86VidMode support for the active display
@@ -322,6 +331,7 @@ title: Version history
 - \[x86 CPUs\] Improved Intel mobile CPU detection (e.g. disables RDTSC timing
   on Centrino systems)
 
+---
 ### Version 2.4.2
 - Preliminary native Mac OS X support (via the Carbon interface)
 - Preliminary DOS support (DJGPP + Mesa)
@@ -357,6 +367,7 @@ title: Version history
 - \[AmigaOS\] Bugfix: `glfwGetWindowParam` now returns proper values for all
   parameters (except for `GLFW_ACCELERATED`)
 
+---
 ### Version 2.4.1
 - Added AmigaOS support (preliminary)
 - GLFW for the X Window System now works under Mac OS X
@@ -365,6 +376,7 @@ title: Version history
 - \[X11\] Bugfix: GLFW should now compile under IRIX v5.3
 - \[X11\] Bugfix: GLFW should now compile with Kylix
 
+---
 ### Version 2.4
 - Major source code rearrangement - much code is now shared between different
   platforms, and it should be easier to port GLFW to new platforms
@@ -386,6 +398,7 @@ title: Version history
 - \[Win32\] Bugfix: GLFW should now compile on a wider range of MSVC compilers
   (e.g. .NET) - Thanks Tim Little!
 
+---
 ### Version 2.3.2
 - Removed the silly limitation of 100 threads (the thread information is now
   kept in a linked list)
@@ -396,11 +409,13 @@ title: Version history
 - \[X11\] Some fixes to the `compile.sh` script (`-O` for non-gcc compilers and
   `make x11-gcc` should now really force GCC)
 
+---
 ### Version 2.3.1
 - \[X11\] A minimalist configuration script was added that solves the issue with
   `glXGetProcAddressARB`, and unifies all Unix/X11 Makefiles into one template
   Makefile (well, one for GLFW, and one for the examples)
 
+---
 ### Version 2.3
 - Added OpenGL stereo rendering support
 - Added a function for parsing the OpenGL version string (`glfwGetGLVersion`)
@@ -414,6 +429,7 @@ title: Version history
   may result in compiler errors on some systems (please let me know if you have
   any related problems).
 
+---
 ### Version 2.2.3
 - Bugfix: Checking for `GL_SGIS_generate_mipmap` is more robust
 - Bugfix: `glfwLoadTexture2D` will now fail if no window is opened
@@ -424,15 +440,18 @@ title: Version history
   only 16-bit color visuals are available (which means that pong3d should work
   on 16-bit displays).
 
+---
 ### Version 2.2.2
 - \[Win32\] Bugfix: Windows did not always get focus (this was a tough one!)
 - \[Win32\] Bugfix: `glfwGetWindowParam` did not work with `GLFW_ACCUM_\*_BITS`
   or `GLFW_AUX_BUFFERS`
 - \[X11\] Bugfix: Linux joystick Y axis positions were reversed
 
+---
 ### Version 2.2.1
 - \[X11\] Added joystick support for Linux
 
+---
 ### Version 2.2
 - Added joystick support (only supported under Windows so far)
 - Added joystick controls to `pong3d.c` (only 3 more lines of code)
@@ -456,6 +475,7 @@ title: Version history
 - \[X11\] Bugfix: `glfwGetDesktopMode` and `glfwGetVideoModes` no longer give
   segmentation faults if no X server is available
 
+---
 ### Version 2.1
 - Added image and texture loading capabilities (support for the TGA file format
   at the moment)
@@ -491,6 +511,7 @@ title: Version history
 - \[X11\] Bugfix: Non-OpenGL visuals are not listed anymore
 - \[XFree86\] Bugfix: Undesired video mode changes are now prevented
 
+---
 ### Version 2.0.3
 - Added precise CPU cycle based timing support (RDTSC) for x86 CPUs (under both
   Windows and Unix)
@@ -498,6 +519,7 @@ title: Version history
 - Corrected the CC for Unix/X11 makefiles (`-Wall` is usually not a supported
   flag for CC, so it was removed from the CFLAGS list)
 
+---
 ### Version 2.0.2
 - Added a makefile option for building for X11 with 'cc' rather than 'gcc'
   (useful for IRIX users for instance)
@@ -508,6 +530,7 @@ title: Version history
 - \[X11\] Bugfix: `glfwGetNumberOfProcessors` now works for IRIX (earlier
   versions of GLFW would not compile under IRIX)
 
+---
 ### Version 2.0.1
 - `glfwTerminate` will now be called automatically upon normal program
   termination (using `atexit`)
@@ -516,6 +539,7 @@ title: Version history
 - \[Win32\] Bugfix: `NULL` declaration in `glfw.h` was not MSVC 7.x compatible
 - \[X11\] Bugfix: GLFW would not build with C++ (e.g. g++)
 
+---
 ### Version 2.0
 - GLFW is no longer a single source file, but an entire link library
 - Added multi threading support
@@ -524,14 +548,17 @@ title: Version history
 - Added GLFW Users Manual and GLFW Reference Manual as PDF files
 - Some bugfixes
 
+---
 ### Version 1.0.2
 - Improved fullscreen functionality
 - Added fullscreen support for X11
 
+---
 ### Version 1.0.1
 - Added support for the X Window System
 - Fixed bugs
 
+---
 ### Version 1.0.0
 - First release
 - Only supported Windows
