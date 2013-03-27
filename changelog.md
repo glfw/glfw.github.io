@@ -6,6 +6,9 @@ title: Version history
 ## Version history
 
 ### Version 2.7.7
+<span class="date">
+<div class="dateday">08</div><div>Nov</div><div class="dateyear">2012</div>
+</span>
 - \[Cocoa\] Bugfix: The cursor positioning code used `NSPoint` in place of
   `CGPoint`
 - \[Cocoa\] Bugfix: The detection of `setRestorable:` used the wrong selector
@@ -29,6 +32,9 @@ title: Version history
 
 ---
 ### Version 2.7.6
+<span class="date">
+<div class="dateday">03</div><div>Jul</div><div class="dateyear">2012</div>
+</span>
 - Added new joystick test (backported from 3.0)
 - \[Cocoa\] Added joystick support (backported from 3.0)
 - \[Cocoa\] Bugfix: Fullscreen windows with OpenGL 3.2 core contexts failed to
@@ -53,6 +59,9 @@ title: Version history
 
 ---
 ### Version 2.7.5
+<span class="date">
+<div class="dateday">15</div><div>Apr</div><div class="dateyear">2012</div>
+</span>
 - \[Cocoa\] Replaced `NSDate` time source with `mach_absolute_time` (backported
   from 3.0)
 - \[Cocoa\] Bugfix: A header needed for `MAXPATHLEN` on some systems was not
@@ -60,6 +69,9 @@ title: Version history
 
 ---
 ### Version 2.7.4
+<span class="date">
+<div class="dateday">22</div><div>Mar</div><div class="dateyear">2012</div>
+</span>
 - \[X11\] Bugfix: The library containing `clock_gettime` was not detected
 - \[X11\] Bugfix: The POSIX monotonic clock was detected using a non-POSIX macro
 - \[Cocoa\] Replaced deprecated Core Graphics event suppression call
@@ -74,6 +86,9 @@ title: Version history
 
 ---
 ### Version 2.7.3
+<span class="date">
+<div class="dateday">13</div><div>Mar</div><div class="dateyear">2012</div>
+</span>
 - Added `GLFW_INCLUDE_GL3` macro for including the new `gl3.h` instead of `gl.h`
 - Bugfix: The returned desktop mode did not reflect the display mode as it was
   before the window was opened.
@@ -97,6 +112,9 @@ title: Version history
 
 ---
 ### Version 2.7.2
+<span class="date">
+<div class="dateday">12</div><div>Aug</div><div class="dateyear">2011</div>
+</span>
 - Added library version check to dynamic linking test
 - \[Cocoa\] Added support for OpenGL 3.2 core profile in 10.7 Lion and above
 - \[Cocoa\] Made relevant `CFLAGS` overridable
@@ -107,6 +125,9 @@ title: Version history
 
 ---
 ### Version 2.7.1
+<span class="date">
+<div class="dateday">27</div><div>Jul</div><div class="dateyear">2011</div>
+</span>
 - Clarified language in the Reference Manual concerning window hint resetting
 - Bugfix: The OpenGL profile and forward-compatibility window parameters were
   not set
@@ -146,6 +167,9 @@ title: Version history
 
 ---
 ### Version 2.7
+<span class="date">
+<div class="dateday">03</div><div>Sep</div><div class="dateyear">2010</div>
+</span>
 - Added `GLFW_OPENGL_VERSION_MAJOR` and `GLFW_OPENGL_VERSION_MINOR` hints for
   versioned context creation
 - Added `GLFW_OPENGL_FORWARD_COMPAT` hint for forward compatible context
@@ -242,6 +266,9 @@ title: Version history
 
 ---
 ### Version 2.6
+<span class="date">
+<div class="dateday">01</div><div>Sep</div><div class="dateyear">2007</div>
+</span>
 - Added `GLFW_FSAA_SAMPLES` multisampling hint
 - Added `GLFW_WINDOW_NO_RESIZE` hint for non-resizable windows
 - Added install targets for all Unix-like build targets
@@ -300,6 +327,9 @@ title: Version history
 
 ---
 ### Version 2.5
+<span class="date">
+<div class="dateday">15</div><div>Apr</div><div class="dateyear">2005</div>
+</span>
 - Added the function `glfwWaitEvents`
 - Added window close callback, which enables a program to prevent a user from
   closing a window with the window manager
@@ -333,6 +363,9 @@ title: Version history
 
 ---
 ### Version 2.4.2
+<span class="date">
+<div class="dateday">15</div><div>Feb</div><div class="dateyear">2004</div>
+</span>
 - Preliminary native Mac OS X support (via the Carbon interface)
 - Preliminary DOS support (DJGPP + Mesa)
 - Changed license to the zlib license (almost identical to the previous GLFW
@@ -369,6 +402,9 @@ title: Version history
 
 ---
 ### Version 2.4.1
+<span class="date">
+<div class="dateday">08</div><div>Mar</div><div class="dateyear">2003</div>
+</span>
 - Added AmigaOS support (preliminary)
 - GLFW for the X Window System now works under Mac OS X
 - \[Win32\] Bugfix: `glfwWaitCond` treated the timeout as milliseconds instead
