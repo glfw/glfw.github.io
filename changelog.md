@@ -5,6 +5,17 @@ title: Version history
 
 ## Version history
 
+### Version 2.7.8
+<span class="date">
+<div class="dateday">05</div><div>Apr</div><div class="dateyear">2013</div>
+</span>
+- \[Win32\] Bugfix: The temporary window was shown before being destroyed
+  (backported from 3.0)
+- \[X11\] Bugfix: Some function pointer types were named incorrectly
+- \[X11\] Bugfix: The Mesa 9.x implementation of GLX_ARB_create_context_profile
+  is broken in some revisions (backported from 3.0)
+
+---
 ### Version 2.7.7
 <span class="date">
 <div class="dateday">08</div><div>Nov</div><div class="dateyear">2012</div>

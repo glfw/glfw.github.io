@@ -5,13 +5,13 @@ title: Download
 
 ## Download
 
-The current version is 2.7.7 ([release notes](release-2.7.7.html)), which was
-released on November 8, 2012.
+The current version is 2.7.8 ([release notes](release-2.7.8.html)), which was
+released on April 5, 2013.
 
 ---
 ### Source archive
 
-<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.zip/download" title="Download Source (ZIP)">Download</a>
+<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.8/glfw-2.7.8.zip/download" title="Download Source (ZIP)">Download</a>
 
 This contains:
 
@@ -21,14 +21,14 @@ This contains:
 - Project files for Microsoft Visual C++ 2008, 2010 and 2012
 - Bindings and examples for Pascal and D
 - The [User Guide and Reference Manual](documentation.html)
-- The [readme and release notes](release-2.7.7.html)
+- The [readme and release notes](release-2.7.8.html)
 
 This is the recommended version for all platforms.
 
 ---
 ### Binaries for 32-bit Windows
 
-<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN32.zip/download" title="Download Win32 Binaries (ZIP)">Download</a>
+<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.8/glfw-2.7.8.bin.WIN32.zip/download" title="Download Win32 Binaries (ZIP)">Download</a>
 
 This contains:
 
@@ -41,7 +41,7 @@ This contains:
 ---
 ### Binaries for 64-bit Windows
 
-<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.7/glfw-2.7.7.bin.WIN64.zip/download" title="Download Win64 Binaries (ZIP)">Download</a>
+<a class="download" href="http://sourceforge.net/projects/glfw/files/glfw/2.7.8/glfw-2.7.8.bin.WIN64.zip/download" title="Download Win64 Binaries (ZIP)">Download</a>
 
 This contains:
 
