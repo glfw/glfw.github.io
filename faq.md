@@ -332,6 +332,10 @@ connecting your code to OpenGL and then getting out of the way.  If you get
 incorrect rendering results, it is therefore most likely due to errors in your
 code, the OpenGL implementation or both.
 
+The OpenGL.org wiki has an extensive article on
+[common mistakes](https://www.opengl.org/wiki/Common_Mistakes), which may be
+able to help you locate the problem.
+
 ### 2.15 - Can I use GLEW with GLFW?
 
 Yes, as long as you include the GLEW header before the GLFW one.  The GLEW
