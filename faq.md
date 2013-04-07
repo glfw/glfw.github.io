@@ -333,7 +333,7 @@ incorrect rendering results, it is therefore most likely due to errors in your
 code, the OpenGL implementation or both.
 
 The OpenGL.org wiki has an extensive article on
-[common mistakes](https://www.opengl.org/wiki/Common_Mistakes), which may be
+[common mistakes](https://www.opengl.org/wiki/Common_Mistakes) that may be
 able to help you locate the problem.
 
 ### 2.15 - Can I use GLEW with GLFW?
