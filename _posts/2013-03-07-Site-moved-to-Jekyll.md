@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Site moved to Jekyll
-category: news
+tag: news
 ---
 
 This site now runs on [Jekyll](http://jekyllrb.com/), an easy-to-use static page

@@ -4,8 +4,7 @@ title: Version history
 ---
 
 ## Version history
-{% for post in site.posts %}
-{% if post.categories contains "changelog" %}
+{% for post in site.tags.changelog %}
 ---
 <a href="{{ post.url }}">
 <h3>Version {{ post.title }}</h3>
@@ -16,7 +15,6 @@ title: Version history
 </span>
 </a>
 {{ post.content }}
-{% endif %}
 {% endfor %}
 
 ---

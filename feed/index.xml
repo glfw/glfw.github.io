@@ -15,8 +15,7 @@ layout: nil
     <email>webmaster@glfw.org</email>
   </author>
 
-  {% for post in site.posts %}
-    {% if post.categories contains "news" %}
+  {% for post in site.tags.news %}
       <entry>
 	<id>http://www.glfw.org/{{ post.id }}</id>
 	<link type="text/html" rel="alternate" href="http://www.glfw.org{{ post.url }}"/>
@@ -24,7 +23,6 @@ layout: nil
 	<updated>{{ post.date | date_to_xmlschema }}</updated>
 	<content type="html">{{ post.content | xml_escape }}</content>
       </entry>
-    {% endif %}
   {% endfor %}
 
 </feed>
