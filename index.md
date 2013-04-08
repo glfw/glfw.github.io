@@ -28,6 +28,7 @@ GLFW is licensed under the [zlib/libpng license](license.html).
 If GLFW isn't what you are looking for, there are [alternatives](links.html#alternatives_to_glfw).
 
 {% for post in site.posts %}
+{% if post.categories contains "news" %}
 ---
 <a href="{{ post.url }}">
 <h3>{{ post.title }}</h3>
@@ -39,6 +40,7 @@ If GLFW isn't what you are looking for, there are [alternatives](links.html#alte
 </a>
 
 {{ post.content }}
+{% endif %}
 {% endfor %}
 
 If you find any bugs, please help us by reporting them in our

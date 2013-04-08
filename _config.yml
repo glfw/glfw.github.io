@@ -1,2 +1,2 @@
-permalink: none
+permalink: /:title.html
 pygments: true
