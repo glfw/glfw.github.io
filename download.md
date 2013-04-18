@@ -54,13 +54,9 @@ This contains:
 - An abbreviated version of the release notes
 
 ---
-## Subversion repository
+## GitHub repository
 
 The latest version of the 2.x source code is always available in our
-[Subversion repository](http://sourceforge.net/scm/?type=svn&group_id=72569).
-
-**Note** that the Subversion version may or may not be usable, depending on when
-you do the checkout. If you wish to know more about the development version,
-please [contact the developers](community.html).
+[GitHub repository](https://github.com/glfw/glfw-legacy).
 
 {% endfor %}

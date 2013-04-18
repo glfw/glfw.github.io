@@ -10,8 +10,8 @@ If you have questions related to the use of GLFW, we have a
 and the IRC channel `#glfw` on [Freenode](http://freenode.net/).
 
 If you have a bug to report, a feature you'd like to request or a patch
-you wish to submit, please file it in one of our
-[SF.net trackers](http://sourceforge.net/tracker/?group_id=72569).
+you wish to submit, please submit an issue or a pull request to the
+[GitHub repository](https://github.com/glfw/glfw-legacy).
 
 If you find a problem related to this website, please email the
 [webmaster](mailto:webmaster@glfw.org).

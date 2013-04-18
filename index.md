@@ -25,7 +25,8 @@ GLFW is licensed under the [zlib/libpng license](license.html).
 - Makefiles or project files for most popular C/C++ compilers
 - Examples and comprehensive [documentation](documentation.html)
 
-If GLFW isn't what you are looking for, there are [alternatives](links.html#alternatives_to_glfw).
+If GLFW isn't what you are looking for, there are
+[alternatives](links.html#alternatives_to_glfw).
 
 {% for post in site.tags.news %}
 ---
@@ -40,7 +41,3 @@ If GLFW isn't what you are looking for, there are [alternatives](links.html#alte
 
 {{ post.content }}
 {% endfor %}
-
-If you find any bugs, please help us by reporting them in our
-[bug tracker](http://sourceforge.net/tracker/?group_id=72569).
-If you encounter any problems using GLFW, please [contact us](community.html).

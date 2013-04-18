@@ -74,11 +74,10 @@ makefiles in the `lib\win32`, `lib/x11` or
 If you have any problems, please use our
 [support forum](http://sourceforge.net/projects/glfw/forums/forum/247562)
 and
-[bug tracker](http://sourceforge.net/tracker/?group_id=72569&atid=534938)
-on SourceForge.net. We would like to support as many systems as possible, so if
-you had to make any modifications or additions to the source and/or makefiles
-in order to make GLFW compile successfully, we would very much like to know
-what you had to do.
+[issue tracker](https://github.com/glfw/glfw-legacy/issues). We would like to
+support as many systems as possible, so if you had to make any modifications or
+additions to the source and/or makefiles in order to make GLFW compile
+successfully, we would very much like to know what you had to do.
 
 
 ### 2.1 Microsoft Windows
@@ -547,14 +546,12 @@ useful for OpenGL development.
 
 If you have questions related to the use of GLFW, we have a
 [user's web forum](https://sourceforge.net/forum/forum.php?forum_id=247562),
-and a
-[user's mailing list](https://lists.sourceforge.net/lists/listinfo/glfw-user)
 on SF.net, and the registered IRC channel `#glfw` on
 [Freenode](http://freenode.net/).
 
 If you have a bug to report, a patch to submit or a feature you'd like to
-request, please file it in one of the
-[GLFW trackers](http://sourceforge.net/tracker/?group_id=72569) on SF.net.
+request, please file it in the
+[issue tracker](https://github.com/glfw/glfw-legacy/issues) on GitHub.
 
 Finally, if you're interested in helping out with the development of
 GLFW or porting it to your favorite platform, we have a
