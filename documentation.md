@@ -62,9 +62,3 @@ reference manual.
 
 GLFW has a wiki at [wiki.glfw.org](http://wiki.glfw.org/).
 
----
-### Patch submitters guide
-
-The [patch submitters guide](patchguide.html) describes best practices for
-creating and submitting patches to GLFW.  It is recommended reading for anyone
-who wishes to contribute to the project.
