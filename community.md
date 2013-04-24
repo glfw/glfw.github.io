@@ -11,7 +11,7 @@ and the IRC channel `#glfw` on [Freenode](http://freenode.net/).
 
 If you have a bug to report, a feature you'd like to request or a patch
 you wish to submit, please submit an issue or a pull request to the
-[GitHub repository](https://github.com/glfw/glfw-legacy).
+[GitHub repositories](https://github.com/glfw).
 
 If you find a problem related to this website, please email the
 [webmaster](mailto:webmaster@glfw.org).
