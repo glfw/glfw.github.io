@@ -192,7 +192,8 @@ the color depth of an OpenGL window at the time of creating the OpenGL context
 ### 2.3 - What texture file formats does GLFW support?
 
 **Note that the image and texture loading facilities are deprecated and have
-been [removed](http://wiki.glfw.org/wiki/Rationale_for_removing) in GLFW 3.0.**
+been [removed](http://www.glfw.org/docs/3.0/moving.html#moving_image) in GLFW
+3.0.**
 
 Through the `glfwReadImage` and `glfwLoadTexture2D` functions, GLFW supports the
 Truevision Targa version 1 (TGA) file format.
@@ -262,7 +263,8 @@ codes 160-255, ISO 8859-1 is able to support many European languages.
 No.  However, neither is OpenGL.
 
 **Note that the threading facilities are deprecated and have been
-[removed](http://wiki.glfw.org/wiki/Rationale_for_removing) in GLFW 3.0.**
+[removed](http://www.glfw.org/docs/3.0/moving.html#moving_threads) in GLFW
+3.0.**
 
 The threading part of the GLFW API (threads, mutexes and condition variables) is
 thread safe, as is the `glfwSleep` function.  Other functions are NOT thread
