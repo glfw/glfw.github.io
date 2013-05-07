@@ -23,7 +23,7 @@ interactively tweak their parameters on-screen.
 
 ![Screenshot of the AntTweakBar UI editing a cube](screenshots/anttweakbar.png)
 
-*Screenshot copyright &copy; Philippe Decaudin.*
+*Screenshot Copyright © Philippe Decaudin*
 
 ---
 ### Barok Engine
@@ -34,7 +34,7 @@ content.
 
 ![Screenshot of the Barok engine editor](screenshots/barokengine.png)
 
-*Screenshot copyright &copy; Kamil Nowakowski*
+*Screenshot Copyright © Kamil Nowakowski*
 
 ---
 ### BlendELF
@@ -61,7 +61,7 @@ conceptually clean as possible.
 
 ![Screenshot of Horde3D rendering a character](screenshots/horde3d.png)
 
-*Screenshot copyright &copy; Nicolas Schulz.*
+*Screenshot Copyright © Nicolas Schulz*
 
 ---
 ### The Polynomial
@@ -74,7 +74,7 @@ and so on, all while rocking out to the music.
 
 ![Screenshot of The Polynomial gameplay](screenshots/polynomial.png)
 
-*Screenshot copyright &copy; Dmytry Lavrov.*
+*Screenshot Copyright © Dmytry Lavrov*
 
 ---
 ### VSXu
