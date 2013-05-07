@@ -26,6 +26,17 @@ interactively tweak their parameters on-screen.
 *Screenshot copyright &copy; Philippe Decaudin.*
 
 ---
+### Barok Engine
+
+[Barok Engine](http://barokengine.com/) is a free, homemade engine with built-in
+tools that allows for the creation of massive, open world scenery rich in
+content.
+
+![Screenshot of the Barok engine editor](screenshots/barokengine.png)
+
+*Screenshot copyright &copy; Kamil Nowakowski*
+
+---
 ### BlendELF
 
 [BlendELF](http://blendelf.com/) is a small, scriptable 3D game engine.
