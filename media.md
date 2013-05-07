@@ -37,13 +37,6 @@ content.
 *Screenshot Copyright © Kamil Nowakowski*
 
 ---
-### BlendELF
-
-[BlendELF](http://blendelf.com/) is a small, scriptable 3D game engine.
-
-![Screenshot of the BlendELF engine rendering a test scene](screenshots/blendelf.png)
-
----
 ### Grand Central
 
 [Grand Central](http://pouet.net/prod.php?which=50691) is a multi-platform PC
