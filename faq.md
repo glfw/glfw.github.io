@@ -160,7 +160,7 @@ forward-compatible OpenGL 3.2 core profile contexts.  Additionally, creating
 such contexts requires new code, so older versions of GLFW cannot create
 OpenGL 3.0 contexts on Mac OS X.
 
-The first version of to support creation of OpenGL 3.2 contexts on OS X Lion was
+The first version to support creation of OpenGL 3.2 contexts on OS X Lion was
 GLFW 2.7.2.
 
 ---
