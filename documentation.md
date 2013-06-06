@@ -7,7 +7,7 @@ title: Documentation
 
 ### User guide
 
-<a class="download" href="GLFWUsersGuide278.pdf" title="Download User Guide (PDF)">Download</a>
+<a class="download" href="GLFWUsersGuide279.pdf" title="Download User Guide (PDF)">Download</a>
 
 The user guide is a task-oriented guide to the API.  It does not describe every
 detail of GLFW, but instead attempts to get you started in the areas of your
@@ -16,7 +16,7 @@ interest.
 ---
 ### Reference manual
 
-<a class="download" href="GLFWReference278.pdf" title="Download Reference Manual (PDF)">Download</a>
+<a class="download" href="GLFWReference279.pdf" title="Download Reference Manual (PDF)">Download</a>
 
 The reference manual describes every function and constant of the API, but isn't
 necessarily the best way to get started using GLFW.
