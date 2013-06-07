@@ -200,6 +200,6 @@ title: Version history
 - Fixed bugs
 
 ---
-### Version 1.0.0
+### Version 1.0
 - First release
 - Only supported Windows
