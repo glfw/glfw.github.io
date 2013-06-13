@@ -58,9 +58,6 @@ int main(void)
 }
 {% endhighlight %}
 
-To learn about these and all other GLFW functions, see the user guide and
-reference manual.
-
 ---
 ### Wiki
 
