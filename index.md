@@ -5,8 +5,8 @@ title: An OpenGL library
 
 ## Welcome
 
-**GLFW** is a free, Open Source, multi-platform library for opening a window,
-creating an OpenGL context and managing input.  It is easy to integrate into
+**GLFW** is an Open Source, multi-platform library for creating windows with
+OpenGL contexts and managing input and events.  It is easy to integrate into
 existing applications and does not lay claim to the main loop.
 
 GLFW is written in C and has native support for Windows, Mac OS X and many
