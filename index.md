@@ -17,9 +17,10 @@ GLFW is licensed under the [zlib/libpng license](license.html).
 ### Features
 - Easy to use API in the style of the OpenGL APIs
 - Gives you a window and OpenGL context with two function calls
-- Explicit support for MSAA and OpenGL 3.2+, including profiles and flags
+- Explicit support for MSAA, sRGB, robustness, OpenGL 3.2+ and OpenGL ES
+- Support for multiple monitors, high-DPI, gamma ramps and clipboard
 - Input can be either polled or delivered via callbacks
-- Basic Unicode character input
+- UTF-8 for all strings and basic Unicode character input
 - Supports both static and dynamic linking
 - Open Source with a liberal OSI-certified [license](license.html)
 - Examples and comprehensive [documentation](documentation.html)
