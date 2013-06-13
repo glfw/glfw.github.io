@@ -27,7 +27,7 @@ GLFW is licensed under the [zlib/libpng license](license.html).
 If GLFW isn't what you are looking for, there are
 [alternatives](links.html#alternatives_to_glfw).
 
-{% for post in site.tags.news %}
+{% for post in site.tags.news limit:10 %}
 ---
 <a href="{{ post.url }}">
 <h3>{{ post.title }}</h3>
@@ -40,3 +40,6 @@ If GLFW isn't what you are looking for, there are
 
 {{ post.content }}
 {% endfor %}
+
+---
+<p>See the <a href="news.html">news archive</a> for older posts.</p>
