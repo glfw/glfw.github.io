@@ -58,8 +58,3 @@ int main(void)
 }
 {% endhighlight %}
 
----
-### Wiki
-
-GLFW has a wiki at [wiki.glfw.org](http://wiki.glfw.org/).
-
