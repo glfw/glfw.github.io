@@ -13,8 +13,8 @@ If you have a bug to report, a feature you'd like to request or a patch
 you wish to submit, please submit an issue or a pull request to the
 [GitHub repositories](https://github.com/glfw).
 
-If you find a problem related to this website, please email the
-[webmaster](mailto:webmaster@glfw.org).
+If you find a problem related to this website, please submit an issue to the 
+[website repository](https://github.com/glfw/website/issues).
 
 Finally, if you want to help with the development of GLFW, we have a
 [developer's mailing list](https://lists.stacken.kth.se/mailman/listinfo/glfw-dev).
