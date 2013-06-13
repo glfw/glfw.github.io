@@ -7,9 +7,9 @@ title: Download
 
 ## Download
 
-The current version is {{ post.title }}, which was released on
-{{ post.date | date: "%B %e, %Y" }}.  For a full list of changes in this and
-previous releases, see the [version history](changelog.html).
+The current version is **{{ post.title }}**, which was released on
+{{ post.date | date: "%B %e, %Y" }}.  See the [version history](changelog.html)
+for a list of changes.
 
 ---
 ### Source archive
