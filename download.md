@@ -52,7 +52,7 @@ This contains:
 ---
 ## Git repository
 
-The latest version of the 3.0 source code is always available in our
-[Git repository](https://github.com/glfw/glfw).
+The latest version of the source code, including tags for all releases, is
+always available in our [Git repository](https://github.com/glfw/glfw).
 
 {% endfor %}
