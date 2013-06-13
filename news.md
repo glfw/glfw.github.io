@@ -7,7 +7,7 @@ title: News archive
 {% for post in site.tags.news %}
 ---
 <a href="{{ post.url }}">
-<h3>Version {{ post.title }}</h3>
+<h3>{{ post.title }}</h3>
 <span class="date">
 <div class="dateday">{{ post.date | date: "%e" }}</div>
 <div>{{ post.date | date: "%b" }}</div>
