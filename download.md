@@ -3,7 +3,16 @@ layout: default
 title: Download
 ---
 
-{% for post in site.tags.changelog limit:1 %}
+{% comment %}Getting a list of all posts tagged changelog, sorted from newest to oldest{% endcomment %}
+{% for post in site.tags.changelog %}
+
+{% comment %}Getting first character of post title (Version string){% endcomment %}
+{% capture major_version_string %}
+{{ post.title | substring: 0, 1 }}
+{% endcapture %}
+
+{% comment %}Providing links to the latest mainline GLFW release{% endcomment %}
+{% if major_version_string contains '3' %}
 
 ## Download
 
@@ -55,4 +64,6 @@ This contains:
 The latest version of the source code, including tags for all releases, is
 always available in our [Git repository](https://github.com/glfw/glfw).
 
+{% break %}
+{% endif %}
 {% endfor %}
