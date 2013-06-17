@@ -11,10 +11,11 @@ and the IRC channel `#glfw` on [Freenode](http://freenode.net/).
 
 If you have a bug to report, a feature you'd like to request or a patch
 you wish to submit, please submit an issue or a pull request to the
-[GitHub repositories](https://github.com/glfw).
+[GLFW repository](https://github.com/glfw/glfw/issues).
 
 If you find a problem related to this website, please submit an issue to the 
 [website repository](https://github.com/glfw/website/issues).
 
-Finally, if you want to help with the development of GLFW, we have a
+Finally, if you want to help with the development of GLFW, join us on GitHub or
+IRC.  There is also an occasionally active
 [developer's mailing list](https://lists.stacken.kth.se/mailman/listinfo/glfw-dev).
