@@ -3,11 +3,13 @@ layout: default
 title: Documentation
 ---
 
+{% for post in site.tags.changelog limit:1 %}
+
 ## Documentation
 
 ### Guides and reference manual
 
-<a class="download" href="/docs/3.0/" title="View documentation">View</a>
+<a class="download" href="/docs/{{ post.title }}/" title="View documentation">View</a>
 
 GLFW is documented using [Doxygen](http://www.stack.nl/~dimitri/doxygen/), with
 both reference documentation and guides both for new users and those who have
@@ -59,3 +61,4 @@ int main(void)
 }
 {% endhighlight %}
 
+{% endfor %}
