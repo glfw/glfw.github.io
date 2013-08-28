@@ -4,7 +4,7 @@ title: News archive
 ---
 
 ## News archive
-{% for post in site.tags.news limit:10 %}
+{% for post in site.tags.news %}
 ---
 <article>
 <a href="{{ post.url }}">
