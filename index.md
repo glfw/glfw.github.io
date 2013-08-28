@@ -30,16 +30,20 @@ If GLFW isn't what you are looking for, there are
 
 {% for post in site.tags.news limit:10 %}
 ---
+<article>
 <a href="{{ post.url }}">
 <h3>{{ post.title }}</h3>
-<span class="date">
+</a>
+<time datetime="{{ post.date | date: "%Y-%m-%d" }}">
+</time>
+<div class="date">
 <div class="dateday">{{ post.date | date: "%e" }}</div>
 <div>{{ post.date | date: "%b" }}</div>
 <div class="dateyear">{{ post.date | date: "%Y" }}</div>
-</span>
-</a>
+</div>
 
 {{ post.content }}
+</article>
 {% endfor %}
 
 ---

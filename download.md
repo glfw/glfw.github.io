@@ -8,8 +8,9 @@ title: Download
 ## Download
 
 The current version is **{{ post.title }}**, which was released on
-{{ post.date | date: "%B %e, %Y" }}.  See the [version history](changelog.html)
-for a list of changes.
+<time datetime="{{ post.date | date: "%Y-%m-%d" }}">
+{{ post.date | date: "%B %e, %Y" }}</time>.
+See the [version history](changelog.html) for a list of changes.
 
 ---
 ### Source archive

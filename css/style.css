@@ -100,11 +100,11 @@ td, th {
   padding: 0.5em;
 }
 
-.content, th, tr:nth-child(even) {
+section, th, tr:nth-child(even) {
   background-color: #4d4d4d;
 }
 
-a, .navbar a:hover, .footer a:hover, tr:hover {
+a, nav a:hover, footer a:hover, tr:hover {
   color: #ffb380;
   text-decoration: none;
   transition: .35s ease;
@@ -114,7 +114,7 @@ a:hover {
   text-shadow: 0px 0px 8px #ff6600;
 }
 
-.navbar a, .footer a {
+nav a, footer a {
   color: #b3b3b3;
 }
 
@@ -123,19 +123,19 @@ a:hover {
 }
 
 .page {
-  width: 920px;
+  max-width: 920px;
   margin: 32px auto 32px auto;
   box-shadow: 0px 0px 8px #000000;
 }
 
-.header {
+header {
   height: 64px;
   background-image: url("glfw_header.png"), url("bar_header.png");
   background-position: left top, left top;
   background-repeat: no-repeat, repeat-x;
 }
 
-.header a#glfw_home {
+header a#glfw_home {
   line-height: 64px;
   padding-left: 12px;
   padding-right: 12px;
@@ -145,53 +145,46 @@ a:hover {
   font-weight: bold;
 }
 
-.header a#glfw_home:hover {
+header a#glfw_home:hover {
   text-shadow: 0px 0px 16px #ffe6d5;
 }
 
-.navbar {
-  list-style-type: none;
-  padding-right: 16px;
+nav {
   float: right;
 }
 
-.navbar li {
-  float: left;
-}
-
-.navbar a {
+nav a {
   padding-right: 8px;
   padding-left: 8px;
   line-height: 64px;
-  display: block;
   font-size: 18px;
   font-weight: normal;
 }
 
-.content {
+section {
   min-height: 590px;
   padding: 32px;
   color: #e6e6e6;
   font-size: 16px;
 }
 
-.content ol {
+section ol {
   margin-left: 2em;
 }
 
-.content ul {
+section ul {
   margin-left: 2em;
   list-style-type: square;
 }
 
-.footer {
+footer {
   height: 64px;
   background-image: url("bar_footer.png");
   background-position: right bottom;
   background-repeat: repeat-x;
 }
 
-.footer a {
+footer a {
   line-height: 64px;
   display: block;
   font-size: 12px;
