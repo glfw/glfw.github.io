@@ -12,11 +12,8 @@ title: Version history
 </a>
 <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
 </time>
-<div class="date">
-<div class="dateday">{{ post.date | date: "%e" }}</div>
-<div>{{ post.date | date: "%b" }}</div>
-<div class="dateyear">{{ post.date | date: "%Y" }}</div>
-</div>
+
+<h5>Released on {{ post.date | date: "%B %e, %Y" }}</h5>
 
 {{ post.content }}
 </article>

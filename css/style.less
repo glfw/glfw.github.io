@@ -1,195 +1,225 @@
 ---
 ---
 
+// Navigation bar and footer text color
+@nav-footer-color: hsl(0, 0%, 5%);
+
+// Page body background color
+@body-background-color: hsl(0, 0%, 15%);
+
+// Block quotes and code blocks border color
+@code-block-border-color: hsl(0, 0%, 20%);
+
+// Page header, footer, code block, table and block quote background color
+@page-background-color: hsl(0, 0%, 25%);
+
+// Section (content) and table even rows background color
+@section-background-color: hsl(0, 0%, 30%);
+
+// Page border color
+@page-border-color: hsl(0, 0%, 35%);
+
+// Default text color
+@default-text-color: hsl(0, 0%, 90%);
+
+// Base color used for links and buttons
+@base-hue: 24;
+
+// Download and view buttons background and hover colors
+@download-button-background-color: hsl(@base-hue, 100%, 45%);
+@download-button-background-hover-color: hsl(@base-hue, 100%, 50%);
+
+// Navigation, links and table cells default and hover colors
+@link-color: hsl(@base-hue, 100%, 75%);
+@link-hover-color: hsl(@base-hue, 100%, 50%);
+
+// Page header and footer links hover and shadow colors
+@nav-footer-hover-color: hsl(@base-hue, 100%, 60%);
+@nav-footer-text-shadow-hover-color: hsl(@base-hue, 100%, 50%);
+
+// GLFW logo text shadow color on hover
+// Note : Texture used in header should use same color as GLFW Logo
+@glfw-text-color: @nav-footer-hover-color;
+@glfw-text-shadow-hover-color: @nav-footer-text-shadow-hover-color;
+
+// Page header and footer height
+@header-footer-height: 64px;
+
 * {
-  margin: 0px;
-  padding: 0px;
-  font-family: sans-serif;
-}
-
-code, code span {
-  font-family: monospace;
-  font-size: 90%;
-}
-
-.date, .download {
-  border-radius: 2px;
-  color: #ffffff;
-  padding: 0.25em;
-  background-color: #e85d00;
-  font-size: 90%;
-  font-weight: bold;
-  text-align: center;
-}
-
-.date {
-  margin-top: -2em;
-  margin-left: -3em;
-  float: left;
-  width: 2em;
-}
-
-.dateday {
-  font-size: 150%;
-}
-
-.dateyear {
-  font-size: 75%;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	line-height: 1.5em;
 }
 
 .download {
-  margin-top: -2em;
-  float: right;
-  width: 8em;
-  transition: .35s ease;
-  text-transform: uppercase;
+	color: #ffffff;
+	padding: 0.25em;
+	background-color: @download-button-background-color;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: -3em;
+	float: right;
+	width: 8em;
+	transition: .35s ease;
+	text-transform: uppercase;
 }
 
 .download:hover {
-  background-color: #ff6600;
-  box-shadow: 0px 0px 8px #ff6600;
+	background-color: @download-button-background-hover-color;
+	box-shadow: 0px 0px 8px @download-button-background-hover-color;
 }
 
 body {
-  background-color: #171717;
-  background-image: url("noise.png");
+	background-color: @body-background-color;
 }
 
-h1, h2, h3, h4 {
-  color: #ffffff;
+h1 {
+	font-size: 2.5em;
 }
 
-h3, h4 {
-  margin: 1em auto 0.25em auto;
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.17em;
+}
+
+h5 {
+	font-size: 0.75em;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #ffffff;
+	margin: 0.5em auto 0.5em auto;
 }
 
 hr {
-  height: 2px;
-  margin: 1em auto 1em auto;
-  border: 0px;
+	height: 2px;
+	margin: 2em auto;
+	border: 0px;
+}
+
+code, code span {
+	font-family: monospace;
 }
 
 p, blockquote, table, .highlight {
-  margin-top: 0.5em;
-  margin-left: 1em;
-  margin-bottom: 0.5em;
+	margin: 1em auto;
 }
 
 blockquote, .highlight {
-  padding: 0.5em;
-  border-width: 0px 0px 0px 4px;
-  border-style: solid;
-  border-color: #333333;
-  overflow: auto;
+	padding: 0.5em;
+	border-width: 0px 0px 0px 4px;
+	border-style: solid;
+	border-color: @code-block-border-color;
+	overflow: auto;
 }
 
-code, blockquote, .highlight {
-  border-radius: 2px;
+code, blockquote, table, .highlight, .download {
+	border-radius: 2px;
 }
 
 code {
-  padding: 0.1em;
+	padding: 0.1em;
 }
 
 .highlight code {
-  padding: 0em;
-}
-
-table {
-  border-radius: 2px;
+	padding: 0em;
 }
 
 td, th {
-  padding: 0.5em;
+	padding: 0.5em;
 }
 
 section, th, tr:nth-child(even) {
-  background-color: #4d4d4d;
+	background-color: @section-background-color;
 }
 
 a, nav a:hover, footer a:hover, tr:hover {
-  color: #ffb380;
-  text-decoration: none;
-  transition: .35s ease;
+	color: @link-color;
+	text-decoration: none;
+	transition: .35s ease;
 }
 
 a:hover {
-  text-shadow: 0px 0px 8px #ff6600;
+	text-shadow: 0px 0px 8px @link-hover-color;
 }
 
 nav a, footer a {
-  color: #b3b3b3;
+	color: @nav-footer-color;
+	text-shadow: 0 1px 1px hsl(0, 0%, 40%);
+}
+
+nav a:hover, footer a:hover {
+	color: @nav-footer-hover-color;
+	text-shadow: 0px 0px 8px @nav-footer-text-shadow-hover-color;
 }
 
 .page, hr, table, blockquote, code, .highlight {
-  background-color: #424242;
+	background-color: @page-background-color;
 }
 
 .page {
-  max-width: 920px;
-  margin: 32px auto 32px auto;
-  box-shadow: 0px 0px 8px #000000;
+	max-width: 820px;
+	margin: 32px auto 32px auto;
+	box-shadow: 0px 0px 4px #000000;
+	border: 2px solid @page-border-color;
+	border-radius: 4px;
 }
 
 header {
-  height: 64px;
-  background-image: url("glfw_header.png"), url("bar_header.png");
-  background-position: left top, left top;
-  background-repeat: no-repeat, repeat-x;
+	height: @header-footer-height;
 }
 
 header a#glfw_home {
-  line-height: 64px;
-  padding-left: 12px;
-  padding-right: 12px;
-  float: left;
-  color: #ffffff;
-  font-size: 36px;
-  font-weight: bold;
+	line-height: @header-footer-height;
+	padding-right: 48px;
+	float: left;
+	color: @glfw-text-color;
+	font-size: 2.5em;
+	font-weight: bold;
+	background-image: url("arrow.png");
+	background-position: right top;
+	background-repeat: no-repeat;
 }
 
 header a#glfw_home:hover {
-  text-shadow: 0px 0px 16px #ffe6d5;
+	text-shadow: 0px 0px 16px @glfw-text-shadow-hover-color;
 }
 
 nav {
-  float: right;
+	float: right;
 }
 
 nav a {
-  padding-right: 8px;
-  padding-left: 8px;
-  line-height: 64px;
-  font-size: 18px;
-  font-weight: normal;
+	padding-left: 16px;
+	line-height: @header-footer-height;
+}
+
+header, footer {
+	padding: 0 32px;
 }
 
 section {
-  min-height: 590px;
-  padding: 32px;
-  color: #e6e6e6;
-  font-size: 16px;
+	min-height: 590px;
+	padding: 32px;
+	color: @default-text-color;
 }
 
-section ol {
-  margin-left: 2em;
-}
-
-section ul {
-  margin-left: 2em;
-  list-style-type: square;
-}
-
-footer {
-  height: 64px;
-  background-image: url("bar_footer.png");
-  background-position: right bottom;
-  background-repeat: repeat-x;
+section ol, section ul {
+	margin-left: 2em;
 }
 
 footer a {
-  line-height: 64px;
-  display: block;
-  font-size: 12px;
-  text-align: center;
+	line-height: @header-footer-height;
+	display: block;
+	font-size: 0.75em;
+	text-align: center;
 }
