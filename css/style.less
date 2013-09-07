@@ -22,6 +22,9 @@
 // Default text color
 @default-text-color: hsl(0, 0%, 90%);
 
+// Default text color for headers
+@default-header-color: hsl(0, 0%, 100%);
+
 // Base color used for links and buttons
 @base-hue: 24;
 
@@ -44,13 +47,6 @@
 
 // Page header and footer height
 @header-footer-height: 64px;
-
-* {
-	margin: 0px;
-	padding: 0px;
-	font-family: sans-serif;
-	line-height: 1.5em;
-}
 
 .download {
 	color: #ffffff;
@@ -75,43 +71,14 @@ body {
 	background-color: @body-background-color;
 }
 
-h1 {
-	font-size: 2.5em;
-}
-
-h2 {
-	font-size: 2em;
-}
-
-h3 {
-	font-size: 1.5em;
-}
-
-h4 {
-	font-size: 1.17em;
-}
-
-h5 {
-	font-size: 0.75em;
-}
-
-h1, h2, h3, h4, h5 {
-	color: #ffffff;
-	margin: 0.5em auto 0.5em auto;
+h1, h2, h3, h4, h5, h6 {
+	color: @default-header-color;
 }
 
 hr {
 	height: 2px;
 	margin: 2em auto;
 	border: 0px;
-}
-
-code, code span {
-	font-family: monospace;
-}
-
-p, blockquote, table, .highlight {
-	margin: 1em auto;
 }
 
 blockquote, .highlight {
@@ -130,8 +97,9 @@ code {
 	padding: 0.1em;
 }
 
-.highlight code {
-	padding: 0em;
+table {
+	border-collapse: inherit;
+	border-spacing: 1px;
 }
 
 td, th {
@@ -210,10 +178,6 @@ section {
 	min-height: 590px;
 	padding: 32px;
 	color: @default-text-color;
-}
-
-section ol, section ul {
-	margin-left: 2em;
 }
 
 footer a {
