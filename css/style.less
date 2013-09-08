@@ -22,7 +22,7 @@
 // Default text color
 @default-text-color: hsl(0, 0%, 90%);
 
-// Default text color for headers
+// Default text color for headers, bold and italic texts
 @default-header-color: hsl(0, 0%, 100%);
 
 // Base color used for links and buttons
@@ -71,7 +71,7 @@ body {
 	background-color: @body-background-color;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, strong, em {
 	color: @default-header-color;
 }
 
@@ -95,6 +95,7 @@ code, blockquote, table, .highlight, .download {
 
 code {
 	padding: 0.1em;
+	font-size: 0.8em;
 }
 
 table {
@@ -134,7 +135,7 @@ nav a:hover, footer a:hover {
 }
 
 .page {
-	max-width: 820px;
+	max-width: 920px;
 	margin: 32px auto 32px auto;
 	box-shadow: 0px 0px 4px #000000;
 	border: 2px solid @page-border-color;
@@ -180,9 +181,11 @@ section {
 	color: @default-text-color;
 }
 
-footer a {
-	line-height: @header-footer-height;
-	display: block;
-	font-size: 0.75em;
-	text-align: center;
+footer {
+	font-size: 0.9em;
+}
+
+footer ul {
+	list-style-type: none;
+	padding-left: 0;
 }
