@@ -32,6 +32,12 @@
 @download-button-background-color: hsl(@base-hue, 100%, 45%);
 @download-button-background-hover-color: hsl(@base-hue, 100%, 50%);
 
+// Download and view buttons background and hover colors
+@button-shade1: hsl(@base-hue, 100%, 45%);
+@button-shade2: hsl((@base-hue + 10), 100%, 55%);
+@button-shadow: @code-block-border-color;
+@button-text-shadow: darken(@button-shade1, 10%);
+
 // Navigation, links and table cells default and hover colors
 @link-color: hsl(@base-hue, 100%, 75%);
 @link-hover-color: hsl(@base-hue, 100%, 50%);
@@ -65,6 +71,27 @@
 .download:hover {
 	background-color: @download-button-background-hover-color;
 	box-shadow: 0px 0px 8px @download-button-background-hover-color;
+}
+
+.button {
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	transition: .35s ease;
+	border-radius: 4px;
+	background: linear-gradient(to bottom, @button-shade2 0%,@button-shade1 100%);
+	box-shadow: inset 0px 0px 32px @button-shade1, 0px 0px 8px @button-shadow;
+	text-shadow: 0px -1px 1px @button-text-shadow;
+}
+
+.button:hover {
+	box-shadow: inset 0px 0px 4px @button-shade2, 0px 0px 8px @button-shade1;
+	background: linear-gradient(to bottom, @button-shade2 0%,@button-shade1 100%);
+}
+
+.big {
+	padding: 1em 0em;
+	width: 100%;
 }
 
 body {
