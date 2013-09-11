@@ -4,17 +4,15 @@ title: News archive
 ---
 
 ## News archive
+<ul>
 {% for post in site.tags.news %}
----
-<article>
-<a href="{{ post.url }}">
-<h3>{{ post.title }}</h3>
-</a>
+<li>
 <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
 </time>
-
-<h5>Posted on {{ post.date | date: "%B %e, %Y" }}</h5>
-
-{{ post.content }}
-</article>
+<span>{{ post.date | date: "%Y-%m-%d" }} &emsp;</span>
+<a href="{{ post.url }}">
+{{ post.title }}
+</a>
+</li>
 {% endfor %}
+</ul>
