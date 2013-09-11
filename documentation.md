@@ -7,11 +7,11 @@ title: Documentation
 
 ### Guides and reference manual
 
-<a class="download" href="/docs/latest/" title="View documentation">View</a>
-
 GLFW is documented using [Doxygen](http://www.stack.nl/~dimitri/doxygen/), with
 both reference documentation and guides both for new users and those who have
 used earlier versions.
+
+[Click here](/docs/latest/) to access online GLFW documentation.
 
 ---
 ### Example code
