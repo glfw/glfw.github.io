@@ -29,10 +29,6 @@
 @base-hue: 24;
 
 // Download and view buttons background and hover colors
-@download-button-background-color: hsl(@base-hue, 100%, 45%);
-@download-button-background-hover-color: hsl(@base-hue, 100%, 50%);
-
-// Download and view buttons background and hover colors
 @button-shade1: hsl(@base-hue, 100%, 45%);
 @button-shade2: hsl((@base-hue + 10), 100%, 55%);
 @button-shadow: @code-block-border-color;
@@ -54,26 +50,9 @@
 // Page header and footer height
 @header-footer-height: 64px;
 
-.download {
-	color: #ffffff;
-	padding: 0.25em;
-	background-color: @download-button-background-color;
-	font-size: 0.9em;
-	font-weight: bold;
-	text-align: center;
-	margin-top: -3em;
-	float: right;
-	width: 8em;
-	transition: .35s ease;
-	text-transform: uppercase;
-}
-
-.download:hover {
-	background-color: @download-button-background-hover-color;
-	box-shadow: 0px 0px 8px @download-button-background-hover-color;
-}
-
 .button {
+	padding: 1em 0em;
+	margin: 1em 0em;
 	color: #ffffff;
 	font-weight: bold;
 	text-align: center;
@@ -87,10 +66,6 @@
 .button:hover {
 	box-shadow: inset 0px 0px 4px @button-shade2, 0px 0px 8px @button-shade1;
 	background: linear-gradient(to bottom, @button-shade2 0%,@button-shade1 100%);
-}
-
-.big {
-	padding: 1em 0em;
 }
 
 body {

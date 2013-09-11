@@ -41,7 +41,7 @@ If GLFW isn't what you are looking for, there are
 <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
 {{ post.date | date: "%B %e, %Y" }}</time></h4>
 <a href="download.html">
-<div class="big button">
+<div class="button">
 <h1>GLFW {{ post.title }}</h1>
 <h4>Ready For Download!</h4>
 </div>
