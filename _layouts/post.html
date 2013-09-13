@@ -2,12 +2,12 @@
 layout: default
 ---
 
+<article>
 <h2>{{ page.title }}</h2>
+<time datetime="{{ page.date | date: "%Y-%m-%d" }}">
+</time>
 
-<span class="date">
-<div class="dateday">{{ page.date | date: "%e" }}</div>
-<div>{{ page.date | date: "%b" }}</div>
-<div class="dateyear">{{ page.date | date: "%Y" }}</div>
-</span>
+<h5>Posted on {{ page.date | date: "%B %e, %Y" }}</h5>
 
-<p>{{ content }}</p>
+{{ content }}
+</article>
