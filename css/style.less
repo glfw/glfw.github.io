@@ -28,7 +28,7 @@
 // Base color used for links and buttons
 @base-hue: 24;
 
-// Download and view buttons background and hover colors
+// Tables, download and view buttons background and hover colors
 @button-shade1: hsl(@base-hue, 100%, 45%);
 @button-shade2: hsl((@base-hue + 10), 100%, 55%);
 @button-shadow: @code-block-border-color;
@@ -69,10 +69,11 @@
 }
 
 body {
+	color: @default-text-color;
 	background-color: @body-background-color;
 }
 
-h1, h2, h3, h4, h5, h6, strong, em {
+h1, h2, h3, h4, h5, h6, strong, em, th {
 	color: @default-header-color;
 }
 
@@ -91,7 +92,7 @@ blockquote, .highlight {
 }
 
 code, blockquote, table, .highlight, .download {
-	border-radius: 2px;
+	border-radius: 4px;
 }
 
 code {
@@ -101,18 +102,24 @@ code {
 
 table {
 	border-collapse: inherit;
-	border-spacing: 1px;
+	border: 2px solid @button-shade1;
 }
 
 td, th {
 	padding: 0.5em;
 }
 
-section, th, tr:nth-child(even) {
+th {
+	background: linear-gradient(to bottom, @button-shade2 0%,@button-shade1 100%);
+	box-shadow: inset 0px 0px 32px @button-shade1;
+	text-shadow: 0px -1px 1px @button-text-shadow;
+}
+
+section, tr:nth-child(even) {
 	background-color: @section-background-color;
 }
 
-a, nav a:hover, footer a:hover, tr:hover {
+a, nav a:hover, footer a:hover, tbody tr:hover {
 	color: @link-color;
 	text-decoration: none;
 	transition: .35s ease;
@@ -179,7 +186,6 @@ header, footer {
 section {
 	min-height: 590px;
 	padding: 32px;
-	color: @default-text-color;
 }
 
 footer {
