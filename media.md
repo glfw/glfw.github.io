@@ -26,9 +26,11 @@ If you feel your application should be listed here, please
 <figure>
 <img alt="{{ post.photoalt }}" src="{{ post.photourl }}">
 <figcaption>
+<p>
 <small>
 {{ post.copynotice}}
 </small>
+</p>
 </figcaption>
 </figure>
 {% endcol %}
