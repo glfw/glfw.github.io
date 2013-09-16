@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: multimedia
 title: Barok Engine
 tag: media
 photourl: screenshots/barokengine.png

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: multimedia
 title: Grand Central
 tag: media
 photourl: screenshots/grandcentral.png

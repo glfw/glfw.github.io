@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: multimedia
 title: AntTweakBar
 tag: media
 photourl: screenshots/anttweakbar.png

@@ -43,10 +43,10 @@ If GLFW isn't what you are looking for, there are
 <a href="http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.zip/download">
 <div class="button">
 <p>Download GLFW {{ glfwversion }}</p>
-<p class="note">Released on 
+<p><small>Released on 
 <time datetime="{{ releasedate | date: "%Y-%m-%d" }}">
 {{ releasedate | date: "%B %e, %Y" }}</time>
-</p>
+</small></p>
 </div>
 </a>
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: multimedia
 title: The Polynomial
 tag: media
 photourl: screenshots/polynomial.png

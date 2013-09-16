@@ -23,9 +23,14 @@ If you feel your application should be listed here, please
 {{ post.content }}
 {% endcol %}
 {% col 1-2 %}
-![{{ post.photoalt }}]({{ post.photourl }})
-
-<p class="note">{{ post.copynotice }}</p>
+<figure>
+<img alt="{{ post.photoalt }}" src="{{ post.photourl }}">
+<figcaption>
+<small>
+{{ post.copynotice}}
+</small>
+</figcaption>
+</figure>
 {% endcol %}
 {% endrow %}
 
