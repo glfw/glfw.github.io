@@ -5,33 +5,7 @@ title: Links
 
 ## Links
 
-Here is a collection of links useful to OpenGL developers, both beginner and
-expert, most of them relevant whether you are using GLFW or not.  While we do
-try to keep the links up to date, some may have gone stale.
-
-If you find stale links below, please [contact us](community.html).
-
----
-## OpenGL Resources
-
-### Information
-
-- [OpenGL.org](http://www.opengl.org/) - The official site for OpenGL
-- [OpenGL Registry](http://www.opengl.org/registry/) - The OpenGL specification
-  registry
-
-### Tutorials
-
-- [Learning Modern 3D Graphics Programming](http://www.arcsynthesis.org/gltut/)
-  - A modern 3D graphics tutorial based on OpenGL 3.3
-- [opengl-tutorial.org](http://www.opengl-tutorial.org/) - Tutorials for OpenGL
-  3.3 and above
-- [open.gl](http://open.gl/) - A modern OpenGL tutorial
-- [TyphoonLabs Tutorials](http://www.opengl.org/sdk/docs/tutorials/TyphoonLabs/)
-  - Another set of tutorials on using the OpenGL Shading Language
-
----
-## Alternatives to GLFW
+### Alternatives to GLFW
 
 No library can be perfect for everyone, and GLFW is no exception.  Here
 are a few alternatives known to be stable:

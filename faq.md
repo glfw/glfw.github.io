@@ -8,11 +8,7 @@ title: FAQ
 This page attempts to address some of the most commonly asked questions that we
 have received from GLFW users.
 
-If your questions are not answered here, please do
-[contact us](community.html).
-
----
-## Table of Contents
+If your questions are not answered here, please do [contact us](community.html).
 
 ### Introduction
 
@@ -23,7 +19,7 @@ If your questions are not answered here, please do
 - [1.5 What versions of OpenGL are supported by GLFW?](#15__what_versions_of_opengl_are_supported_by_glfw)
 
 
-### General Questions
+### General
 
 - [2.1 Why use separate red/green/blue bit depths?](#21__why_use_separate_redgreenblue_bit_depths)
 - [2.2 Why is it not possible to change video modes after a window has been opened?](#22__why_is_it_not_possible_to_change_video_modes_after_a_window_has_been_opened)
@@ -43,20 +39,19 @@ If your questions are not answered here, please do
 - [2.16 How do I use C++ methods as callbacks?](#216_how_do_i_use_c_methods_as_callbacks)
 
 
-### Windows Specific Questions
+### Windows
 
 - [3.1 What compilers are supported by GLFW?](#31__what_compilers_are_supported_by_glfw)
 - [3.2 Why do I get link errors when trying to build my program?](#32__why_do_i_get_link_errors_when_trying_to_build_my_program)
 - [3.3 Why doesnt glfwSwapInterval work?](#33__why_doesnt_glfwswapinterval_work)
 
 
-### Mac OS X Specific Questions
+### OS X
 
-- [4.1 Why can I not focus or interact with my program window?](#41__why_can_i_not_focus_or_interact_with_my_program_window)
-- [4.2 How do I create an OpenGL 3.2 context?](#42__how_do_i_create_an_opengl_30_context)
+- [4.1 How do I create an OpenGL 3.2 context?](#41__how_do_i_create_an_opengl_30_context)
 
 
-### Unix/X11 Specific Questions
+### Unix / X11
 
 
 ---
@@ -164,7 +159,7 @@ GLFW 2.7.2.
 
 
 ---
-## General Questions
+## General
 
 ### 2.1 - Why use separate red/green/blue bit depths?
 
@@ -341,7 +336,7 @@ callbacks and use it to call methods on your object.
 
 
 ---
-## Windows Specific Questions
+## Windows
 
 ### 3.1 - What compilers are supported by GLFW?
 
@@ -380,18 +375,9 @@ verified in your display driver settings that vertical sync has not been
 forcibly disabled, please report this as a bug in GLFW.
 
 ---
-## Mac OS X Specific Questions
+## OS X
 
-### 4.1 - Why can I not focus or interact with my program window?
-
-Your program most likely lacks an application bundle.
-
-To learn more about bundles, see the
-[Bundle Programming Guide](http://developer.apple.com/mac/library/documentation/CoreFoundation/Conceptual/CFBundles/)
-on the Apple Developer Connection.
-
-
-### 4.2 - How do I create an OpenGL 3.0+ context?
+### 4.1 - How do I create an OpenGL 3.0+ context?
 
 The only OpenGL 3.0+ context configuration currently supported by Mac OS X is
 forward-compatible, core profile OpenGL 3.2.  To create such a context, you
@@ -406,5 +392,5 @@ glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 
 ---
-## Unix/X11 Specific Questions
+## Unix / X11
 

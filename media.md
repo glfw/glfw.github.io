@@ -3,12 +3,11 @@ layout: default
 title: Media
 ---
 
-## Screenshots
+## Media
 
 As GLFW doesn't itself render anything and uses only standard window manager
-decorations, there is little to show of GLFW itself.
-
-Instead, here is a small showcase of software using GLFW.
+decorations, there is little to show of GLFW itself.  Instead, here is a small
+showcase of software using GLFW.
 
 If you feel your application should be listed here, please
 [contact us](community.html).
@@ -26,7 +25,7 @@ If you feel your application should be listed here, please
 {% col 1-2 %}
 ![{{ post.photoalt }}]({{ post.photourl }})
 
-{{ post.copynotice }}
+<p class="note">{{ post.copynotice }}</p>
 {% endcol %}
 {% endrow %}
 
