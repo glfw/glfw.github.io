@@ -7,7 +7,7 @@ title: Documentation
 
 ### Guides and reference manual
 
-GLFW has [comprehensive HTML documentation](documentation.html) generated with
+GLFW has [comprehensive HTML documentation](/docs/latest/) generated with
 [Doxygen](http://www.stack.nl/~dimitri/doxygen/), containing both an API
 reference, guides for different parts of the API, a tutorial for beginners and
 a transition guide for users of GLFW 2.
