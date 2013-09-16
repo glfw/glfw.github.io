@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GLFW now has a wiki
-tag: news
+tags: news
 ---
 
 As there were issues with the MediaWiki instance on SourceForge.net, I set

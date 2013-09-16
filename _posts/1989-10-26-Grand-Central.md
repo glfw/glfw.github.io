@@ -1,7 +1,7 @@
 ---
 layout: multimedia
 title: Grand Central
-tag: media
+tags: media, news
 photourl: screenshots/grandcentral.png
 photoalt: Screenshot of Grand Central
 copynotice:

@@ -1,7 +1,7 @@
 ---
 layout: multimedia
 title: Barok Engine
-tag: media
+tags: media, news
 photourl: screenshots/barokengine.png
 photoalt: Screenshot of the Barok engine editor
 copynotice: Screenshot Copyright © Kamil Nowakowski

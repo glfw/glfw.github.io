@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GLFW repositories moved to GitHub
-tag: news
+tags: news
 ---
 
 All GLFW repositories have been [moved to GitHub](https://github.com/glfw).
