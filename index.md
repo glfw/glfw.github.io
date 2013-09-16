@@ -3,6 +3,14 @@ layout: default
 title: An OpenGL library
 ---
 
+{% assign glfwversion = '0.0.0' %}
+{% assign releasedate = '0-0-0' %}
+
+{% for post in site.tags.changelog limit:1 %}
+	{% assign glfwversion = post.title %}
+	{% assign releasedate = post.date %}
+{% endfor %}
+
 ## Welcome
 
 **GLFW** is an Open Source, multi-platform library for creating windows with
@@ -37,14 +45,12 @@ If GLFW isn't what you are looking for, there are
 {% col 1-3 %}
 ### &emsp;
 
-{% for post in site.tags.changelog limit:1 %}
-
-<a href="http://sourceforge.net/projects/glfw/files/glfw/{{ post.title }}/glfw-{{ post.title }}.zip/download">
+<a href="http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.zip/download">
 <div class="button">
-<p>Download GLFW {{ post.title }}</p>
+<p>Download GLFW {{ glfwversion }}</p>
 <p class="note">Released on 
-<time datetime="{{ post.date | date: "%Y-%m-%d" }}">
-{{ post.date | date: "%B %e, %Y" }}</time>
+<time datetime="{{ releasedate | date: "%Y-%m-%d" }}">
+{{ releasedate | date: "%B %e, %Y" }}</time>
 </p>
 </div>
 </a>
@@ -55,7 +61,6 @@ If GLFW isn't what you are looking for, there are
 </div>
 </a>
 
-{% endfor %}
 {% endcol %}
 
 {% endrow %}

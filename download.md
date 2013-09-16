@@ -3,13 +3,19 @@ layout: default
 title: Download
 ---
 
+{% assign glfwversion = '0.0.0' %}
+{% assign releasedate = '0-0-0' %}
+
 {% for post in site.tags.changelog limit:1 %}
+	{% assign glfwversion = post.title %}
+	{% assign releasedate = post.date %}
+{% endfor %}
 
 ## Download
 
-The current version is **{{ post.title }}**, which was released on
-**<time datetime="{{ post.date | date: "%Y-%m-%d" }}">
-{{ post.date | date: "%B %e, %Y" }}</time>**.
+The current version is **{{ glfwversion }}**, which was released on
+**<time datetime="{{ releasedate | date: "%Y-%m-%d" }}">
+{{ releasedate | date: "%B %e, %Y" }}</time>**.
 See the [version history](changelog.html) for a list of changes.
 
 ### Source package
@@ -24,7 +30,7 @@ The latest version of the source code, including tags for all releases,
 is always available in our [Git repository](https://github.com/glfw/glfw).
 {% endcol %}
 {% col 1-3 %}
-<a href="http://sourceforge.net/projects/glfw/files/glfw/{{ post.title }}/glfw-{{ post.title }}.zip/download">
+<a href="http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.zip/download">
 <div class="button">Source package</div>
 </a>
 {% endcol %}
@@ -39,10 +45,10 @@ These packages contain complete GLFW header file,
 library binaries for Visual C++ 2010, Visual C++ 2012 and MinGW / MinGW-w64.
 {% endcol %}
 {% col 1-3 %}
-<a href="http://sourceforge.net/projects/glfw/files/glfw/{{ post.title }}/glfw-{{ post.title }}.bin.WIN32.zip/download">
+<a href="http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.WIN32.zip/download">
 <div class="button">32-bit Windows binaries</div>
 </a>
-<a href="http://sourceforge.net/projects/glfw/files/glfw/{{ post.title }}/glfw-{{ post.title }}.bin.WIN64.zip/download">
+<a href="http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.WIN64.zip/download">
 <div class="button">64-bit Windows binaries</div>
 </a>
 {% endcol %}
@@ -66,5 +72,3 @@ maintained and provided by volunteers and GLFW community.
 | Java     | Nathan Sweet        | [https://github.com/badlogic/jglfw](https://github.com/badlogic/jglfw) |
 | Ruby     | Noel Cower          | [https://github.com/nilium/ruby-glfw3](https://github.com/nilium/ruby-glfw3) |
 | Rust     | Brendan Zabarauskas | [https://github.com/bjz/glfw-rs](https://github.com/bjz/glfw-rs) |
-
-{% endfor %}
