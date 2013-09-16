@@ -4,18 +4,20 @@ title: Version history
 ---
 
 ## Version history
-<ul>
+
 {% for post in site.tags.changelog %}
-<li>
+---
+
+<article>
+<h3>Version {{ post.title }}</h3>
 <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
 </time>
-<span>{{ post.date | date: "%Y-%m-%d" }} &emsp;</span>
-<a href="{{ post.url }}">
-Version {{ post.title }}
-</a>
-</li>
+
+<h5>Released on {{ post.date | date: "%B %e, %Y" }}</h5>
+
+{{ post.content }}
+</article>
 {% endfor %}
-</ul>
 
 ---
 ### Version 1.0.2
