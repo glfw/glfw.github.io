@@ -3,13 +3,8 @@ layout: default
 title: An OpenGL library
 ---
 
-{% assign glfwversion = '0.0.0' %}
-{% assign releasedate = '0-0-0' %}
-
-{% for post in site.tags.changelog limit:1 %}
-	{% assign glfwversion = post.title %}
-	{% assign releasedate = post.date %}
-{% endfor %}
+{% assign glfwversion = site.tags.changelog.first.title %}
+{% assign releasedate = site.tags.changelog.first.date %}
 
 ## Welcome
 
