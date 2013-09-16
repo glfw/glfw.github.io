@@ -14,32 +14,33 @@ Unix-like systems using the X Window System, such as Linux and FreeBSD.
 
 GLFW is licensed under the [zlib/libpng license](license.html).
 
-<div class="pure-g-r">
+{% row %}
 
-<div class="pure-u-2-3">
-<h3>Features</h3>
-<ul>
-<li>Easy to use API in the style of the OpenGL APIs</li>
-<li>Gives you a window and OpenGL context with two function calls</li>
-<li>Explicit support for MSAA, sRGB, robustness, OpenGL 3.2+ and OpenGL ES</li>
-<li>Support for multiple monitors, high-DPI, gamma ramps and clipboard</li>
-<li>Input can be either polled or delivered via callbacks</li>
-<li>UTF-8 for all strings and basic Unicode character input</li>
-<li>Supports both static and dynamic linking</li>
-<li>Open Source with a liberal OSI-certified <a href="license.html">license</a></li>
-<li>Examples and comprehensive <a href="documentation.html">documentation</a></li>
-</ul>
+{% col 2-3 %}
+### Features
+
+- Easy to use API in the style of the OpenGL APIs
+- Gives you a window and OpenGL context with two function calls
+- Explicit support for MSAA, sRGB, robustness, OpenGL 3.2+ and OpenGL ES
+- Support for multiple monitors, high-DPI, gamma ramps and clipboard
+- Input can be either polled or delivered via callbacks
+- UTF-8 for all strings and basic Unicode character input
+- Supports both static and dynamic linking
+- Open Source with a liberal OSI-certified [license](license.html)
+- Examples and comprehensive [documentation](documentation.html)
 
 If GLFW isn't what you are looking for, there are
-<a href="links.html#alternatives_to_glfw">alternatives</a>.
-</div>
+[alternatives](links.html#alternatives_to_glfw).
+{% endcol %}
 
-<div class="pure-u-1-3">
-<h3>Get Latest Stable Release</h3>
+{% col 1-3 %}
+### Get Latest Stable Release
+
 {% for post in site.tags.changelog limit:1 %}
-<h4>Release date:
+**Release date:
 <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
-{{ post.date | date: "%B %e, %Y" }}</time></h4>
+{{ post.date | date: "%B %e, %Y" }}</time>**
+
 <a href="download.html">
 <div class="button">
 <h1>GLFW {{ post.title }}</h1>
@@ -47,17 +48,18 @@ If GLFW isn't what you are looking for, there are
 </div>
 </a>
 {% endfor %}
-</div>
+{% endcol %}
 
-</div>
+{% endrow %}
 
 ---
 
 ## Latest News
-<div class="pure-g-r">
+
+{% row %}
 
 {% for post in site.tags.news limit:3 %}
-<div class="pure-u-1-3">
+{% col 1-3 %}
 <article>
 <h3>{{ post.title }}</h3>
 <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
@@ -67,9 +69,9 @@ If GLFW isn't what you are looking for, there are
 
 {{ post.content }}
 </article>
-</div>
+{% endcol %}
 {% endfor %}
 
-</div>
+{% endrow %}
 
-See the <a href="news.html">news archive</a> for older posts.
+See the [news archive](news.html) for older posts.
