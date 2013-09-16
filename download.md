@@ -14,55 +14,54 @@ See the [version history](changelog.html) for a list of changes.
 
 ---
 ### Source Code
-<div class="pure-g-r">
-<div class="pure-u-2-3">
-<p>
+
+{% row %}
+{% col 2-3 %}
 These packages contain complete GLFW source code, CMake project files,
-<a href="documentation.html">documentation</a>, examples and test programs.
-</p>
-<p>
+[documentation](documentation.html), examples and test programs.
+
 The latest version of the source code, including tags for all releases,
- is always available in our <a href="https://github.com/glfw/glfw">Git repository</a>.
-</p>
-</div>
-<div class="pure-u-1-3">
+ is always available in our [Git repository](https://github.com/glfw/glfw).
+{% endcol %}
+{% col 1-3 %}
 <a href="http://sourceforge.net/projects/glfw/files/glfw/{{ post.title }}/glfw-{{ post.title }}.zip/download">
 <div class="button">Source Archive</div>
 </a>
 <a href="https://github.com/glfw/glfw">
 <div class="button">Git Repository</div>
 </a>
-</div>
-</div>
+{% endcol %}
+{% endrow %}
 
 ---
 ### Windows Binary Packages
-<div class="pure-g-r">
-<div class="pure-u-2-3">
-<p>
+
+{% row %}
+{% col 2-3 %}
 These packages contain complete GLFW header file,
- <a href="documentation.html">documentation</a>,
+ [documentation](documentation.html),
  release mode dynamic and static libraries for Microsoft&trade; Visual C++
  2008, Visual C++ 2010, Visual C++ 2012 and MinGW.
-</p>
-</div>
-<div class="pure-u-1-3">
+{% endcol %}
+{% col 1-3 %}
 <a href="http://sourceforge.net/projects/glfw/files/glfw/{{ post.title }}/glfw-{{ post.title }}.bin.WIN32.zip/download">
 <div class="button">32-bit Windows Binaries</div>
 </a>
 <a href="http://sourceforge.net/projects/glfw/files/glfw/{{ post.title }}/glfw-{{ post.title }}.bin.WIN64.zip/download">
 <div class="button">64-bit Windows Binaries</div>
 </a>
-</div>
-</div>
+{% endcol %}
+{% endrow %}
 
 ### Linux and Mac OS X Binary Packages
+
 Please use official packages provided by your Linux distribution.
 Compiling from source is preferred method in case there isn't any
 official packages available or access to bleeding edge GLFW is required.
 
 ---
 ### Bindings
+
 Here is a list of GLFW bindings for other programming languages 
 maintained and provided by volunteers and GLFW community.
 
