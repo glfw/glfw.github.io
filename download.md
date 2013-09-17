@@ -25,9 +25,9 @@ The latest version of the source code, including tags for all releases,
 is always available in our [Git repository](https://github.com/glfw/glfw).
 {% endcol %}
 {% col 1-3 %}
-<a href="http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.zip/download">
-<div class="button">Source package</div>
-</a>
+{% button http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.zip/download %}
+Source package
+{% endbutton %}
 {% endcol %}
 {% endrow %}
 
@@ -40,12 +40,12 @@ These packages contain complete GLFW header file,
 library binaries for Visual C++ 2010, Visual C++ 2012 and MinGW / MinGW-w64.
 {% endcol %}
 {% col 1-3 %}
-<a href="http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.WIN32.zip/download">
-<div class="button">32-bit Windows binaries</div>
-</a>
-<a href="http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.WIN64.zip/download">
-<div class="button">64-bit Windows binaries</div>
-</a>
+{% button http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.WIN32.zip/download %}
+32-bit Windows binaries
+{% endbutton %}
+{% button http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.WIN64.zip/download %}
+64-bit Windows binaries
+{% endbutton %}
 {% endcol %}
 {% endrow %}
 

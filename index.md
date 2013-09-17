@@ -40,21 +40,18 @@ If GLFW isn't what you are looking for, there are
 {% col 1-3 %}
 ### &emsp;
 
-<a href="http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.zip/download">
-<div class="button">
-<p>Download GLFW {{ glfwversion }}</p>
-<p><small>Released on 
+{% button http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.zip/download %}
+Download GLFW {{ glfwversion }}
+<br>
+<small>Released on 
 <time datetime="{{ releasedate | date: "%Y-%m-%d" }}">
 {{ releasedate | date: "%B %e, %Y" }}</time>
-</small></p>
-</div>
-</a>
+</small>
+{% endbutton %}
 
-<a href="https://github.com/glfw/glfw">
-<div class="button">
-<p>Clone on GitHub</p>
-</div>
-</a>
+{% button https://github.com/glfw/glfw %}
+Clone on GitHub
+{% endbutton %}
 
 {% endcol %}
 
