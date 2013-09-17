@@ -65,13 +65,17 @@ Clone on GitHub
 {% for post in site.tags.news limit:3 %}
 {% col 1-3 %}
 <article>
-<h3>{{ post.title }}</h3>
+<header>
 
+<h3>{{ post.title }}</h3>
 <small>
 Posted on {% include time.html date=post.date %}
 </small>
 
+</header>
+
 {{ post.content }}
+
 </article>
 {% endcol %}
 {% endfor %}

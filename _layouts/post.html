@@ -3,9 +3,13 @@ layout: default
 ---
 
 <article>
-<h2>{{ page.title }}</h2>
+<header>
 
+<h2>{{ page.title }}</h2>
 <small>Posted on {% include time.html date=page.date %}</small>
 
+</header>
+
 {{ content }}
+
 </article>

@@ -49,7 +49,7 @@ module Jekyll
     def render(context)
       require "maruku"
       contents = super
-      %|<div class="pure-u-#{@width}">#{Maruku::new(contents).to_html}</div>|
+      %|<div class="pure-u-#{@width}"><div class="box">#{Maruku::new(contents).to_html}</div></div>|
     end
   end
 end

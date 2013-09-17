@@ -15,7 +15,10 @@ If you feel your application should be listed here, please
 {% for post in site.tags.media %}
 ---
 
-### {{ post.title }}
+<article>
+<header>
+<h3>{{ post.title }}</h3>
+</header>
 
 {% row %}
 
@@ -36,4 +39,5 @@ If you feel your application should be listed here, please
 {% endcol %}
 {% endrow %}
 
+</article>
 {% endfor %}

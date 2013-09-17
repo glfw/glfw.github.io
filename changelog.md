@@ -9,11 +9,15 @@ title: Version history
 ---
 
 <article>
-<h3>Version {{ post.title }}</h3>
+<header>
 
+<h3>Version {{ post.title }}</h3>
 <small>Released on {% include time.html date=post.date %}</small>
 
+</header>
+
 {{ post.content }}
+
 </article>
 {% endfor %}
 
