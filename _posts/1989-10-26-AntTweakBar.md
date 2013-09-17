@@ -1,7 +1,7 @@
 ---
 layout: multimedia
 title: AntTweakBar
-tags: media, news
+tags: media , news
 photourl: screenshots/anttweakbar.png
 photoalt: Screenshot of the AntTweakBar UI editing a cube
 copynotice: Screenshot Copyright © Philippe Decaudin
