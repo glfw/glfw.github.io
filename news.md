@@ -7,9 +7,11 @@ title: News archive
 <ul>
 {% for post in site.tags.news %}
 <li>
+<span>
 <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
+{{ post.date | date: "%Y-%m-%d" }}
 </time>
-<span>{{ post.date | date: "%Y-%m-%d" }} &emsp;</span>
+&emsp;</span>
 <a href="{{ post.url }}">
 {{ post.title }}
 </a>

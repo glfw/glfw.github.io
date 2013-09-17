@@ -4,13 +4,12 @@ title: Download
 ---
 
 {% assign glfwversion = site.tags.changelog.first.title %}
-{% assign releasedate = site.tags.changelog.first.date %}
+{% assign releasedate = site.tags.changelog.first.date | date: "%Y-%m-%d" %}
 
 ## Download
 
 The current version is **{{ glfwversion }}**, which was released on
-**<time datetime="{{ releasedate | date: "%Y-%m-%d" }}">
-{{ releasedate | date: "%B %e, %Y" }}</time>**.
+**{% include time.html date=releasedate %}**.
 See the [version history](changelog.html) for a list of changes.
 
 ### Source package

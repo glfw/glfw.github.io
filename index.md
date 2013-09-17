@@ -43,9 +43,8 @@ If GLFW isn't what you are looking for, there are
 {% button http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.zip/download %}
 Download GLFW {{ glfwversion }}
 <br>
-<small>Released on 
-<time datetime="{{ releasedate | date: "%Y-%m-%d" }}">
-{{ releasedate | date: "%B %e, %Y" }}</time>
+<small>
+Released on {% include time.html date=releasedate %}
 </small>
 {% endbutton %}
 
@@ -67,10 +66,10 @@ Clone on GitHub
 {% col 1-3 %}
 <article>
 <h3>{{ post.title }}</h3>
-<time datetime="{{ post.date | date: "%Y-%m-%d" }}">
-</time>
 
-<h5>Posted on {{ post.date | date: "%B %e, %Y" }}</h5>
+<small>
+Posted on {% include time.html date=post.date %}
+</small>
 
 {{ post.content }}
 </article>

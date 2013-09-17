@@ -4,10 +4,8 @@ layout: default
 
 <article>
 <h2>{{ page.title }}</h2>
-<time datetime="{{ page.date | date: "%Y-%m-%d" }}">
-</time>
 
-<h5>Posted on {{ page.date | date: "%B %e, %Y" }}</h5>
+<small>Posted on {% include time.html date=page.date %}</small>
 
 <figure>
 <img alt="{{ page.photoalt }}" src="{{ page.photourl }}">

@@ -10,10 +10,8 @@ title: Version history
 
 <article>
 <h3>Version {{ post.title }}</h3>
-<time datetime="{{ post.date | date: "%Y-%m-%d" }}">
-</time>
 
-<h5>Released on {{ post.date | date: "%B %e, %Y" }}</h5>
+<small>Released on {% include time.html date=post.date %}</small>
 
 {{ post.content }}
 </article>
