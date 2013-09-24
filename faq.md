@@ -50,7 +50,7 @@ If your questions are not answered here, please do
 - [3.3 Why doesnt glfwSwapInterval work?](#33__why_doesnt_glfwswapinterval_work)
 
 
-### Mac OS X Specific Questions
+### OS X Specific Questions
 
 - [4.1 Why can I not focus or interact with my program window?](#41__why_can_i_not_focus_or_interact_with_my_program_window)
 - [4.2 How do I create an OpenGL 3.2 context?](#42__how_do_i_create_an_opengl_30_context)
@@ -128,8 +128,8 @@ managing OpenGL contexts, windows and input.
 
 ### 1.4 - What platforms are supported by GLFW?
 
-Currently, GLFW supports Windows, Mac OS X and Unix-like operating systems with
-the X Window System, such as Linux and FreeBSD.
+Currently, GLFW supports Windows, OS X and Unix-like operating systems with the
+X Window System, such as Linux and FreeBSD.
 
 GLFW is designed to be as portable as possible, and the code has been written
 with portability in mind.
@@ -154,11 +154,11 @@ extension.  Most modern drivers do this.
 Explicit creation of OpenGL contexts of version 3.0 and above on Windows and
 X11, including profiles and flags, is supported by GLFW 2.7 and later.
 
-However, Mac OS X did not support OpenGL 3.0 or later at the time that GLFW 2.7
-was released, and the support that Apple has since added only includes
+However, OS X did not support OpenGL 3.0 or later at the time that GLFW 2.7 was
+released, and the support that Apple has since added only includes
 forward-compatible OpenGL 3.2 core profile contexts.  Additionally, creating
-such contexts requires new code, so older versions of GLFW cannot create
-OpenGL 3.0 contexts on Mac OS X.
+such contexts requires new code, so older versions of GLFW cannot create OpenGL
+3.0 contexts on OS X.
 
 The first version to support creation of OpenGL 3.2 contexts on OS X Lion was
 GLFW 2.7.2.
@@ -279,8 +279,7 @@ right CTRL key with `glfwGetKey(window, GLFW_KEY_LEFT_CONTROL)` or
 On Windows, the `QueryPerformanceCounter` API is used if available, with
 `timeGetTime` as a fallback.
 
-On Mac OS X, the Cocoa port uses `mach_absolute_time` and the legacy Carbon port
-uses `gettimeofday`.
+On OS X, the Mach `mach_absolute_time` time source is used.
 
 On Unix-like operating systems using the X11 port, the POSIX `CLOCK_MONOTONIC`
 time source is used if available, with `gettimeofday` as a fallback.
@@ -291,8 +290,8 @@ time source is used if available, with `gettimeofday` as a fallback.
 On Windows, plain Win32 is used for window and input management, and WGL (with
 extensions) is used to create contexts.
 
-On Mac OS X, Cocoa is used for window and input management, and NSOpenGL for
-context creation.
+On OS X, Cocoa is used for window and input management, and NSOpenGL for context
+creation.
 
 On Unix-like systems using the X Window System, the Xlib API is used for window
 and input management, the XRandR or XF86VidMode extension (if available) for
@@ -381,7 +380,7 @@ verified in your display driver settings that vertical sync has not been
 forcibly disabled, please report this as a bug in GLFW.
 
 ---
-## Mac OS X Specific Questions
+## OS X Specific Questions
 
 ### 4.1 - Why can I not focus or interact with my program window?
 
@@ -394,7 +393,7 @@ on the Apple Developer Connection.
 
 ### 4.2 - How do I create an OpenGL 3.0+ context?
 
-The only OpenGL 3.0+ context configuration currently supported by Mac OS X is
+The only OpenGL 3.0+ context configuration currently supported by OS X is
 forward-compatible, core profile OpenGL 3.2.  To create such a context, you
 should set the following hints:
 
