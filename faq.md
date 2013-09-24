@@ -93,11 +93,12 @@ GLFW is *by design* not...
 
 - a user interface library.  It allows you to create a single, OpenGL-capable
   window.  No menus, no buttons.
-- an image loading library.  It has a legacy facility for loading Targa files
-  for testing purposes, nothing more.
 - a Windows-only library.  Requests for features that cannot be portably
-  implemented *will be denied* unless they are unobtrusive (like the Win32 port
+  implemented will be denied unless they are unobtrusive (like the Windows port
   looking for a `GLFW_ICON` resource).
+- a threading library.  There are already good cross-platform threading
+  libraries and threading has been added to both the C11 and C++11 standard
+  libraries.
 - capable of rendering text.  There are already several libraries that render
   text with OpenGL, and consistent cross-platform text rendering cannot depend
   on the platform's text rendering facilities anyway.
