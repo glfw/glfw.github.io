@@ -336,8 +336,8 @@ attempts to include doesn't interfere.
 You cannot use regular methods as callbacks, as GLFW is a C library and doesn't
 know about objects and `this` pointers.  If you wish to receive callbacks to
 a C++ object, use static methods or regular functions as callbacks, store the
-pointer to the object you wish to call in some location reachable from the
-callbacks and use it to call methods on your object.
+pointer to the object you wish to call as the user pointer for the window and
+use it to call methods on your object.
 
 
 ---
