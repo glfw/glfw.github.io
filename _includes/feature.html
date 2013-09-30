@@ -1,8 +1,12 @@
+{% col 1-6 %}
+<div class="feature">
 <figure>
 <img src="{{ include.img }}">
-<figcaption>
-<p>
-{{ include.desc }}
-</p>
-</figcaption>
 </figure>
+</div>
+{% endcol %}
+{% col 1-3 %}
+<div class="feature">
+{{ include.desc }}
+</div>
+{% endcol %}

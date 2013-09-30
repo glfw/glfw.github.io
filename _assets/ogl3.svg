@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="160"
+   height="80"
+   id="svg3484"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="ogl3.svg">
+  <defs
+     id="defs3486">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4084">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 0,841.89 595.28,0 L 595.28,0 0,0 0,841.89 z"
+         id="path4086" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.9966906"
+     inkscape:cx="82.074087"
+     inkscape:cy="27.721129"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="956"
+     inkscape:window-height="1053"
+     inkscape:window-x="960"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3489">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-972.36218)">
+    <g
+       transform="matrix(0.99980226,0,0,1,0.01581983,4.3380624e-6)"
+       id="g6244">
+      <g
+         transform="translate(136.31695,-161.43621)"
+         id="g6205">
+        <path
+           sodipodi:type="arc"
+           style="color:#000000;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path5877-5-1-9"
+           sodipodi:cx="-159.51395"
+           sodipodi:cy="4.6252775"
+           sodipodi:rx="36.810909"
+           sodipodi:ry="36.810909"
+           d="m -122.70304,4.6252775 c 0,20.3301035 -16.4808,36.8109095 -36.81091,36.8109095 -20.3301,0 -36.81091,-16.480806 -36.81091,-36.8109095 0,-20.3301035 16.48081,-36.8109095 36.81091,-36.8109095 20.33011,0 36.81091,16.480806 36.81091,36.8109095 z"
+           transform="matrix(1.0866344,0,0,1.0866344,117.00848,1168.7724)" />
+        <path
+           inkscape:connector-curvature="0"
+           style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m -56.65625,1136.2997 c -4.87108,0.04 -9.81067,1.0374 -14.5625,3.0937 l 2,4.5938 c 3.95661,-1.7141 8.31978,-2.6875 12.90625,-2.6875 17.94925,0 32.5,14.5507 32.5,32.5 0,17.9492 -14.55075,32.5 -32.5,32.5 -10.15273,0 -19.22766,-4.6762 -25.1875,-11.9688 l -3.875,3.1563 c 2.98248,3.6569 6.54427,6.6365 10.46875,8.875 l -1.25,2.1875 c 8.8164,5.0288 19.22031,6.5084 29.09375,4.1562 21.48997,-5.1196 34.77588,-26.6975 29.65625,-48.1875 l -2.4375,0.5938 c -0.50008,-2.0876 -1.18063,-4.1809 -2.0625,-6.2188 -6.1689,-14.2555 -20.13677,-22.7145 -34.75,-22.5937 z"
+           id="path5877-6-5-9-0" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5871"
+         y="1022.6222"
+         x="57.2575"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke:none;font-family:Montserrat Alternates;-inkscape-font-specification:Montserrat Alternates"
+         xml:space="preserve"><tspan
+           style="font-size:40px;font-weight:normal;fill:#e6e6e6;-inkscape-font-specification:Montserrat Alternates"
+           y="1022.6222"
+           x="57.2575"
+           id="tspan5873"
+           sodipodi:role="line">3+</tspan></text>
+    </g>
+  </g>
+</svg>
