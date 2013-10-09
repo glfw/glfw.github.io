@@ -21,11 +21,14 @@ This package contains the complete source code, CMake build files,
 is the recommended download for all platforms and offers the most control.
 
 The latest version of the source code, including tags for all releases,
-is always available in our [Git repository](https://github.com/glfw/glfw).
+is always available in our Git repository.
 {% endcol %}
 {% col 1-3 %}
 {% button http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.zip/download %}
 Source package
+{% endbutton %}
+{% button https://github.com/glfw/glfw %}
+GitHub repository
 {% endbutton %}
 {% endcol %}
 {% endrow %}
