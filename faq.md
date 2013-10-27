@@ -22,7 +22,7 @@ If your questions are not answered here, please do [contact us](community.html).
 ### General
 
 - [2.1 Why use separate red/green/blue bit depths?](#21__why_use_separate_redgreenblue_bit_depths)
-- [2.2 Why is it not possible to change video modes after a window has been opened?](#22__why_is_it_not_possible_to_change_video_modes_after_a_window_has_been_opened)
+- [2.2 Is it possible to change video modes after a window has been created?](#22__is_it_possible_to_change_video_modes_after_a_window_has_been_created)
 - [2.3 Will image or texture loading support be added to GLFW?](#23__will_image_or_texture_loading_support_be_added_to_glfw)
 - [2.4 Will sound support be added to GLFW?](#24__will_sound_support_be_added_to_glfw)
 - [2.5 Will font or text rendering support be added to GLFW?](#25__will_font_or_text_rendering_support_be_added_to_glfw)
@@ -175,16 +175,16 @@ This doesn't, of course, prevent you from presenting the familiar, single value
 color depths to the user.
 
 
-### 2.2 - Why is it not possible to change video modes after a window has been opened?
+### 2.2 - Is it possible to change video modes after a window has been created?
 
 There is limited support for mode switching in the form of `glfwSetWindowSize`.
 In fullscreen mode, this will change the video mode to that closest matching the
 current mode, with refresh mode and color depth preserved.
 
 However, some cards do not behave well when the video mode is changed once the
-window has been opened.  Also, under X Window System it is only possible to set
+window has been created.  Also, under X Window System it is only possible to set
 the color depth of an OpenGL window at the time of creating the OpenGL context
-(i.e. when opening the window).
+(i.e. when creating the window).
 
 
 ### 2.3 - Will image or texture loading support be added to GLFW?
