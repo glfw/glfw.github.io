@@ -302,9 +302,7 @@ environment.
 However, if you are using Windows, you cannot get anything newer than
 OpenGL 1.2 without using extensions.  As the extension management in GLFW is
 very rudimentary, we recommend that you use a dedicated extension loading
-library such as
-[GLEW](http://glew.sourceforge.net/) or
-[GLee](http://elf-stone.com/glee.php).
+library such as [GLEW](http://glew.sourceforge.net/).
 
 
 ### 2.14 - Why do my objects look all wrong?
