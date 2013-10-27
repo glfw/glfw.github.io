@@ -57,8 +57,9 @@ Please compile from source or (where available) use the binaries provided by you
 
 ### Bindings
 
-Here is a list of GLFW bindings for other programming languages 
-maintained and provided by volunteers and GLFW community.
+Bindings for other languages are created and maintained by the community and are
+not part of GLFW itself.  Please [let us know](contact.html) if any bindings are
+missing from the list below.
 
 | Language | Maintainer          | Website |
 | -------- | ------------------- | ------- |
