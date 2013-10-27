@@ -376,9 +376,12 @@ forcibly disabled, please report this as a bug in GLFW.
 
 ### 4.1 - How do I create an OpenGL 3.0+ context?
 
-The only OpenGL 3.0+ context configurations currently supported by OS X are
-forward-compatible, core profile OpenGL 3.2 and (on 10.9 Mavericks and later)
-4.1.  To create either a 3.2 or 4.1 a context, you should set the following
+The only OpenGL 3.x and 4.x contexts currently supported by OS X are
+forward-compatible, core profile contexts.  The supported versions are 3.2 on
+10.7 Lion and 3.3 and 4.1 on 10.9 Mavericks.  In all cases, your GPU needs to
+support the specified OpenGL version for context creation to succeed.
+
+To create either an OpenGL 3.2 or later context, you should set the following
 hints:
 
 {% highlight c %}
@@ -388,17 +391,14 @@ glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 {% endhighlight %}
 
-This works because no features were deprecated between OpenGL 3.2 and 4.1,
-making forward-compatible 4.1 backards-compatible with 3.2.
+This will give you a context for the highest version of OpenGL greater than or
+equal to 3.2 that is supported by your OS and GPU.  This works because no
+features were deprecated between OpenGL 3.2 and 4.1, making forward-compatible
+OpenGL 4.1 backards-compatible with 3.2.  If the requested version is not
+supported, window creation will fail.           
 
-If your code requires OpenGL 4.1, you should instead set the following hints:
-
-{% highlight c %}
-glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
-glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-{% endhighlight %}
+If your code requires OpenGL 3.3 or 4.1, you can specify those versions instead,
+as well as any valid OpenGL version in between.
 
 
 ---
