@@ -14,7 +14,7 @@ If your questions are not answered here, please do [contact us](community.html).
 
 - [1.1 What is GLFW?](#11__what_is_glfw)
 - [1.2 What is GLFW not?](#12__what_is_glfw_not)
-- [1.3 Why yet another OpenGL toolkit?](#13__why_yet_another_opengl_toolkit)
+- [1.3 Why yet another OpenGL library?](#13__why_yet_another_opengl_library)
 - [1.4 What platforms are supported by GLFW?](#14__what_platforms_are_supported_by_glfw)
 - [1.5 What versions of OpenGL are supported by GLFW?](#15__what_versions_of_opengl_are_supported_by_glfw)
 
