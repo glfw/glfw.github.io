@@ -106,12 +106,11 @@ GLFW is *by design* not...
 - GLUT or SDL.
 
 
-### 1.3 - Why yet another OpenGL toolkit?
+### 1.3 - Why yet another OpenGL library?
 
-There are already [several toolkits](links.html#alternatives_to_glfw)
-available for aiding OpenGL development.  The most commonly used are
-[freeglut](http://freeglut.sourceforge.net/), an Open Source
-implementation of GLUT, and [SDL](http://www.libsdl.org/).
+There are several other libraries available for aiding OpenGL development.  The
+most common ones are [freeglut](http://freeglut.sourceforge.net/), an Open
+Source implementation of GLUT, and [SDL](http://www.libsdl.org/).
 
 However, GLUT is getting quite old and freeglut is mostly concerned with
 providing a stable clone of it, while SDL is too large for some people and has

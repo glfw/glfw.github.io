@@ -1,11 +1,9 @@
 ---
 layout: default
-title: Links
+title: Alternatives to GLFW
 ---
 
-## Links
-
-### Alternatives to GLFW
+## Alternatives to GLFW
 
 No library can be perfect for everyone, and GLFW is no exception.  Here
 are a few alternatives known to be stable:
@@ -21,5 +19,6 @@ are a few alternatives known to be stable:
   input, audio, etc.
 
 There is also a
-[list of alternatives](http://www.opengl.org/resources/libraries/windowtoolkits/)
-to GLFW (actually alternatives to GLUT) maintained on OpenGL.org.
+[list of OpenGL frameworks and libraries](https://www.opengl.org/wiki/Related_toolkits_and_APIs)
+maintained on the OpenGL.org wiki.
+
