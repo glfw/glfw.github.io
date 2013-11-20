@@ -63,6 +63,7 @@ missing from the list below.
 
 | Language | Maintainer          | Website |
 | -------- | ------------------- | ------- |
+| Ada      | Felix Krause        | [https://github.com/flyx/OpenGLAda](https://github.com/flyx/OpenGLAda) |
 | C#       | Antonie Blom        | [https://github.com/antonijn/Pencil.Gaming](https://github.com/antonijn/Pencil.Gaming) |
 | D        | Mike Parker         | [https://github.com/aldacron/Derelict3](https://github.com/aldacron/Derelict3) |
 | Go       | Coşku Baş           | [https://github.com/go-gl/glfw3](https://github.com/go-gl/glfw3) |
