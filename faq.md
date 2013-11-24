@@ -362,14 +362,16 @@ included in the GLFW source and binary distributions.
 
 ### 3.3 - Why doesn't glfwSwapInterval work?
 
-This is a known problem with certain ATI/AMD card/driver combinations, where the
-driver apparently ignores requests for enabling vertical sync.  GLFW itself only
-only passes the specified interval to the `wglSwapIntervalEXT` function and the
-rest is up to the driver.
+Modern graphics drivers have settings that allow users to override an
+application's request for (among other things) swap interval.  If such a setting
+is enabled, `glfwSwapInterval` will have no effect.
 
-However, if you encounter this problem on non-ATI/AMD hardware and you have
-verified in your display driver settings that vertical sync has not been
-forcibly disabled, please report this as a bug in GLFW.
+Swap interval setting is also by default disabled by GLFW on Windows Vista and
+later version when using DWM (Aero), as setting the swap interval there leads to
+severe jitter on some hardware.  You can forcibly enable this with
+a compile-time option.  See the
+[Compiling GLFW](http://www.glfw.org/docs/latest/compile.html) guide for
+details.
 
 ## OS X
 
