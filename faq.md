@@ -61,13 +61,13 @@ If your questions are not answered here, please do [contact us](community.html).
 
 GLFW is a small C library that lets you create and manage an OpenGL context and
 its associated window, enumerate and change display modes, as well as handle
-inputs such as keyboard, mouse, joystick and time.
+inputs such as keyboard, mouse, joystick, clipboard and time.
 
 GLFW provides a thin, multi-platform abstraction layer, primarily for
 applications whose sole graphics output is through the OpenGL API.  While GLFW
 is very useful when developing multi-platform OpenGL applications,
-single-platform developers can also benefit from avoiding the drudgery of kludgy
-platform-specific APIs.
+single-platform developers can also benefit from avoiding having to deal with
+kludgy platform-specific APIs.
 
 The reason that libraries like GLFW are needed is that OpenGL by itself does not
 provide any mechanisms for creating the necessary context, managing windows,
@@ -86,22 +86,24 @@ GLFW matches the description of *other mechanisms* quite well.
 
 GLFW is *by design* not...
 
-- a user interface library.  It allows you to create a single, OpenGL-capable
-  window.  No menus, no buttons.
+- a user interface library.  It allows you to create top-level windows with
+  OpenGL contexts.  No menus, no buttons.
 - a Windows-only library.  Requests for features that cannot be portably
-  implemented will be denied unless they are unobtrusive (like the Windows port
-  looking for a `GLFW_ICON` resource).
+  implemented will be denied unless they are unobtrusive, like the Windows port
+  looking for a `GLFW_ICON` resource at window creation.
 - a threading library.  There are already good cross-platform threading
   libraries and threading has been added to both the C11 and C++11 standard
   libraries.
+- an image loading library.  There are already good cross-platform image loading
+  libraries.
 - capable of rendering text.  There are already several libraries that render
-  text with OpenGL, and consistent cross-platform text rendering cannot depend
+  text with OpenGL and consistent cross-platform text rendering cannot depend
   on the platform's text rendering facilities anyway.
 - capable of rendering anything at all.  Rendering is up to you and/or other
   libraries.
-- equipped with a menu system.
-- integrated into *any* user interface toolkit on *any* platform.  Good UI
-  toolkits already provide OpenGL-capable widgets.
+- integrated with *any* user interface toolkit on *any* platform.  Good UI
+  toolkits already provide OpenGL-capable widgets and having two libraries both
+  talking to the vast global state of a window system is asking for trouble.
 - able to play back sound.
 - GLUT or SDL.
 
@@ -112,9 +114,9 @@ There are several other libraries available for aiding OpenGL development.  The
 most common ones are [freeglut](http://freeglut.sourceforge.net/), an Open
 Source implementation of GLUT, and [SDL](http://www.libsdl.org/).
 
-However, GLUT is getting quite old and freeglut is mostly concerned with
-providing a stable clone of it, while SDL is too large for some people and has
-never had OpenGL as its main focus.
+However, freeglut is mostly concerned with providing a stable clone of GLUT,
+while SDL is too large for some people and has never had OpenGL as its main
+focus.
 
 We therefore believe that there is room for a lightweight, modern library for
 managing OpenGL contexts, windows and input.
@@ -154,8 +156,8 @@ forward-compatible OpenGL 3.2 core profile contexts.  Additionally, creating
 such contexts requires new code, so older versions of GLFW cannot create OpenGL
 3.0 contexts on OS X.
 
-The first version to support creation of OpenGL 3.2 contexts on OS X Lion was
-GLFW 2.7.2.
+The first version to support creation of OpenGL 3.2 contexts on OS X Lion and
+later was GLFW 2.7.2.
 
 
 ---
@@ -177,13 +179,8 @@ color depths to the user.
 ### 2.2 - Is it possible to change video modes after a window has been created?
 
 There is limited support for mode switching in the form of `glfwSetWindowSize`.
-In fullscreen mode, this will change the video mode to that closest matching the
-current mode, with refresh mode and color depth preserved.
-
-However, some cards do not behave well when the video mode is changed once the
-window has been created.  Also, under X Window System it is only possible to set
-the color depth of an OpenGL window at the time of creating the OpenGL context
-(i.e. when creating the window).
+In full screen mode this will change the video mode to that closest matching
+the current mode, with refresh mode and color depth preserved.
 
 
 ### 2.3 - Will image or texture loading support be added to GLFW?
@@ -262,7 +259,7 @@ Yes, you can.
 
 The function `glfwGetKey` lets you check the state of any keyboard key
 (including special keys). You can even call the function from within a callback
-function, which makes it possible to check for things like CTRL+F3 key events
+function, which makes it possible to check for things like Ctrl+F3 key events
 (when you get a `GLFW_KEY_F3` key press event, check the state of the left or
 right CTRL key with `glfwGetKey(window, GLFW_KEY_LEFT_CONTROL)` or
 `glfwGetKey(window, GLFW_KEY_RIGHT_CONTROL)`, or both).
@@ -290,6 +287,9 @@ creation.
 On Unix-like systems using the X Window System, the Xlib API is used for window
 and input management, the XRandR or XF86VidMode extension (if available) for
 display mode management, and GLX (with extensions) for context creation.
+
+There is also an experimental EGL backend that works with the Win32 and Xlib
+APIs.
 
 
 ### 2.13 - Why doesn't your gl.h have the functions I need?
@@ -337,7 +337,7 @@ use it to call methods on your object.
 
 ### 3.1 - What compilers are supported by GLFW?
 
-Currently, GLFW releases are tested with Visual C++ 2008, 2010 and 2012,
+Currently, GLFW releases are tested with Visual C++ 2010, 2012 and 2013,
 standalone MinGW, MinGW with MSYS, and the Cygwin packages for MinGW.
 
 The Windows binary distribution of GLFW contains pre-compiled libraries
@@ -372,8 +372,8 @@ details.
 ### 4.1 - How do I create an OpenGL 3.0+ context?
 
 The only OpenGL 3.x and 4.x contexts currently supported by OS X are
-forward-compatible, core profile contexts.  The supported versions are 3.2 on
-10.7 Lion and 3.3 and 4.1 on 10.9 Mavericks.  In all cases, your GPU needs to
+forward-compatible, core profile contexts.  The supported versions are 3.2
+on 10.7 Lion and 3.3 and 4.1 on 10.9 Mavericks.  In all cases, your GPU needs to
 support the specified OpenGL version for context creation to succeed.
 
 To create either an OpenGL 3.2 or later context, you should set the following
