@@ -349,15 +349,9 @@ If your compiler is not supported, please don't hesitate to
 
 ### 3.2 - Why do I get link errors when trying to build my program?
 
-If you get errors like this one when you try to compile a program using GLFW:
-
-> `error LNK2001: unresolved external symbol _glfwGetWindowAttrib`
-
-*(Example from Microsoft Visual C++)*
-
-then you have most likely not linked your program against GLFW correctly.  How
-to do this is described in section 4.2.2 of the `readme.html` file that is
-included in the GLFW source and binary distributions.
+See the
+[Building programs that use GLFW](http://www.glfw.org/docs/latest/build.html)
+guide for details on how to compile and link programs on various platforms.
 
 
 ### 3.3 - Why doesn't glfwSwapInterval work?
