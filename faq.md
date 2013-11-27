@@ -59,9 +59,9 @@ If your questions are not answered here, please do [contact us](community.html).
 
 ### 1.1 - What is GLFW?
 
-GLFW is a small C library that lets you create and manage an OpenGL context and
-its associated window, enumerate and change display modes, as well as handle
-inputs such as keyboard, mouse, joystick, clipboard and time.
+GLFW is a small C library that lets you create and manage windows with OpenGL
+contexts, enumerate monitors and video modes as well as handle inputs such as
+keyboard, mouse, joystick, clipboard and time.
 
 GLFW provides a thin, multi-platform abstraction layer, primarily for
 applications whose sole graphics output is through the OpenGL API.  While GLFW
