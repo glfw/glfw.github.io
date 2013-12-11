@@ -198,7 +198,7 @@ No.
 No.
 
 However, if you are looking for an OpenGL-like API for sound, have a look at
-[OpenAL](http://connect.creativelabs.com/openal/).
+OpenAL.
 
 
 ### 2.5 - Will font or text rendering support be added to GLFW?
