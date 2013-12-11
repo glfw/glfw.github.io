@@ -380,6 +380,7 @@ See the
 guide for details.                 
 
 
+---
 ## OS X
 
 ### 4.1 - How do I create an OpenGL 3.0+ context?
