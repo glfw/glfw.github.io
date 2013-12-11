@@ -44,14 +44,19 @@ If your questions are not answered here, please do [contact us](community.html).
 - [3.1 What compilers are supported by GLFW?](#31__what_compilers_are_supported_by_glfw)
 - [3.2 Why do I get link errors when trying to build my program?](#32__why_do_i_get_link_errors_when_trying_to_build_my_program)
 - [3.3 Why doesnt glfwSwapInterval work?](#33__why_doesnt_glfwswapinterval_work)
+- [3.4 What libraries should I link with?](#34__what_libraries_should_i_link_with)
 
 
 ### OS X
 
 - [4.1 How do I create an OpenGL 3.2 context?](#41__how_do_i_create_an_opengl_30_context)
+- [4.2 What libraries should I link with?](#42__what_libraries_should_i_link_with)
+- [4.3 Why is my output in the lower-left corner of the window?](43__why_is_my_output_in_the_lower-left_corner_of_the_window)
 
 
 ### Unix / X11
+
+- [5.1 What libraries should I link with?](#51__what_libraries_should_i_link_with)
 
 
 ---
@@ -367,6 +372,14 @@ a compile-time option.  See the
 [Compiling GLFW](http://www.glfw.org/docs/latest/compile.html) guide for
 details.
 
+
+### 3.4 - What libraries should I link with?
+
+See the
+[Building programs that use GLFW](http://www.glfw.org/docs/latest/build.html)
+guide for details.                 
+
+
 ## OS X
 
 ### 4.1 - How do I create an OpenGL 3.0+ context?
@@ -396,6 +409,30 @@ If your code requires OpenGL 3.3 or 4.1, you can specify those versions instead,
 as well as any valid OpenGL version in between.
 
 
+### 4.2 - What libraries should I link with?
+
+See the
+[Building programs that use GLFW](http://www.glfw.org/docs/latest/build.html)
+guide for details.                 
+
+
+### 4.3 - Why is my output in the lower-left corner of the window?
+
+You are passing the window size, which is in screen coordinates, to
+`glViewport`, which works with pixels.  On OS X with a Retina display, and
+possibly on other platforms in the future, screen coordinates and pixels do not
+map 1:1.  Use the framebuffer size, which is in pixels, instead of the window
+size.  See the
+[Window handling guide](http://www.glfw.org/docs/latest/window.html) for
+details.
+
+
 ---
 ## Unix / X11
+
+### 5.1 - What libraries should I link with?
+
+See the
+[Building programs that use GLFW](http://www.glfw.org/docs/latest/build.html)
+guide for details.                 
 
