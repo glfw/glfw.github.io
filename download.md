@@ -59,7 +59,7 @@ Please compile from source or (where available) use the binaries provided by you
 
 Bindings for other languages are created and maintained by the community and are
 not part of GLFW itself.  Please [let us know](community.html) if any bindings are
-missing from the list below.
+missing from the list below, even if a binding is already listed for that language.
 
 | Language    | Maintainer          | Website |
 | ----------- | ------------------- | ------- |
