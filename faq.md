@@ -45,7 +45,7 @@ If your questions are not answered here, please do [contact us](community.html).
 - [3.2 Why do I get link errors when trying to build my program?](#32__why_do_i_get_link_errors_when_trying_to_build_my_program)
 - [3.3 Why doesnt glfwSwapInterval work?](#33__why_doesnt_glfwswapinterval_work)
 - [3.4 What libraries should I link with?](#34__what_libraries_should_i_link_with)
-- [3.5 Why does my application freeze when I move or resize the window?](#35__why_does_application_freeze_when_I_move_or_resize_the_window)
+- [3.5 Why does my application freeze when I move or resize the window?](#35__why_does_my_application_freeze_when_i_move_or_resize_the_window)
 
 
 ### OS X
