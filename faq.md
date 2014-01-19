@@ -45,6 +45,7 @@ If your questions are not answered here, please do [contact us](community.html).
 - [3.2 Why do I get link errors when trying to build my program?](#32__why_do_i_get_link_errors_when_trying_to_build_my_program)
 - [3.3 Why doesnt glfwSwapInterval work?](#33__why_doesnt_glfwswapinterval_work)
 - [3.4 What libraries should I link with?](#34__what_libraries_should_i_link_with)
+- [3.5 Why does my application freeze when I move or resize the window?](#35__why_does_application_freeze_when_I_move_or_resize_the_window)
 
 
 ### OS X
@@ -378,6 +379,14 @@ details.
 See the
 [Building programs that use GLFW](http://www.glfw.org/docs/latest/build.html)
 guide for details.                 
+
+
+### 3.5 - Why does my application freeze when I move or resize the window?
+
+The Windows event loop is blocked by certain actions like dragging or resizing
+a window, or opening the window menu.  This is part of the design of Windows and
+cannot be changed by GLFW.  If you wish to keep rendering during such actions,
+you should render from a secondary thread.
 
 
 ---
