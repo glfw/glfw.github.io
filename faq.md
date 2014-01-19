@@ -52,7 +52,7 @@ If your questions are not answered here, please do [contact us](community.html).
 
 - [4.1 How do I create an OpenGL 3.2 context?](#41__how_do_i_create_an_opengl_30_context)
 - [4.2 What libraries should I link with?](#42__what_libraries_should_i_link_with)
-- [4.3 Why is my output in the lower-left corner of the window?](43__why_is_my_output_in_the_lower-left_corner_of_the_window)
+- [4.3 Why is my output in the lower-left corner of the window?](#43__why_is_my_output_in_the_lowerleft_corner_of_the_window)
 
 
 ### Unix / X11
