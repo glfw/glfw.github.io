@@ -6,11 +6,11 @@ title: An OpenGL library
 {% assign glfwversion = site.tags.changelog.first.title %}
 {% assign releasedate = site.tags.changelog.first.date %}
 
+## Welcome
+
 {% row %}
 
 {% col 2-3 %}
-
-## Welcome
 
 **GLFW** is an Open Source, multi-platform library for creating windows with
 OpenGL contexts and managing input and events.  It is easy to integrate into
@@ -23,7 +23,6 @@ GLFW is licensed under the [zlib/libpng license](license.html).
 {% endcol %}
 
 {% col 1-3 %}
-## &emsp;
 
 {% button http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.zip/download %}
 Download GLFW {{ glfwversion }}
