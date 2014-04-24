@@ -35,7 +35,7 @@ If your questions are not answered here, please do [contact us](community.html).
 - [2.12 What window system APIs does GLFW use?](#212__what_window_system_apis_does_glfw_use)
 - [2.13 Why doesn't your gl.h have the functions I need?](#213__why_doesnt_your_glh_have_the_functions_i_need)
 - [2.14 Why do my objects look all wrong?](#214__why_do_my_objects_look_all_wrong)
-- [2.15 Can I use GLEW with GLFW?](#215__can_i_use_glew_with_glfw)
+- [2.15 Can I use extension loaders with GLFW?](#215__can_i_use_extension_loaders_with_glfw)
 - [2.16 How do I use C++ methods as callbacks?](#216_how_do_i_use_c_methods_as_callbacks)
 
 
@@ -139,6 +139,8 @@ with portability in mind.
 
 ### 1.5 - What versions of OpenGL are supported by GLFW?
 
+In short, all versions provided by your operating system.
+
 This question likely stems from the original version of the
 [`WGL_ARB_create_context`](http://www.opengl.org/registry/specs/ARB/wgl_create_context.txt)
 and
@@ -171,12 +173,9 @@ later was GLFW 2.7.2.
 
 ### 2.1 - Why use separate red/green/blue bit depths?
 
-In short, because it more closely matches the way most platforms describe
-OpenGL-capable pixel formats, which in the past actually mattered.
-
-Today, when nearly everyone just asks for 24-bit color and gets it, it matters
-less.  It does, however, make the API slightly more future-proof, as the values
-specified can be passed nearly unmodified to the window system.
+Because that is how most platforms describe OpenGL-capable pixel formats and how
+OpenGL describes its framebuffers.  It makes GLFW more consistent with the APIs
+it interacts with, and more future-proof.
 
 This doesn't, of course, prevent you from presenting the familiar, single value
 color depths to the user.
@@ -184,9 +183,9 @@ color depths to the user.
 
 ### 2.2 - Is it possible to change video modes after a window has been created?
 
-There is limited support for mode switching in the form of `glfwSetWindowSize`.
-In full screen mode this will change the video mode to that closest matching
-the current mode, with refresh mode and color depth preserved.
+You can change the resolution of a full screen window with `glfwSetWindowSize`,
+but the pixel format, i.e. the framebuffer bit depths will remain the same.
+Changing the pixel format requires the context to be recreated.
 
 
 ### 2.3 - Will image or texture loading support be added to GLFW?
@@ -294,8 +293,7 @@ On Unix-like systems using the X Window System, the Xlib API is used for window
 and input management, the XRandR or XF86VidMode extension (if available) for
 display mode management, and GLX (with extensions) for context creation.
 
-There is also an experimental EGL backend that works with the Win32 and Xlib
-APIs.
+There is also an EGL backend that works with the Win32 and Xlib APIs.
 
 
 ### 2.13 - Why doesn't your gl.h have the functions I need?
@@ -307,26 +305,40 @@ environment.
 However, if you are using Windows, you cannot get anything newer than
 OpenGL 1.2 without using extensions.  As the extension management in GLFW is
 very rudimentary, we recommend that you use a dedicated extension loading
-library such as [GLEW](http://glew.sourceforge.net/).
+library such as [glad](https://github.com/Dav1dde/glad).
 
 
 ### 2.14 - Why do my objects look all wrong?
 
-GLFW does not exist between your code and OpenGL.  Think instead of GLFW as
-connecting your code to OpenGL and then getting out of the way.  If you get
-incorrect rendering results, it is therefore most likely due to errors in your
-code, the OpenGL implementation or both.
+GLFW does not wrap OpenGL.  No GLFW code is involved when you make an OpenGL
+call.  Think instead of GLFW as connecting your code to OpenGL and then getting
+out of the way.  That connection is the OpenGL context you create and make
+current with GLFW.  If you get incorrect rendering results, it is therefore most
+likely due to errors in your code, the OpenGL implementation or both.
 
 The OpenGL.org wiki has an extensive article on
 [common mistakes](https://www.opengl.org/wiki/Common_Mistakes) that may be
 able to help you locate the problem.
 
 
-### 2.15 - Can I use GLEW with GLFW?
+### 2.15 - Can I use extension loaders with GLFW?
 
-Yes, as long as you include the GLEW header before the GLFW one.  The GLEW
-header defines all the necessary magic macros to make sure the `gl.h` that GLFW
-attempts to include doesn't interfere.
+Yes, as long as you prevent the GLFW header from including the platform client
+API header (for example `gl.h` for OpenGL).  There are two ways to do this.
+Either include the extension loader header before including the GLFW header:
+
+{% highlight c %}
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+{% endhighlight %}
+
+...or define `GLFW_INCLUDE_NONE` before including the GLFW header:                                                   
+
+{% highlight c %}
+#define GLFW_INCLUDE_NONE
+#include <GLFW/glfw3.h>
+#include <glad/glad.h>
+{% endhighlight %}
 
 
 ### 2.16 How do I use C++ methods as callbacks?
@@ -343,8 +355,8 @@ use it to call methods on your object.
 
 ### 3.1 - What compilers are supported by GLFW?
 
-Currently, GLFW releases are tested with Visual C++ 2010, 2012 and 2013,
-standalone MinGW, MinGW with MSYS, and the Cygwin packages for MinGW.
+Currently, GLFW releases are tested with MinGW, MinGW-w64 and Visual C++ 2010,
+2012 and 2013.
 
 The Windows binary distribution of GLFW contains pre-compiled libraries
 for all of the compilers mentioned above.
