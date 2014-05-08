@@ -7,5 +7,6 @@ It requires Jekyll and several other Ruby gems to build.
  - jekyll
  - jekyll-press
  - less
+ - rouge
  - therubyracer
 
