@@ -4,7 +4,7 @@
 # mixing Markdown and HTML syntax directly.
 #
 # NOTE:
-# This plugin uses Maruku, Jekyll's default markdown syntax parser.
+# This plugin uses kramdown, Jekyll's default markdown syntax parser.
 # Make sure it is enabled as default markdown syntax parser to avoid
 # inconsistency between generated HTML code.
 #
@@ -47,9 +47,9 @@ module Jekyll
     end
 
     def render(context)
-      require "maruku"
+      require "kramdown"
       contents = super
-      %|<div class="pure-u-#{@width}"><div class="box">#{Maruku::new(contents).to_html}</div></div>|
+      %|<div class="pure-u-#{@width}"><div class="box">#{Kramdown::Document.new(contents).to_html}</div></div>|
     end
   end
 end
