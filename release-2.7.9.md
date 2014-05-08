@@ -17,6 +17,7 @@ Table of contents
 8. [Acknowledgements](#8_acknowledgements)
 
 ---
+
 ## 1. Introduction
 
 Welcome to version 2.7.9 of the GLFW library.  GLFW is a free, Open Source,
