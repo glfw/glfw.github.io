@@ -1,5 +1,5 @@
 permalink: /:title.html
-pygments: true
+highlighter: pygments
 exclude: [README.md]
 
 jekyll-press:
