@@ -9,7 +9,7 @@ title: Download
 ## Download
 
 The current version is **{{ glfwversion }}**, which was released on
-**{% include time.html date=releasedate %}**.
+<strong>{% include time.html date=releasedate %}</strong>.
 See the [version history](changelog.html) for a list of changes.
 
 ### Source package
