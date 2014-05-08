@@ -61,6 +61,7 @@ If your questions are not answered here, please do [contact us](community.html).
 
 
 ---
+
 ## Introduction
 
 ### 1.1 - What is GLFW?
@@ -167,6 +168,7 @@ later was GLFW 2.7.2.
 
 
 ---
+
 ## General
 
 ### 2.1 - Why use separate red/green/blue bit depths?
@@ -339,6 +341,7 @@ use it to call methods on your object.
 
 
 ---
+
 ## Windows
 
 ### 3.1 - What compilers are supported by GLFW?
@@ -390,6 +393,7 @@ you should render from a secondary thread.
 
 
 ---
+
 ## OS X
 
 ### 4.1 - How do I create an OpenGL 3.0+ context?
@@ -438,6 +442,7 @@ details.
 
 
 ---
+
 ## Unix / X11
 
 ### 5.1 - What libraries should I link with?
