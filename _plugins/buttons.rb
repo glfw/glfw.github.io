@@ -17,12 +17,9 @@ module Jekyll
     end
 
     def render(context)
-      require "maruku"
       # Letting Liquid to process variables mixed with the link address if any
       @link = Liquid::Template.parse(@link).render context
       
-      # Use this one in case you are going to use Markdown syntax for button label
-      #buttonLabel = Maruku::new(super).to_html
       buttonLabel = super
       %|<a class="button" href="#{@link}">#{buttonLabel}</a>|
     end
