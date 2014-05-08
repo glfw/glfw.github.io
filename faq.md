@@ -4,61 +4,18 @@ title: FAQ
 ---
 
 ## Frequently Asked Questions
+{:.no_toc}
 
 This page attempts to address some of the most commonly asked questions that we
 have received from GLFW users.
 
 If your questions are not answered here, please do [contact us](community.html).
 
-### Introduction
+### Table of contents
+{:.no_toc}
 
-- [1.1 What is GLFW?](#11__what_is_glfw)
-- [1.2 What is GLFW not?](#12__what_is_glfw_not)
-- [1.3 Why yet another OpenGL library?](#13__why_yet_another_opengl_library)
-- [1.4 What platforms are supported by GLFW?](#14__what_platforms_are_supported_by_glfw)
-- [1.5 What versions of OpenGL are supported by GLFW?](#15__what_versions_of_opengl_are_supported_by_glfw)
-
-
-### General
-
-- [2.1 Why use separate red/green/blue bit depths?](#21__why_use_separate_redgreenblue_bit_depths)
-- [2.2 Is it possible to change video modes after a window has been created?](#22__is_it_possible_to_change_video_modes_after_a_window_has_been_created)
-- [2.3 Will image or texture loading support be added to GLFW?](#23__will_image_or_texture_loading_support_be_added_to_glfw)
-- [2.4 Will sound support be added to GLFW?](#24__will_sound_support_be_added_to_glfw)
-- [2.5 Will font or text rendering support be added to GLFW?](#25__will_font_or_text_rendering_support_be_added_to_glfw)
-- [2.6 Will pop-up menu support be added to GLFW?](#26__will_popup_menu_support_be_added_to_glfw)
-- [2.7 Will message box support be added to GLFW?](#27__will_message_box_support_be_added_to_glfw)
-- [2.8 What is Unicode and ISO 8859-1?](#28__what_is_unicode_and_iso_88591)
-- [2.9 Is GLFW thread safe?](#29__is_glfw_thread_safe)
-- [2.10 Can I check several keys at once?](#210__can_i_check_several_keys_at_once)
-- [2.11 What timer APIs does GLFW use?](#211__what_timer_apis_does_glfw_use)
-- [2.12 What window system APIs does GLFW use?](#212__what_window_system_apis_does_glfw_use)
-- [2.13 Why doesn't your gl.h have the functions I need?](#213__why_doesnt_your_glh_have_the_functions_i_need)
-- [2.14 Why do my objects look all wrong?](#214__why_do_my_objects_look_all_wrong)
-- [2.15 Can I use extension loaders with GLFW?](#215__can_i_use_extension_loaders_with_glfw)
-- [2.16 How do I use C++ methods as callbacks?](#216_how_do_i_use_c_methods_as_callbacks)
-
-
-### Windows
-
-- [3.1 What compilers are supported by GLFW?](#31__what_compilers_are_supported_by_glfw)
-- [3.2 Why do I get link errors when trying to build my program?](#32__why_do_i_get_link_errors_when_trying_to_build_my_program)
-- [3.3 Why doesnt glfwSwapInterval work?](#33__why_doesnt_glfwswapinterval_work)
-- [3.4 What libraries should I link with?](#34__what_libraries_should_i_link_with)
-- [3.5 Why does my application freeze when I move or resize the window?](#35__why_does_my_application_freeze_when_i_move_or_resize_the_window)
-
-
-### OS X
-
-- [4.1 How do I create an OpenGL 3.2 context?](#41__how_do_i_create_an_opengl_30_context)
-- [4.2 What libraries should I link with?](#42__what_libraries_should_i_link_with)
-- [4.3 Why is my output in the lower-left corner of the window?](#43__why_is_my_output_in_the_lowerleft_corner_of_the_window)
-
-
-### Unix / X11
-
-- [5.1 What libraries should I link with?](#51__what_libraries_should_i_link_with)
-
+* This will become a table of contents (this text will be scraped).
+{:toc}
 
 ---
 
