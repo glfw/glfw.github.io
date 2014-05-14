@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: frontpage
 title: An OpenGL library
 ---
 
@@ -35,6 +35,8 @@ Released on {% include time.html date=releasedate %}
 {% button https://github.com/glfw/glfw %}
 Clone on GitHub
 {% endbutton %}
+
+{% include milestone.html %}
 
 {% endcol %}
 
