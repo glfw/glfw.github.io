@@ -33,6 +33,10 @@
 
 						var progress = document.getElementById("progress");
 						progress.innerHTML = Math.floor(workProgress) + "%";
+
+						var milestoneContainer = document.getElementById("milestone-container");
+						milestoneContainer.style["opacity"] = "1.0";
+						milestoneContainer.style["transition"] = ".7s ease-in";
 					}
 				};
 
