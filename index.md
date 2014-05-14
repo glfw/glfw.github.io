@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: frontpage
 title: An OpenGL library
 ---
 
@@ -33,6 +33,8 @@ Download GLFW {{ glfwversion }}
 {% button https://github.com/glfw/glfw %}
 Clone on GitHub
 {% endbutton %}
+
+{% include milestone.html %}
 
 {% endcol %}
 
