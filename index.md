@@ -44,8 +44,9 @@ Clone on GitHub
 
 {% include features.html %}
 
-No library can be perfect for everyone, and GLFW is no exception.  If GLFW isn't
-what you're looking for, there are [alternatives](alternatives.html).
+No library can be perfect for everyone.  If GLFW isn't what you're looking for,
+there are
+[alternatives](https://www.opengl.org/wiki/Related_toolkits_and_APIs).
 
 ---
 
