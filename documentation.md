@@ -24,7 +24,7 @@ design, inner workings and use of the library.
 
 ### Example code
 
-Below is a short example shows how the GLFW API looks and how easy it is to
+Below is a short example showing how the GLFW API looks and how easy it is to
 create and a window and OpenGL context with it. There are many more functions
 than those used here, but these are all you need to get started.
 
