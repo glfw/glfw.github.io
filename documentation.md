@@ -24,9 +24,10 @@ design, inner workings and use of the library.
 
 ### Example code
 
-Below is a short example showing how the GLFW API looks and how easy it is to
-create and a window and OpenGL context with it. There are many more functions
-than those used here, but these are all you need to get started.
+Below is a short example of setting up a window and OpenGL context with GLFW.
+There are many more functions than those used here.  For a more complete
+introduction to GLFW, see [Getting started](/docs/latest/quick.html)
+in the documentation.
 
 {% highlight c %}
 #include <GLFW/glfw3.h>
@@ -66,3 +67,4 @@ int main(void)
     return 0;
 }
 {% endhighlight %}
+
