@@ -19,7 +19,10 @@ module Jekyll
     def render(context)
       # Letting Liquid to process variables mixed with the link address if any
       @link = Liquid::Template.parse(@link).render context
-      
+
+      # Strip leading or trailing spaces from link if any
+      @link.strip!
+
       buttonLabel = super
       %|<a class="button" href="#{@link}">#{buttonLabel}</a>|
     end
