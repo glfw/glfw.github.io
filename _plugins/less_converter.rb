@@ -32,7 +32,7 @@ module Jekyll
       setup
       begin
         parser = Less::Parser.new
-        parser = parser.parse(content).to_css
+        parser = parser.parse(content).to_css(:compress => true)
       rescue => e
         puts "Less Exception: #{e.message}"
       end
