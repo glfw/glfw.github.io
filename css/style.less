@@ -34,75 +34,80 @@
 @button-shadow: hsl(0, 0%, 60%);
 @button-text-shadow: darken(@button-shade1, 10%);
 
+// Progress bar colors
+@prog-body-shade1: hsl(0, 0%, 90%);
+@prog-body-shade2: hsl(0, 0%, 95%);
+@prog-body-shadow1: hsl(0, 0%, 90%);
+@prog-body-shadow2: @button-shadow;
+@prog-out-shade1: hsl(0, 0%, 75%);
+@prog-out-shade2: hsl(0, 0%, 80%);
+@prog-out-shadow1: hsl(0, 0%, 60%);
+@prog-out-shadow2: hsl(0, 0%, 100%);
+@prog-bar-shade1: @button-shade1;
+@prog-bar-shade2: hsl((@base-hue + 15), 100%, 60%);
+@prog-bar-shadow1: hsla(0, 0%, 100%, 0.4);
+@prog-bar-shadow2: @button-shade1;
+
 // Navigation, links and table cells default and hover colors
 @link-color: hsl(@base-hue, 100%, 50%);
-@link-hover-color: hsl(@base-hue, 100%, 50%);
 
 // Page header and footer links hover and shadow colors
 @nav-footer-hover-color: hsl(@base-hue, 100%, 60%);
-@nav-footer-text-shadow-hover-color: hsl(@base-hue, 100%, 50%);
-
-// GLFW logo text shadow color on hover
-// Note : Texture used in header should use same color as GLFW Logo
-@glfw-text-color: @nav-footer-color;
-@glfw-text-shadow-hover-color: @nav-footer-text-shadow-hover-color;
 
 // Page header and footer height
 @header-footer-height: 64px;
 
 .button {
-	padding: 0.6em 0em;
-	margin: 1em 0em;
-	color: #ffffff;
+	color: #fff;
 	font-weight: bold;
-	text-align: center;
-	border-radius: 4px;
-	background: linear-gradient(to bottom, @button-shade2 0%,@button-shade1 100%);
-	box-shadow: inset 0px 0px 32px @button-shade1, 0px 0px 2px @button-shadow;
-	text-shadow: 0px -1px 1px @button-text-shadow;
-	display: block;
+	box-shadow: inset 0 0 32px @button-shade1, 0 0 2px @button-shadow;
+	text-shadow: 0 -1px 1px @button-text-shadow;
+}
+
+.button, th {
+	background: linear-gradient(@button-shade2 0%,@button-shade1 100%);
 }
 
 .button:hover {
-	box-shadow: inset 0px 0px 32px @button-shade2, 0px 0px 2px @button-shadow;
+	box-shadow: inset 0 0 32px @button-shade2, 0 0 2px @button-shadow;
 }
 
-div#milestone-container {
-	padding: 0.6em;
-	margin: 1em 0em;
+#milestone-container {
 	color: @default-text-color;
-	border-radius: 4px;
-	background: linear-gradient(to bottom, hsl(0, 0%, 95%) 0%,hsl(0, 0%, 90%) 100%);
-	box-shadow: inset 0px 0px 32px hsl(0, 0%, 90%), 0px 0px 2px @button-shadow;
-	text-shadow: 0px 1px 1px hsl(0, 0%, 100%);//
+	background: linear-gradient(@prog-body-shade2 0%,@prog-body-shade1 100%);
+	box-shadow: inset 0 0 32px @prog-body-shadow1, 0 0 2px @prog-body-shadow2;
+	text-shadow: 0 1px 1px hsl(0, 0%, 100%);
+	opacity: 0;
+}
+
+.button, #milestone-container {
+	padding: .6em;
+	margin: 1em 0;
 	display: block;
-	opacity: 0.0;
 }
 
-div#progress-bar {
-	background: linear-gradient(to bottom, hsl(0, 0%, 75%) 0%,hsl(0, 0%, 80%) 100%);
-	box-shadow: inset 0px 1px 4px hsl(0, 0%, 60%), inset 0px -1px 1px hsl(0, 0%, 100%);
-	border-radius: 4px;
-	margin-top: 0.5em;
+#progress-bar {
+	//background: linear-gradient(@prog-out-shade1 0%, @prog-out-shade2 100%);
+	//box-shadow: inset 0 1px 4px @prog-out-shadow1, inset 0 -1px 1px @prog-out-shadow2;
+	// Faking the inset box-shadow effect with a simple linear gradient
+	background: linear-gradient(@prog-out-shadow1 0%, @prog-out-shade1 30%, @prog-out-shade2 95%, @prog-out-shadow2 100%);
+	margin-top: .5em;
 }
 
-span#progress-bar-inner {
-	background: linear-gradient(to left, hsl((@base-hue + 15), 100%, 60%) 10%,@button-shade1 100%);
-	box-shadow: inset 0px 4px 1px hsla(0, 0%, 100%, 0.4), inset 0px 0px 1px hsla(@base-hue, 100%, 47%, 0.75);
+#progress-bar-inner {
+	background: linear-gradient(to left, @prog-bar-shade2 10%,@prog-bar-shade1 100%);
+	box-shadow: inset 0 4px 1px @prog-bar-shadow1, inset 0 0 1px @prog-bar-shadow2;
 	width: 100%;
 	display: block;
 	height: 8px;
-	border-radius: 4px;
 }
 
-div#progress {
-	text-align: center;
+#progress {
 	font-size: 2em;
 }
 
 body {
 	color: @default-text-color;
-	background-color: @body-background-color;
 }
 
 h1, h2, h3, h4, h5, h6, strong, em {
@@ -112,25 +117,25 @@ h1, h2, h3, h4, h5, h6, strong, em {
 hr {
 	height: 6px;
 	margin: 3em auto;
-	border: 0px;
-	background: linear-gradient(to right, @section-background-color 0%,@page-background-color 50%,@section-background-color 100%);
+	border: 0;
+	background: linear-gradient(to left, @section-background-color 0%,@page-background-color 50%,@section-background-color 100%);
 }
 
 blockquote, .highlight {
-	padding: 0.5em 2em;
-	border-width: 0px 0px 0px 4px;
+	padding: .5em 2em;
+	border-width: 0 0 0 4px;
 	border-style: solid;
 	border-color: @code-block-border-color;
 	overflow: auto;
 }
 
-code, blockquote, table, .highlight, .download {
+code, blockquote, table, .highlight, .button, #milestone-container, #progress-bar, #progress-bar-inner {
 	border-radius: 4px;
 }
 
 code {
-	padding: 0.1em;
-	font-size: 0.8em;
+	padding: .1em;
+	font-size: .8em;
 }
 
 table {
@@ -139,40 +144,37 @@ table {
 }
 
 td, th {
-	padding: 0.5em;
+	padding: .5em;
 }
 
 th {
-	background: linear-gradient(to bottom, @button-shade2 0%,@button-shade1 100%);
-	box-shadow: inset 0px 0px 32px @button-shade1;
-	text-shadow: 0px -1px 1px @button-text-shadow;
-	color: #ffffff;
+	box-shadow: inset 0 0 32px @button-shade1;
+	text-shadow: 0 -1px 1px @button-text-shadow;
+	color: #fff;
 }
 
 section, tr:nth-child(even) {
 	background-color: @section-background-color;
 }
 
-ul#markdown-toc {
-	padding-left: 0px;
-	list-style-type: none;
-}
-
 a {
 	color: @link-color;
 	text-decoration: none;
-	transition: .35s ease;
 }
 
-nav a, footer a {
+header a, footer a {
 	color: @nav-footer-color;
 }
 
-nav a:hover, footer a:hover {
+header a, footer a, .button {
+	transition: .35s ease;
+}
+
+header a:hover, footer a:hover {
 	color: @nav-footer-hover-color;
 }
 
-table, blockquote, code {
+body, table, blockquote, code {
 	background-color: @page-background-color;
 }
 
@@ -185,19 +187,12 @@ header.main {
 	min-width: 800px;
 }
 
-header a#glfw_home {
+#glfw_home {
 	line-height: @header-footer-height;
 	padding-right: 48px;
 	float: left;
-	color: @glfw-text-color;
 	font-size: 2.5em;
-	background-image: url("arrow.png");
-	background-position: right top;
-	background-repeat: no-repeat;
-}
-
-header a#glfw_home:hover {
-	color: @nav-footer-hover-color;
+	background: url("arrow.png") no-repeat right;
 }
 
 nav {
@@ -211,20 +206,22 @@ nav a {
 
 section {
 	min-height: 590px;
-	padding: 3em 0em;
 }
 
 footer {
-	font-size: 0.9em;
-	padding: 3em 0em;
+	font-size: .9em;
 }
 
-footer ul {
+section, footer {
+	padding: 3em 0;
+}
+
+footer ul, #markdown-toc {
 	list-style-type: none;
 	padding-left: 0;
 }
 
-figure {
+figure, .button, #progress {
 	text-align: center;
 }
 
@@ -238,11 +235,11 @@ figure img {
 }
 
 .feature {
-	padding: 2em 0em;
+	padding: 2em 0;
 }
 
 .wrapper {
 	max-width: 920px;
-	margin: 0px auto 0px auto;
-	padding: 0px 32px;
+	margin: 0 auto;
+	padding: 0 32px;
 }
