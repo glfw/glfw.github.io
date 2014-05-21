@@ -291,7 +291,10 @@ Either include the extension loader header before including the GLFW header:
 #include <GLFW/glfw3.h>
 {% endhighlight %}
 
-...or define `GLFW_INCLUDE_NONE` before including the GLFW header:                                                   
+The extension loader header will disable and replace the standard OpenGL header
+that the GLFW header includes.  You can also disable the standard OpenGL header
+yourself by defining `GLFW_INCLUDE_NONE` before including the GLFW header.  This
+will let you include the GLFW and extension loader headers in any order:
 
 {% highlight c %}
 #define GLFW_INCLUDE_NONE
@@ -316,13 +319,11 @@ use it to call methods on your object.
 ### 3.1 - What compilers are supported by GLFW?
 
 Currently, GLFW releases are tested with MinGW, MinGW-w64 and Visual C++ 2010,
-2012 and 2013.
+2012 and 2013, but it should work with any compiler that supports C99 (C89 on
+Windows).  Very old development environments may require updated system headers.
 
 The Windows binary distribution of GLFW contains pre-compiled libraries
-for all of the compilers mentioned above.
-
-If your compiler is not supported, please don't hesitate to
-[contact us](community.html).
+for both MinGW and the most recent versions of Visual C++.
 
 
 ### 3.2 - Why do I get link errors when trying to build my program?
