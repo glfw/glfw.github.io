@@ -5,13 +5,10 @@ title: License
 
 ## License
 
-GLFW is licensed under an unmodified
-[zlib/libpng](http://www.opensource.org/licenses/zlib-license.php)
-license, which is an OSI-certified, BSD-like license that allows static linking
-with closed source software.  It is reproduced in its entirety below.
-
-You will also find it in the file `COPYING.txt` of the GLFW distribution and in
-the header of each source file.
+GLFW is licensed under the
+[zlib/libpng](http://www.opensource.org/licenses/zlib-license.php) license,
+a BSD-like license that allows static linking with closed source software.  It
+is reproduced in its entirety below.
 
 > Copyright &copy; 2002-2006 Marcus Geelnard
 > 
@@ -35,3 +32,6 @@ the header of each source file.
 > 
 > 3. This notice may not be removed or altered from any source
 >    distribution.
+
+You will find this license in the file `COPYING.txt` of the GLFW distribution
+and in the comment header of each source file.
