@@ -8,7 +8,7 @@
 @code-block-border-color: hsl(0, 0%, 80%);
 
 // Highlighted code blocks background color
-@code-block-background-color: hsl(0, 0%, 20%);
+@code-block-background-color: hsl(0, 0%, 95%);
 
 // Page horizontal rule, code block, table and block quote background color
 @page-background-color: hsl(0, 0%, 95%);
@@ -178,10 +178,6 @@ body, table, blockquote, code {
 	background-color: @page-background-color;
 }
 
-.highlight, .highlight code {
-	background-color: @code-block-background-color;
-}
-
 header.main {
 	height: @header-footer-height;
 	min-width: 800px;
@@ -248,7 +244,11 @@ figure img {
 
 // Syntax Highlighting
 
-.gs {
+.highlight, .highlight code {
+	background-color: @code-block-background-color;
+}
+
+.gs, .o, .kn, .nt, .ow, .k, .kc, .kd, .kp, .kr, .kt, .no {
 	font-weight: bold;
 }
 
@@ -256,35 +256,32 @@ figure img {
 	font-style: italic;
 }
 
-.hll {
-	background-color: #49483e;
-}
-
 .err {
-	color: #960050;
-	background-color: #1e0010;
+	color: hsl(322, 100%, 50%);
+	background-color: hsl(322, 100%, 10%);
 }
 
 .o, .kn, .nt, .ow {
-	color: #f92672;
+	color: hsl(322, 100%, 30%);
 }
 
 .k, .kc, .kd, .kp, .kr, .kt, .no {
-	color: #66d9ef;
+	color: darken(@default-text-color, 5%);
 }
 
 .l, .m, .mf, .mh, .mi, .mo, .se, .il {
-	color: #ae81ff;
+	color: hsl(322, 100%, 30%);
 }
 
 .c, .cm, .cp, .c1, .cs, .na, .nc, .nd, .ne, .nf, .nx {
-	color: #a6e22e;
+	color: hsl(193, 100%, 30%);
 }
 
 .s, .ld, .sb, .sc, .sd, .s2, .sh, .si, .sx, .sr, .s1, .ss {
-	color: #e6db74;
+	color: hsl(261, 100%, 30%);
+	background-color: hsl(261, 100%, 95%);
 }
 
 .n, .p, .w, .nb, .ni, .nl, .nn, .py, .nv, .bp, .vc, .vg, .vi {
-	color: #f8f8f2;
+	color: @default-text-color;
 }
