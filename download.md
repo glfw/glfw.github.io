@@ -64,7 +64,7 @@ missing from the list below, even if a binding is already listed for that langua
 | Language    | Maintainer          | Website |
 | ----------- | ------------------- | ------- |
 | Ada         | Felix Krause        | [https://github.com/flyx/OpenGLAda](https://github.com/flyx/OpenGLAda) |
-| C#          | Antonie Blom        | [https://github.com/antonijn/Pencil.Gaming](https://github.com/antonijn/Pencil.Gaming) |
+| C#          | Andy Korth          | [https://github.com/andykorth/Pencil.Gaming](https://github.com/andykorth/Pencil.Gaming) |
 | Common Lisp | Alex Charlton       | [https://github.com/AlexCharlton/cl-glfw3](https://github.com/AlexCharlton/cl-glfw3) |
 | D           | Mike Parker         | [https://github.com/aldacron/Derelict3](https://github.com/aldacron/Derelict3) |
 | Go          | Coşku Baş           | [https://github.com/go-gl/glfw3](https://github.com/go-gl/glfw3) |
