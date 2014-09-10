@@ -66,7 +66,7 @@ missing from the list below, even if a binding is already listed for that langua
 | Ada         | Felix Krause        | [https://github.com/flyx/OpenGLAda](https://github.com/flyx/OpenGLAda) |
 | C#          | Andy Korth          | [https://github.com/andykorth/Pencil.Gaming](https://github.com/andykorth/Pencil.Gaming) |
 | Common Lisp | Alex Charlton       | [https://github.com/AlexCharlton/cl-glfw3](https://github.com/AlexCharlton/cl-glfw3) |
-| D           | Mike Parker         | [https://github.com/aldacron/Derelict3](https://github.com/aldacron/Derelict3) |
+| D           | Mike Parker         | [https://github.com/DerelictOrg/DerelictGLFW3](https://github.com/DerelictOrg/DerelictGLFW3) |
 | Go          | Coşku Baş           | [https://github.com/go-gl/glfw3](https://github.com/go-gl/glfw3) |
 | Haskell     | Brian Lewis         | [https://github.com/bsl/GLFW-b](https://github.com/bsl/GLFW-b) |
 | Java        | Nathan Sweet        | [https://github.com/badlogic/jglfw](https://github.com/badlogic/jglfw) |
