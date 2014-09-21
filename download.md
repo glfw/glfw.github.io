@@ -53,7 +53,12 @@ library binaries for Visual C++ 2012, Visual C++ 2013 and MinGW / MinGW-w64.
 
 ### Linux and OS X binaries
 
-Please compile from source or (where available) use the binaries provided by your package system.
+Please download and compile the source package above.  There is a [guide for
+compiling GLFW](/docs/latest/compile.html) in the documentation.
+
+Some package systems, for example MacPorts and Arch Linux, include relatively
+up-to-date GLFW packages, but many sadly do not.  If you intend to use a GLFW
+package, please verify that its version fits your needs.
 
 ### Bindings
 
