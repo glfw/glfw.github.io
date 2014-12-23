@@ -303,7 +303,7 @@ will let you include the GLFW and extension loader headers in any order:
 {% endhighlight %}
 
 
-### 2.16 How do I use C++ methods as callbacks?
+### 2.16 - How do I use C++ methods as callbacks?
 
 You cannot use regular methods as callbacks, as GLFW is a C library and doesn't
 know about objects and `this` pointers.  If you wish to receive callbacks to
