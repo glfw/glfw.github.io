@@ -48,6 +48,12 @@ GLFW matches the description of *other mechanisms* quite well.
 
 GLFW is *by design* not...
 
+- an implementation of OpenGL or OpenGL ES.  It wraps the various
+  platform-specific context creation API.
+- an OpenGL or OpenGL ES header.  It includes the API headers already provided
+  by your development environment.
+- an OpenGL or OpenGL ES extension loader.  There are already good extension
+  loader libraries.
 - a user interface library.  It allows you to create top-level windows with
   OpenGL contexts.  No menus, no buttons.
 - a Windows-only library.  Requests for features that cannot be portably
