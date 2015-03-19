@@ -5,29 +5,22 @@ title: Documentation
 
 ## Documentation
 
-### Guides and reference manual
+The [HTML documentation](/docs/latest/) contains both tutorials, guides for
+different topics and an API reference.
 
-GLFW has [comprehensive HTML documentation](/docs/latest/) generated with
-[Doxygen](http://www.stack.nl/~dimitri/doxygen/), containing both an API
-reference, guides for different parts of the API, a tutorial for beginners and
-a transition guide for users of GLFW 2.
+The [FAQ](faq.html) answers many commonly asked questions about the design,
+implementation and use of GLFW.
 
 ### License
 
-GLFW is licensed under the [zlib/libpng license](license.html), a simple license
-that permits modification, distribution and use in closed source software.
-
-### FAQ
-
-The [GLFW FAQ](faq.html) answers many of the commonly asked questions about the
-design, inner workings and use of the library.
+GLFW is under the [zlib/libpng license](license.html), which permits modification,
+distribution and use in closed source software.
 
 ### Example code
 
 Below is a short example of setting up a window and OpenGL context with GLFW.
-There are many more functions than those used here.  For a more complete
-introduction to GLFW, see [Getting started](/docs/latest/quick.html)
-in the documentation.
+There are many more functions than those used here.  For a quick introduction to
+GLFW, see [Getting started](/docs/latest/quick.html) in the HTML documentation.
 
 {% highlight c %}
 #include <GLFW/glfw3.h>

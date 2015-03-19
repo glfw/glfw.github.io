@@ -9,12 +9,10 @@ title: FAQ
 This page attempts to address some of the most commonly asked questions that we
 have received from GLFW users.
 
-If your questions are not answered here, please do [contact us](community.html).
-
 ### Table of contents
 {:.no_toc}
 
-* This will become a table of contents (this text will be scraped).
+* This will become a table of contents (this text will be discarded).
 {:toc}
 
 ---
