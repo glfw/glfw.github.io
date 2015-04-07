@@ -40,7 +40,7 @@ GitHub repository
 These packages contain complete GLFW header file,
 [documentation](documentation.html) and release mode DLL and static
 library binaries for Visual C++ 2010 (32-bit only), Visual C++ 2012, Visual C++
-2013 and MinGW / MinGW-w64.
+2013 and MinGW-w64.
 {% endcol %}
 {% col 1-3 %}
 {% button http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.WIN32.zip/download %}
