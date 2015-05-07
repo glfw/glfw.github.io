@@ -22,7 +22,7 @@ GLFW is licensed under the [zlib/libpng license](license.html).
 
 {% col 1-3 %}
 
-{% button http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.zip/download %}
+{% button https://github.com/glfw/glfw/releases/download/{{ glfwversion }}/glfw-{{ glfwversion }}.zip %}
 Download GLFW {{ glfwversion }}
 <br>
 <small>Released on {% include time.html date=releasedate %}</small>

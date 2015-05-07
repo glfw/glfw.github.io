@@ -24,7 +24,7 @@ The latest version of the source code, including tags for all releases,
 is always available in our Git repository.
 {% endcol %}
 {% col 1-3 %}
-{% button http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.zip/download %}
+{% button https://github.com/glfw/glfw/releases/download/{{ glfwversion }}/glfw-{{ glfwversion }}.zip %}
 Source package
 {% endbutton %}
 {% button https://github.com/glfw/glfw %}
@@ -43,10 +43,10 @@ library binaries for Visual C++ 2010 (32-bit only), Visual C++ 2012, Visual C++
 2013 and MinGW-w64.
 {% endcol %}
 {% col 1-3 %}
-{% button http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.WIN32.zip/download %}
+{% button https://github.com/glfw/glfw/releases/download/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.WIN32.zip %}
 32-bit Windows binaries
 {% endbutton %}
-{% button http://sourceforge.net/projects/glfw/files/glfw/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.WIN64.zip/download %}
+{% button https://github.com/glfw/glfw/releases/download/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.WIN64.zip %}
 64-bit Windows binaries
 {% endbutton %}
 {% endcol %}
