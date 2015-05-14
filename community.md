@@ -17,5 +17,4 @@ If you find a problem related to this website, please submit an issue to the
 [website repository](https://github.com/glfw/website/issues).
 
 Finally, if you want to help with the development of GLFW, join us on GitHub or
-IRC.  There is also an occasionally active
-[developer's mailing list](https://lists.stacken.kth.se/mailman/listinfo/glfw-dev).
+IRC.
