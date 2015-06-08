@@ -65,8 +65,9 @@ package, please verify that its version fits your needs.
 
 Bindings for other languages are created and maintained by the community and are
 not part of GLFW itself.  Please [let us
-know](https://github.com/glfw/website/issues) if any bindings are missing from
-the list below, even if a binding is already listed for that language.
+know](https://github.com/glfw/website/issues) if any fully functional bindings
+are missing in the list below.  We will happily list multiple bindings for the
+same language.
 
 | Language    | Maintainer          | Website |
 | ----------- | ------------------- | ------- |
