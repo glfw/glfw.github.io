@@ -343,13 +343,6 @@ Modern graphics drivers have settings that allow users to override an
 application's request for (among other things) swap interval.  If such a setting
 is enabled, `glfwSwapInterval` will have no effect.
 
-Swap interval setting is also by default disabled by GLFW on Windows Vista and
-later version when using DWM (Aero), as setting the swap interval there leads to
-severe jitter on some hardware.  You can forcibly enable this with
-a compile-time option.  See the
-[Compiling GLFW](http://www.glfw.org/docs/latest/compile.html) guide for
-details.
-
 
 ### 3.4 - What libraries should I link with?
 
