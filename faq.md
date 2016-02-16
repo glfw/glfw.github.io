@@ -21,17 +21,17 @@ have received from GLFW users.
 
 ### 1.1 - What is GLFW?
 
-GLFW is a small C library that lets you create and manage windows with OpenGL
-contexts, enumerate monitors and video modes as well as handle inputs such as
-keyboard, mouse, joystick, clipboard and time.
+GLFW is a small C library that lets you create and manage windows, OpenGL
+and OpenGL ES contexts and Vulkan surfaces, enumerate monitors and video modes
+as well as handle inputs such as keyboard, mouse, joystick, clipboard and time.
 
 GLFW provides a thin, multi-platform abstraction layer, primarily for
-applications whose sole graphics output is through the OpenGL API.  While GLFW
-is very useful when developing multi-platform OpenGL applications,
+applications whose sole graphics output is through OpenGL, OpenGL ES or Vulkan.
+While GLFW is very useful when developing multi-platform OpenGL applications,
 single-platform developers can also benefit from avoiding having to deal with
 kludgy platform-specific APIs.
 
-The reason that libraries like GLFW are needed is that OpenGL by itself does not
+Libraries like GLFW are useful because OpenGL and OpenGL ES by themselves do not
 provide any mechanisms for creating the necessary context, managing windows,
 user input, timing etc.  As stated in the OpenGL 3.1 Specification (chapter 2,
 first paragraph):
@@ -43,19 +43,23 @@ first paragraph):
 
 GLFW matches the description of *other mechanisms* quite well.
 
+Unlike the GL APIs, Vulkan does provide its own instance and surface creation
+functions, but surface creation is platform-specific and the API still only
+covers rendering.
+
 
 ### 1.2 - What is GLFW not?
 
 GLFW is *by design* not...
 
-- an implementation of OpenGL or OpenGL ES.  It wraps the various
-  platform-specific context creation API.
-- an OpenGL or OpenGL ES header.  It includes the API headers already provided
-  by your development environment.
-- an OpenGL or OpenGL ES extension loader.  There are already good extension
-  loader libraries.
+- an implementation of OpenGL, OpenGL ES or Vulkan.  It wraps the various
+  platform-specific context and surface creation API.
+- an OpenGL, OpenGL ES or Vulkan header.  It includes the API headers already
+  provided by your development environment.
+- an OpenGL, OpenGL ES or Vulkan extension loader.  There are already good
+  extension loader libraries for the GL APIs.
 - a user interface library.  It allows you to create top-level windows with
-  OpenGL contexts.  No menus, no buttons.
+  OpenGL and OpenGL ES contexts and Vulkan surfaces.  No menus, no buttons.
 - a Windows-only library.  Requests for features that cannot be portably
   implemented will be denied unless they are unobtrusive, like the Windows port
   looking for a `GLFW_ICON` resource at window creation.
@@ -218,7 +222,8 @@ codes 160-255, ISO 8859-1 is able to support many European languages.
 
 ### 2.9 - Is GLFW thread safe?
 
-Some parts are, specifically those needed to allow rendering from secondary threads.
+Some parts are, specifically those needed to allow rendering and Vulkan object
+creation from secondary threads.
 
 
 ### 2.10 - Can I check several keys at once?
