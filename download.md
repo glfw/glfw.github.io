@@ -57,9 +57,9 @@ library binaries for Visual C++ 2010 (32-bit only), Visual C++ 2012, Visual C++
 Please download and compile the source package above.  There is a [guide for
 compiling GLFW](/docs/latest/compile.html) in the documentation.
 
-Some package systems, for example MacPorts and Arch Linux, include relatively
-up-to-date GLFW packages, but most sadly do not.  If you intend to use a GLFW
-package, please verify that its version fits your needs.
+Some package systems, for example NuGet, MacPorts and Arch Linux include
+relatively up-to-date GLFW packages, but most sadly do not.  If you intend to
+use a GLFW package, please verify that its version fits your needs.
 
 ### Bindings
 
