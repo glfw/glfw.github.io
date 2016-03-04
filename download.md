@@ -75,6 +75,7 @@ same language.
 | C#          | Andy Korth          | [https://github.com/andykorth/Pencil.Gaming](https://github.com/andykorth/Pencil.Gaming) |
 | Common Lisp | Alex Charlton       | [https://github.com/AlexCharlton/cl-glfw3](https://github.com/AlexCharlton/cl-glfw3) |
 | D           | Mike Parker         | [https://github.com/DerelictOrg/DerelictGLFW3](https://github.com/DerelictOrg/DerelictGLFW3) |
+| Dart        | Harry Stern         | [https://github.com/google/dart-glfw](https://github.com/google/dart-glfw) |
 | Duktape     | Laurent Zubiaur     | [https://github.com/lzubiaur/duk-glfw](https://github.com/lzubiaur/duk-glfw) |
 | Go          | Coşku Baş           | [https://github.com/go-gl/glfw](https://github.com/go-gl/glfw) |
 | Haskell     | Brian Lewis         | [https://github.com/bsl/GLFW-b](https://github.com/bsl/GLFW-b) |
