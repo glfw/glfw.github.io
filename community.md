@@ -5,16 +5,17 @@ title: Community
 
 ## Community
 
-If you have questions related to the use of GLFW, we have a
-[users web forum](https://sourceforge.net/p/glfw/discussion/247562/)
-and the IRC channel `#glfw` on [Freenode](http://freenode.net/).
+The [users forum](http://discourse.glfw.org/) is a good place to ask questions
+about GLFW and talk to others using it.
 
-If you have a bug to report, a feature you'd like to request or a patch
-you wish to submit, please submit an issue or a pull request to the
-[GLFW repository](https://github.com/glfw/glfw/issues).
+The [IRC channel](http://webchat.freenode.net?randomnick=1&channels=%23glfw)
+named `#glfw` on [Freenode](http://freenode.net/) is a good place both for questions
+and for helping out with or just following the day-to-day development.
 
-If you find a problem related to this website, please submit an issue to the 
-[website repository](https://github.com/glfw/website/issues).
+The [issue tracker](https://github.com/glfw/glfw/issues) is where to post bug
+reports, feature requests and pull requests.
 
-Finally, if you want to help with the development of GLFW, join us on GitHub or
-IRC.
+If you find a bug or have a suggestion for this website, please submit an issue
+or a pull request to the [website issue
+tracker](https://github.com/glfw/website/issues).
+
