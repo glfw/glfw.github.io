@@ -106,7 +106,7 @@ with portability in mind.
 
 ### 1.5 - What versions of OpenGL are supported by GLFW?
 
-In short, all versions provided by your operating system.
+__TL;DR__ All versions supported by your operating system, driver and GPU.
 
 This question likely stems from the original version of the
 [`WGL_ARB_create_context`](http://www.opengl.org/registry/specs/ARB/wgl_create_context.txt)
