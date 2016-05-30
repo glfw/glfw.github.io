@@ -96,9 +96,9 @@ managing OpenGL contexts, windows and input.
 
 ### 1.4 - What platforms are supported by GLFW?
 
-Currently, GLFW supports Windows, OS X and Unix-like operating systems with the
-X Window System, such as Linux and FreeBSD.  Support for Wayland and Mir is
-available but not yet feature complete.
+Currently, GLFW supports Windows (XP and later), OS X (10.7 Lion and later) and
+Unix-like operating systems with the X Window System, such as Linux, FreeBSD and
+Cygwin.  Support for Wayland and Mir is available but not yet feature complete.
 
 GLFW is designed to be as portable as possible, and the code has been written
 with portability in mind.
