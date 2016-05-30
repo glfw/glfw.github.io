@@ -215,7 +215,9 @@ for more information about Unicode.*
 ### 2.9 - Is GLFW thread safe?
 
 Some parts are, specifically those needed to allow rendering and Vulkan object
-creation from secondary threads.
+creation from secondary threads.  See [Thread
+Safety](http://www.glfw.org/docs/latest/intro.html#thread_safety) in the
+documentation for details.
 
 
 ### 2.10 - Can I check several keys at once?
