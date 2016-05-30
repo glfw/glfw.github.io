@@ -326,8 +326,9 @@ use it to call methods on your object.
 ### 3.1 - What compilers are supported by GLFW?
 
 Currently, GLFW releases are tested with MinGW, MinGW-w64 and Visual C++ 2010,
-2012 and 2013, but it should work with any compiler that supports C99 (C89 on
-Windows).  Very old development environments may require updated system headers.
+2012, 2013 and 2015, but it should work with any compiler that supports C99 (C89
+on Windows).  Very old development environments may require updated system
+headers.
 
 The Windows binary distribution of GLFW contains pre-compiled libraries
 for both MinGW and the most recent versions of Visual C++.
