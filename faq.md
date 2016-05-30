@@ -97,7 +97,8 @@ managing OpenGL contexts, windows and input.
 ### 1.4 - What platforms are supported by GLFW?
 
 Currently, GLFW supports Windows, OS X and Unix-like operating systems with the
-X Window System, such as Linux and FreeBSD.
+X Window System, such as Linux and FreeBSD.  Support for Wayland and Mir is
+available but not yet feature complete.
 
 GLFW is designed to be as portable as possible, and the code has been written
 with portability in mind.
@@ -236,23 +237,27 @@ On Windows, the `QueryPerformanceCounter` API is used if available, with
 
 On OS X, the Mach `mach_absolute_time` time source is used.
 
-On Unix-like operating systems using the X11 port, the POSIX `CLOCK_MONOTONIC`
-time source is used if available, with `gettimeofday` as a fallback.
+On Unix-like operating systems using the X11, Wayland and Mir ports, the POSIX
+`CLOCK_MONOTONIC` time source is used if available, with `gettimeofday` as
+a fallback.
 
 
 ### 2.12 - What window system APIs does GLFW use?
 
-On Windows, plain Win32 is used for window and input management, and WGL (with
-extensions) is used to create contexts.
+On Windows, plain Win32 is used for window and input management, and WGL or EGL
+to create OpenGL and OpenGL ES contexts.
 
-On OS X, Cocoa is used for window and input management, and NSOpenGL for context
-creation.
+On OS X, Cocoa is used for window and input management, and NSOpenGL to create
+OpenGL contexts.
 
 On Unix-like systems using the X Window System, the Xlib API is used for window
-and input management, the XRandR or XF86VidMode extension (if available) for
-display mode management, and GLX (with extensions) for context creation.
+and input management, and GLX or EGL to create OpenGL and OpenGL ES contexts.
 
-There is also an EGL backend that works with the Win32 and Xlib APIs.
+On Linux systems using Wayland, the Wayland API is used for window and input
+management, and EGL to create OpenGL and OpenGL ES contexts.
+
+On Linux systems using Mir, the Mir API is used for window and input management,
+and EGL to create OpenGL and OpenGL ES contexts.
 
 
 ### 2.13 - Why doesn't your gl.h have the functions I need?
