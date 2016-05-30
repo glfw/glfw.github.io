@@ -195,7 +195,7 @@ As there is no reason why message box code has to be integrated into GLFW,
 it is better to leave that functionality to a separate library.
 
 
-### 2.8 - What is Unicode and ISO 8859-1?
+### 2.8 - What is Unicode?
 
 **Unicode** (sometimes referred to as ISO 10646), is a character coding standard
 that encodes virtually every character from every written language in the world
@@ -209,15 +209,6 @@ for more information about Unicode.*
 
 *See also
 [Wikipedia on Unicode](http://en.wikipedia.org/wiki/Unicode).*
-
-**ISO 8859-1** (also known as *Latin 1*), is a very limited subset of the
-Unicode character set. It represents the lowest 0-255 codes of the Unicode
-character set, and can thus be coded with a single byte.  Character codes 32-126
-are equal to the US-ASCII character set. However, with the additional character
-codes 160-255, ISO 8859-1 is able to support many European languages.
-
-*See also
-[Wikipedia on ISO 8859-1](http://en.wikipedia.org/wiki/ISO/IEC_8859-1).*
 
 
 ### 2.9 - Is GLFW thread safe?
