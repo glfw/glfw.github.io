@@ -49,33 +49,23 @@ If you feel your application should be listed here, please
 [contact us](community.html).
 
 {% for post in site.tags.media %}
----
 
-<article>
-<header>
-<h3>{{ post.title }}</h3>
-</header>
+{% assign loopindex = forloop.index | modulo: 2 %}
 
-{% row %}
+{% if loopindex == 1 %}
+<div class="pure-g-r">
+{% endif %}
 
-{% col 1-2 %}
-{{ post.content }}
-{% endcol %}
-{% col 1-2 %}
-<figure>
+<div class="pure-u-1-2">
+<a href="{{ post.url }}">
 <img alt="{{ post.photoalt }}" src="{{ post.photourl }}">
-<figcaption>
-<p>
-<small>
-{{ post.copynotice}}
-</small>
-</p>
-</figcaption>
-</figure>
-{% endcol %}
-{% endrow %}
+</a>
+</div>
 
-</article>
+{% if loopindex == 0 or forloop.last == true %}
+</div>
+{% endif %}
+
 {% endfor %}
 {% endcol %}
 
