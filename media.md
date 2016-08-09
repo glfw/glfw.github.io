@@ -59,7 +59,7 @@ If you feel your application should be listed here, please
 <div class="pure-u-1-2">
 <div class="thumbnail">
 <a href="{{ post.url }}">
-<img alt="{{ post.photoalt }}" src="{{ post.photourl }}">
+<img alt="{{ post.photoalt }}" src="{{ post.photomin }}">
 </a>
 </div>
 </div>

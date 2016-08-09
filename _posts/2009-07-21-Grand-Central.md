@@ -2,6 +2,7 @@
 layout: multimedia
 title: Grand Central
 tags: media , news
+photomin: screenshots/mini-grandcentral.png
 photourl: screenshots/grandcentral.png
 photoalt: Screenshot of Grand Central
 copynotice:
