@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: media
 title: Media
 ---
 
@@ -58,7 +58,7 @@ If you feel your application should be listed here, please
 
 <div class="pure-u-1-2">
 <div class="thumbnail">
-<a href="{{ post.url }}">
+<a href="{{ post.url }}" class="hint--bottom hint--rounded" aria-label="{{ post.title }}">
 <img alt="{{ post.photoalt }}" src="{{ post.photomin }}">
 </a>
 </div>
