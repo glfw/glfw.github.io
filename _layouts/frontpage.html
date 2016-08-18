@@ -16,6 +16,10 @@
 					if (this.status >= 200 && this.status < 400) {
 						var data = JSON.parse(this.response);
 
+						data = data.filter(function (item) {
+						return (item.title.split(".").length-1) === 1;
+						});
+
 						data.sort(function (a, b) {
 						return a.title - b.title;
 						});
