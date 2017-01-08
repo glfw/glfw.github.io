@@ -52,7 +52,7 @@ library binaries for Visual C++ 2010 (32-bit only), Visual C++ 2012, Visual C++
 {% endcol %}
 {% endrow %}
 
-### Linux and OS X binaries
+### Linux and macOS binaries
 
 Please download and compile the source package above.  There is a [guide for
 compiling GLFW](/docs/latest/compile.html) in the documentation.

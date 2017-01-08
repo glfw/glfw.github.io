@@ -96,7 +96,7 @@ managing OpenGL contexts, windows and input.
 
 ### 1.4 - What platforms are supported by GLFW?
 
-Currently, GLFW supports Windows (XP and later), OS X (10.7 Lion and later) and
+Currently, GLFW supports Windows (XP and later), macOS (10.7 Lion and later) and
 Unix-like operating systems with the X Window System, such as Linux, FreeBSD and
 Cygwin.  Support for Wayland and Mir is available but not yet feature complete.
 
@@ -125,14 +125,14 @@ extension.  Most modern drivers do this.
 Explicit creation of OpenGL contexts of version 3.0 and above on Windows and
 X11, including profiles and flags, is supported by GLFW 2.7 and later.
 
-However, OS X did not support OpenGL 3.0 or later at the time that GLFW 2.7 was
+However, macOS did not support OpenGL 3.0 or later at the time that GLFW 2.7 was
 released, and the support that Apple has since added only includes
 forward-compatible OpenGL 3.2 core profile contexts.  Additionally, creating
 such contexts requires new code, so older versions of GLFW cannot create OpenGL
-3.0 contexts on OS X.
+3.0 contexts on macOS.
 
-The first version to support creation of OpenGL 3.2 contexts on OS X Lion and
-later was GLFW 2.7.2.
+The first version of GLFW to support creation of OpenGL 3.2 contexts on macOS was
+2.7.2.
 
 
 ---
@@ -237,7 +237,7 @@ right CTRL key with `glfwGetKey(window, GLFW_KEY_LEFT_CONTROL)` or
 On Windows, the `QueryPerformanceCounter` API is used if available, with
 `timeGetTime` as a fallback.
 
-On OS X, the Mach `mach_absolute_time` time source is used.
+On macOS, the Mach `mach_absolute_time` time source is used.
 
 On Unix-like operating systems using the X11, Wayland and Mir ports, the POSIX
 `CLOCK_MONOTONIC` time source is used if available, with `gettimeofday` as
@@ -249,7 +249,7 @@ a fallback.
 On Windows, plain Win32 is used for window and input management, and WGL or EGL
 to create OpenGL and OpenGL ES contexts.
 
-On OS X, Cocoa is used for window and input management, and NSOpenGL to create
+On macOS, Cocoa is used for window and input management, and NSOpenGL to create
 OpenGL contexts.
 
 On Unix-like systems using the X Window System, the Xlib API is used for window
@@ -365,11 +365,11 @@ you should render from a secondary thread.
 
 ---
 
-## OS X
+## macOS
 
 ### 4.1 - How do I create an OpenGL 3.0+ context?
 
-The only OpenGL 3.x and 4.x contexts currently supported by OS X are
+The only OpenGL 3.x and 4.x contexts currently supported by macOS are
 forward-compatible, core profile contexts.  The supported versions are 3.2
 on 10.7 Lion and 3.3 and 4.1 on 10.9 Mavericks.  In all cases, your GPU needs to
 support the specified OpenGL version for context creation to succeed.
@@ -404,7 +404,7 @@ guide for details.
 ### 4.3 - Why is my output in the lower-left corner of the window?
 
 You are passing the window size, which is in screen coordinates, to
-`glViewport`, which works with pixels.  On OS X with a Retina display, and
+`glViewport`, which works with pixels.  On macOS with a Retina display, and
 possibly on other platforms in the future, screen coordinates and pixels do not
 map 1:1.  Use the framebuffer size, which is in pixels, instead of the window
 size.  See the
