@@ -2,6 +2,7 @@
 layout: multimedia
 title: The Polynomial
 tags: media , news
+photomin: screenshots/mini-polynomial.png
 photourl: screenshots/polynomial.png
 photoalt: Screenshot of The Polynomial gameplay
 copynotice: Screenshot Copyright © Dmytry Lavrov

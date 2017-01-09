@@ -2,6 +2,7 @@
 layout: multimedia
 title: "TimeLines: Assault on America"
 tags: media , news
+photomin: screenshots/mini-timelines.png
 photourl: screenshots/timelines.png
 photoalt: "Screenshot of TimeLines: Assault on America"
 copynotice: Screenshot Copyright © 4Flash Interactive

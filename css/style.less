@@ -72,6 +72,27 @@
 	box-shadow: inset 0 0 32px @button-shade2, 0 0 2px @button-shadow;
 }
 
+.thumbnail {
+	text-align: center;
+	background: @button-shade1;
+	border: 4px solid @button-shade1;
+	margin: .2em;
+	padding: 0;
+	max-height: 80px;
+	max-width: 130px;
+}
+
+.thumbnail:hover {
+	background: @button-shade2;
+	border: 4px solid @button-shade2;
+}
+
+.thumbnail img {
+	height: 80px;
+	width: 130px;
+	display: block;
+}
+
 #milestone-container {
 	color: @default-text-color;
 	background: linear-gradient(@prog-body-shade2 0%,@prog-body-shade1 100%);
@@ -129,7 +150,7 @@ blockquote, .highlight {
 	overflow: auto;
 }
 
-code, blockquote, table, .highlight, .button, #milestone-container, #progress-bar, #progress-bar-inner {
+code, blockquote, table, .highlight, .button, .thumbnail, #milestone-container, #progress-bar, #progress-bar-inner {
 	border-radius: 4px;
 }
 
@@ -166,7 +187,7 @@ header a, footer a {
 	color: @nav-footer-color;
 }
 
-header a, footer a, .button {
+header a, footer a, .button, .thumbnail {
 	transition: .35s ease;
 }
 
