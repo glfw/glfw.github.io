@@ -83,6 +83,7 @@ same language.
 | Julia       | Jay Weisskopf       | [https://github.com/JuliaGL/GLFW.jl](https://github.com/JuliaGL/GLFW.jl) |
 | LuaJIT      | Oleg Dudka          | [https://github.com/Playermet/luajit-glfw](https://github.com/Playermet/luajit-glfw) |
 | Nimrod      | Erik Andersson      | [https://github.com/EXetoC/nim-glfw](https://github.com/EXetoC/nim-glfw) |
+| Node.js     | M. Damian Mulligan  | [https://github.com/glek/node-glfw-bindings](https://github.com/glek/node-glfw-bindings) |
 | Node.js     | Mikaël Sévenier     | [https://github.com/mikeseven/node-glfw](https://github.com/mikeseven/node-glfw) |
 | Python      | Florian Rhiem       | [https://github.com/FlorianRhiem/pyGLFW](https://github.com/FlorianRhiem/pyGLFW) |
 | Python      | Nicolas P. Rougier  | [https://github.com/rougier/pyglfw](https://github.com/rougier/pyglfw) |
