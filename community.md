@@ -5,8 +5,8 @@ title: Community
 
 ## Community
 
-The [users forum](http://discourse.glfw.org/) is a good place to ask questions
-about GLFW and talk to others using it.
+The [forum](http://discourse.glfw.org/) is a good place to ask questions about
+GLFW and talk to others using it.
 
 The [IRC channel](http://webchat.freenode.net?randomnick=1&channels=%23glfw)
 named `#glfw` on [Freenode](http://freenode.net/) is a good place both for questions
