@@ -82,6 +82,7 @@ same language.
 | Java        | Nathan Sweet        | [https://github.com/badlogic/jglfw](https://github.com/badlogic/jglfw) |
 | Julia       | Jay Weisskopf       | [https://github.com/JuliaGL/GLFW.jl](https://github.com/JuliaGL/GLFW.jl) |
 | LuaJIT      | Oleg Dudka          | [https://github.com/Playermet/luajit-glfw](https://github.com/Playermet/luajit-glfw) |
+| .NET        | Victor P. R. Müller | [https://github.com/realvictorprm/GLFW3.NET](https://github.com/realvictorprm/GLFW3.NET) |
 | Nimrod      | Erik Andersson      | [https://github.com/EXetoC/nim-glfw](https://github.com/EXetoC/nim-glfw) |
 | Node.js     | M. Damian Mulligan  | [https://github.com/glek/node-glfw-bindings](https://github.com/glek/node-glfw-bindings) |
 | Node.js     | Mikaël Sévenier     | [https://github.com/mikeseven/node-glfw](https://github.com/mikeseven/node-glfw) |
