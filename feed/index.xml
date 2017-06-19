@@ -11,7 +11,7 @@ layout: nil
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>http://www.glfw.org/</id>
 	<author>
-		<name>elmindreda</name>
+		<name>GLFW</name>
 		<email>webmaster@glfw.org</email>
 	</author>
 
