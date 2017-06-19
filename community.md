@@ -5,53 +5,87 @@ title: Community
 
 ## Community
 
-The [forum](http://discourse.glfw.org/) is a good place to ask questions about
-GLFW and talk to others using it.
+The [Discourse forum](http://discourse.glfw.org/) is a good place for support
+questions and general discussions.
 
-The [IRC channel](http://webchat.freenode.net?randomnick=1&channels=%23glfw)
-named `#glfw` on [Freenode](http://freenode.net/) is a good place both for questions
-and for helping out with or just following the day-to-day development.
+The IRC channel `#glfw` on
+[Freenode](http://webchat.freenode.net?randomnick=1&channels=%23glfw) is both
+for support questions and for following or helping out with the day-to-day
+development.
 
-The [issue tracker](https://github.com/glfw/glfw/issues) is where to post bug
-reports, feature requests and pull requests.
+The [library issue tracker](https://github.com/glfw/glfw/issues) is where to
+post issues for the library and its documentation.
 
-If you find a bug or have a suggestion for this website, please submit an issue
-or a pull request to the [website issue
-tracker](https://github.com/glfw/website/issues).
+The [website issue tracker](https://github.com/glfw/website/issues) is where to
+post issues for this website, except for anything in `/docs/`.
 
+{% row %}
+
+{% col 3-5 %}
 
 ### Bindings
 
 Bindings for other languages are created and maintained by the community and are
 not part of GLFW itself.  Please [let us
-know](https://github.com/glfw/website/issues) if any fully functional bindings
-are missing in the list below.  We will happily list multiple bindings for the
-same language.
+know](https://github.com/glfw/website/issues) if one should be added or removed.
 
-| Language    | Maintainer          | Website |
+| Language    | Maintainer          | Source |
 | ----------- | ------------------- | ------- |
-| Ada         | Felix Krause        | [https://github.com/flyx/OpenGLAda](https://github.com/flyx/OpenGLAda) |
-| C#          | Andy Korth          | [https://github.com/andykorth/Pencil.Gaming](https://github.com/andykorth/Pencil.Gaming) |
-| C#          | Zachary Snow        | [https://github.com/calebuharrison/LibGLFW](https://github.com/calebuharrison/LibGLFW) |
-| Common Lisp | Alex Charlton       | [https://github.com/AlexCharlton/cl-glfw3](https://github.com/AlexCharlton/cl-glfw3) |
-| Crystal     | Caleb Harrison      | [https://github.com/calebuharrison/LibGLFW](https://github.com/calebuharrison/LibGLFW) |
-| D           | Mike Parker         | [https://github.com/DerelictOrg/DerelictGLFW3](https://github.com/DerelictOrg/DerelictGLFW3) |
-| Dart        | Harry Stern         | [https://github.com/google/dart-glfw](https://github.com/google/dart-glfw) |
-| Duktape     | Laurent Zubiaur     | [https://github.com/lzubiaur/duk-glfw](https://github.com/lzubiaur/duk-glfw) |
-| Go          | Coşku Baş           | [https://github.com/go-gl/glfw](https://github.com/go-gl/glfw) |
-| Haskell     | Brian Lewis         | [https://github.com/bsl/GLFW-b](https://github.com/bsl/GLFW-b) |
-| Java        | Nathan Sweet        | [https://github.com/badlogic/jglfw](https://github.com/badlogic/jglfw) |
-| Julia       | Jay Weisskopf       | [https://github.com/JuliaGL/GLFW.jl](https://github.com/JuliaGL/GLFW.jl) |
-| LuaJIT      | Oleg Dudka          | [https://github.com/Playermet/luajit-glfw](https://github.com/Playermet/luajit-glfw) |
-| .NET        | Victor P. R. Müller | [https://github.com/realvictorprm/GLFW3.NET](https://github.com/realvictorprm/GLFW3.NET) |
-| Nimrod      | Erik Andersson      | [https://github.com/EXetoC/nim-glfw](https://github.com/EXetoC/nim-glfw) |
-| Node.js     | M. Damian Mulligan  | [https://github.com/glek/node-glfw-bindings](https://github.com/glek/node-glfw-bindings) |
-| Node.js     | Mikaël Sévenier     | [https://github.com/mikeseven/node-glfw](https://github.com/mikeseven/node-glfw) |
-| Python      | Florian Rhiem       | [https://github.com/FlorianRhiem/pyGLFW](https://github.com/FlorianRhiem/pyGLFW) |
-| Python      | Nicolas P. Rougier  | [https://github.com/rougier/pyglfw](https://github.com/rougier/pyglfw) |
-| Rebol       | François Jouen      | [https://github.com/ldci/glfw-rebol](https://github.com/ldci/glfw-rebol) |
-| Red         | François Jouen      | [https://github.com/ldci/glfw-red](https://github.com/ldci/glfw-red) |
-| Ruby        | Noel Cower          | [https://github.com/nilium/ruby-glfw3](https://github.com/nilium/ruby-glfw3) |
-| Rust        | Brendan Zabarauskas | [https://github.com/bjz/glfw-rs](https://github.com/bjz/glfw-rs) |
-| Scheme      | Tomas Möre          | [https://github.com/black0range/gambit-GLFW](https://github.com/black0range/gambit-GLFW) |
+| Ada         | Felix Krause        | [OpenGLAda](https://github.com/flyx/OpenGLAda) |
+| C#          | Andy Korth          | [Pencil.Gaming](https://github.com/andykorth/Pencil.Gaming) |
+| C#          | Zachary Snow        | [LibGLFW](https://github.com/calebuharrison/LibGLFW) |
+| Common Lisp | Alex Charlton       | [cl-glfw3](https://github.com/AlexCharlton/cl-glfw3) |
+| Crystal     | Caleb Harrison      | [LibGLFW](https://github.com/calebuharrison/LibGLFW) |
+| D           | Mike Parker         | [DerelictGLFW3](https://github.com/DerelictOrg/DerelictGLFW3) |
+| Dart        | Harry Stern         | [dart-glfw](https://github.com/google/dart-glfw) |
+| Duktape     | Laurent Zubiaur     | [duk-glfw](https://github.com/lzubiaur/duk-glfw) |
+| Go          | Coşku Baş           | [glfw](https://github.com/go-gl/glfw) |
+| Haskell     | Brian Lewis         | [GLFW-b](https://github.com/bsl/GLFW-b) |
+| Java        | Nathan Sweet        | [jglfw](https://github.com/badlogic/jglfw) |
+| Julia       | Jay Weisskopf       | [GLFW.jl](https://github.com/JuliaGL/GLFW.jl) |
+| LuaJIT      | Oleg Dudka          | [luajit-glfw](https://github.com/Playermet/luajit-glfw) |
+| .NET        | Victor P. R. Müller | [GLFW3.NET](https://github.com/realvictorprm/GLFW3.NET) |
+| Nimrod      | Erik Andersson      | [nim-glfw](https://github.com/EXetoC/nim-glfw) |
+| Node.js     | M. Damian Mulligan  | [node-glfw-bindings](https://github.com/glek/node-glfw-bindings) |
+| Node.js     | Mikaël Sévenier     | [node-glfw](https://github.com/mikeseven/node-glfw) |
+| Python      | Florian Rhiem       | [pyGLFW](https://github.com/FlorianRhiem/pyGLFW) |
+| Python      | Nicolas P. Rougier  | [pyglfw](https://github.com/rougier/pyglfw) |
+| Rebol       | François Jouen      | [glfw-rebol](https://github.com/ldci/glfw-rebol) |
+| Red         | François Jouen      | [glfw-red](https://github.com/ldci/glfw-red) |
+| Ruby        | Noel Cower          | [ruby-glfw3](https://github.com/nilium/ruby-glfw3) |
+| Rust        | Brendan Zabarauskas | [glfw-rs](https://github.com/bjz/glfw-rs) |
+| Scheme      | Tomas Möre          | [gambit-GLFW](https://github.com/black0range/gambit-GLFW) |
+
+{% endcol %}
+
+{% col 2-5 %}
+
+### Frameworks
+
+There are a number of frameworks that include GLFW as a component.  Here are
+some of them.  Please [let us know](https://github.com/glfw/website/issues) if
+one should be added or removed.
+
+| Language | Name                                        | Source |
+| -------- | ------------------------------------------- | ---------------- |
+| C++      | [Cinder](https://libcinder.org/)            | [GitHub](https://github.com/cinder/Cinder)
+| C++, Lua | [Cocos2d-x](http://cocos2d-x.org/cocos2dx)  | [GitHub](https://github.com/cocos2d/cocos2d-x)
+| C, C++   | [Emscripten](http://emscripten.org/)        | [GitHub](https://github.com/kripken/emscripten)
+| C++      | [openFrameworks](http://openframeworks.cc/) | [GitHub](https://github.com/openframeworks/openFrameworks/)
+| Java     | [libGDX](http://libgdx.badlogicgames.com/)  | [GitHub](https://github.com/libgdx/libgdx/)
+| Java     | [LWJGL](https://www.lwjgl.org/)             | [GitHub](https://github.com/LWJGL/lwjgl3/)
+
+### Wrappers
+
+While GLFW can be used directly from C++ and related languages, some prefer an
+object oriented interface.  Please [let us
+know](https://github.com/glfw/website/issues) if one should be added or removed.
+
+| Language | Maintainer      | Source |
+| -------- | --------------- | ------ |
+| C++      | Giorgio Marcias | [GLFWM](https://github.com/giorgiomarcias/glfwm)
+
+{% endcol %}
+
+{% endrow %}
 
