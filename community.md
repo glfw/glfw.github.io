@@ -72,9 +72,9 @@ one should be added or removed.
 | [Cinder](https://libcinder.org/)            | C++      | [GitHub](https://github.com/cinder/Cinder)
 | [Cocos2d-x](http://cocos2d-x.org/cocos2dx)  | C++, Lua | [GitHub](https://github.com/cocos2d/cocos2d-x)
 | [Emscripten](http://emscripten.org/)        | C, C++   | [GitHub](https://github.com/kripken/emscripten)
-| [openFrameworks](http://openframeworks.cc/) | C++      | [GitHub](https://github.com/openframeworks/openFrameworks/)
 | [libGDX](http://libgdx.badlogicgames.com/)  | Java     | [GitHub](https://github.com/libgdx/libgdx/)
 | [LWJGL](https://www.lwjgl.org/)             | Java     | [GitHub](https://github.com/LWJGL/lwjgl3/)
+| [openFrameworks](http://openframeworks.cc/) | C++      | [GitHub](https://github.com/openframeworks/openFrameworks/)
 
 ### Wrappers
 
