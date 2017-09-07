@@ -67,14 +67,15 @@ There are a number of frameworks that include GLFW as a component.  Here are
 some of them.  Please [let us know](https://github.com/glfw/website/issues) if
 one should be added or removed.
 
-| Name                                        | Language | Source |
-| ------------------------------------------- | -------- | ---------------- |
-| [Cinder](https://libcinder.org/)            | C++      | [GitHub](https://github.com/cinder/Cinder)
-| [Cocos2d-x](http://cocos2d-x.org/cocos2dx)  | C++, Lua | [GitHub](https://github.com/cocos2d/cocos2d-x)
-| [Emscripten](http://emscripten.org/)        | C, C++   | [GitHub](https://github.com/kripken/emscripten)
-| [libGDX](http://libgdx.badlogicgames.com/)  | Java     | [GitHub](https://github.com/libgdx/libgdx/)
-| [LWJGL](https://www.lwjgl.org/)             | Java     | [GitHub](https://github.com/LWJGL/lwjgl3/)
-| [openFrameworks](http://openframeworks.cc/) | C++      | [GitHub](https://github.com/openframeworks/openFrameworks/)
+| Name                                          | Language | Source |
+| --------------------------------------------- | -------- | ---------------- |
+| [Cinder](https://libcinder.org/)              | C++      | [GitHub](https://github.com/cinder/Cinder)
+| [Cocos2d-x](http://cocos2d-x.org/cocos2dx)    | C++, Lua | [GitHub](https://github.com/cocos2d/cocos2d-x)
+| [Emscripten](http://emscripten.org/)          | C, C++   | [GitHub](https://github.com/kripken/emscripten)
+| [Falcor](https://developer.nvidia.com/falcor) | C++      | [GitHub](https://github.com/nvidiagameworks/falcor)
+| [libGDX](http://libgdx.badlogicgames.com/)    | Java     | [GitHub](https://github.com/libgdx/libgdx/)
+| [LWJGL](https://www.lwjgl.org/)               | Java     | [GitHub](https://github.com/LWJGL/lwjgl3/)
+| [openFrameworks](http://openframeworks.cc/)   | C++      | [GitHub](https://github.com/openframeworks/openFrameworks/)
 
 ### Wrappers
 
