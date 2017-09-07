@@ -53,6 +53,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Python      | Nicolas P. Rougier  | [pyglfw](https://github.com/rougier/pyglfw) |
 | Rebol       | François Jouen      | [glfw-rebol](https://github.com/ldci/glfw-rebol) |
 | Red         | François Jouen      | [glfw-red](https://github.com/ldci/glfw-red) |
+| Red         | Oldes               | [glfw](https://github.com/red/code/tree/master/Library/GLFW) |
 | Ruby        | Noel Cower          | [ruby-glfw3](https://github.com/nilium/ruby-glfw3) |
 | Rust        | Brendan Zabarauskas | [glfw-rs](https://github.com/bjz/glfw-rs) |
 | Scheme      | Tomas Möre          | [gambit-GLFW](https://github.com/black0range/gambit-GLFW) |
