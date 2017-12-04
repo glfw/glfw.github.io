@@ -77,6 +77,7 @@ one should be added or removed.
 | [libGDX](http://libgdx.badlogicgames.com/)    | Java     | [GitHub](https://github.com/libgdx/libgdx/)
 | [LWJGL](https://www.lwjgl.org/)               | Java     | [GitHub](https://github.com/LWJGL/lwjgl3/)
 | [openFrameworks](http://openframeworks.cc/)   | C++      | [GitHub](https://github.com/openframeworks/openFrameworks/)
+| [Orx](http://orx-project.org/)                | C, C++   | [GitHub](https://github.com/orx/orx)
 
 ### Wrappers
 
