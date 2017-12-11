@@ -43,7 +43,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Haskell     | Brian Lewis         | [GLFW-b](https://github.com/bsl/GLFW-b) |
 | Java        | Nathan Sweet        | [jglfw](https://github.com/badlogic/jglfw) |
 | Julia       | Jay Weisskopf       | [GLFW.jl](https://github.com/JuliaGL/GLFW.jl) |
-| Lua         | Stefano Trettel     | [moonglfw](https://github.com/stetre/moonglfw) |
+| Lua         | Stefano Trettel     | [MoonGLFW](https://github.com/stetre/moonglfw) |
 | LuaJIT      | Oleg Dudka          | [luajit-glfw](https://github.com/Playermet/luajit-glfw) |
 | .NET        | Victor P. R. Müller | [GLFW3.NET](https://github.com/realvictorprm/GLFW3.NET) |
 | Nimrod      | Erik Andersson      | [nim-glfw](https://github.com/EXetoC/nim-glfw) |
