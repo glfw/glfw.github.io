@@ -92,6 +92,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 
 | Language | Maintainer      | Source |
 | -------- | --------------- | ------ |
+| C#       | Eric Freed      | [glfw-net](https://github.com/ForeverZer0/glfw-net)
 | C++      | Giorgio Marcias | [GLFWM](https://github.com/giorgiomarcias/glfwm)
 
 {% endcol %}
