@@ -12,7 +12,7 @@ is reproduced in its entirety below.
 
 > Copyright &copy; 2002-2006 Marcus Geelnard
 > 
-> Copyright &copy; 2006-2011 Camilla Berglund
+> Copyright &copy; 2006-2018 Camilla Löwy
 > 
 > This software is provided 'as-is', without any express or implied
 > warranty. In no event will the authors be held liable for any damages
