@@ -9,7 +9,7 @@ The [Discourse forum](http://discourse.glfw.org/) is a good place for support
 questions and general discussions.
 
 The IRC channel `#glfw` on
-[Freenode](http://webchat.freenode.net?randomnick=1&channels=%23glfw) is both
+[Freenode](https://webchat.freenode.net?randomnick=1&channels=%23glfw) is both
 for support questions and for following or helping out with the day-to-day
 development.
 
@@ -75,11 +75,11 @@ one should be added or removed.
 | [Cocos2d-x](http://cocos2d-x.org/cocos2dx)    | C++, Lua | [GitHub](https://github.com/cocos2d/cocos2d-x)
 | [Emscripten](http://emscripten.org/)          | C, C++   | [GitHub](https://github.com/kripken/emscripten)
 | [Falcor](https://developer.nvidia.com/falcor) | C++      | [GitHub](https://github.com/nvidiagameworks/falcor)
-| [libGDX](http://libgdx.badlogicgames.com/)    | Java     | [GitHub](https://github.com/libgdx/libgdx/)
+| [libGDX](https://libgdx.badlogicgames.com/)   | Java     | [GitHub](https://github.com/libgdx/libgdx/)
 | [LWJGL](https://www.lwjgl.org/)               | Java     | [GitHub](https://github.com/LWJGL/lwjgl3/)
 | [NimGL](https://nimgl.org)                    | Nim      | [GitHub](https://github.com/lmariscal/nimgl)
-| [openFrameworks](http://openframeworks.cc/)   | C++      | [GitHub](https://github.com/openframeworks/openFrameworks/)
-| [Orx](http://orx-project.org/)                | C, C++   | [GitHub](https://github.com/orx/orx)
+| [openFrameworks](https://openframeworks.cc/)  | C++      | [GitHub](https://github.com/openframeworks/openFrameworks/)
+| [Orx](https://orx-project.org/)               | C, C++   | [GitHub](https://github.com/orx/orx)
 
 ### Wrappers
 

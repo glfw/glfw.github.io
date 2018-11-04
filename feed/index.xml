@@ -6,10 +6,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>GLFW - An OpenGL library</title>
-	<link href="http://www.glfw.org/"/>
-	<link rel="self" href="http://www.glfw.org/feed/index.xml" type="application/atom+xml" />
+	<link href="https://www.glfw.org/"/>
+	<link rel="self" href="https://www.glfw.org/feed/index.xml" type="application/atom+xml" />
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://www.glfw.org/</id>
+	<id>https://www.glfw.org/</id>
 	<author>
 		<name>GLFW</name>
 		<email>webmaster@glfw.org</email>
@@ -17,8 +17,8 @@ layout: nil
 
 	{% for post in site.tags.news limit:10 %}
 		<entry>
-			<id>http://www.glfw.org/{{ post.id }}</id>
-			<link type="text/html" rel="alternate" href="http://www.glfw.org{{ post.url }}"/>
+			<id>https://www.glfw.org/{{ post.id }}</id>
+			<link type="text/html" rel="alternate" href="https://www.glfw.org{{ post.url }}"/>
 			<title>{{ post.title | xml_escape }}</title>
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
 			<content type="html">{{ post.content | xml_escape }}</content>

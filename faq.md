@@ -84,7 +84,7 @@ GLFW is *by design* not...
 
 There are several other libraries available for aiding OpenGL development.  The
 most common ones are [freeglut](http://freeglut.sourceforge.net/), an Open
-Source implementation of GLUT, and [SDL](http://www.libsdl.org/).
+Source implementation of GLUT, and [SDL](https://www.libsdl.org/).
 
 However, freeglut is mostly concerned with providing a stable clone of GLUT,
 while SDL is too large for some people and has never had OpenGL as its main
@@ -109,9 +109,9 @@ with portability in mind.
 __TL;DR__ All versions supported by your operating system, driver and GPU.
 
 This question likely stems from the original version of the
-[`WGL_ARB_create_context`](http://www.opengl.org/registry/specs/ARB/wgl_create_context.txt)
+[`WGL_ARB_create_context`](https://www.khronos.org/registry/OpenGL/extensions/ARB/WGL_ARB_create_context.txt)
 and
-[`GLX_ARB_create_context`](http://www.opengl.org/registry/specs/ARB/glx_create_context.txt)
+[`GLX_ARB_create_context`](https://www.khronos.org/registry/OpenGL/extensions/ARB/GLX_ARB_create_context.txt)
 extensions, which stated that the old context creation mechanism would be
 limited to OpenGL version 2.1.  However, this is no longer the case and the
 specifications have been updated accordingly.
@@ -119,7 +119,7 @@ specifications have been updated accordingly.
 GLFW 2.6 and earlier use only the older context creation mechanism, which
 on Windows and X11 may return contexts of any version, however new, provided
 they implement the
-[`ARB_compatibility`](http://www.opengl.org/registry/specs/ARB/compatibility.txt)
+[`ARB_compatibility`](https://www.khronos.org/registry/OpenGL/extensions/ARB/ARB_compatibility.txt)
 extension.  Most modern drivers do this.
 
 Explicit creation of OpenGL contexts of version 3.0 and above on Windows and
@@ -205,18 +205,18 @@ platforms, computer languages and APIs have some sort of support for Unicode
 (GLFW now being one of them).
 
 *Visit
-[The Unicode Consortium](http://www.unicode.org)
+[The Unicode Consortium](https://www.unicode.org)
 for more information about Unicode.*
 
 *See also
-[Wikipedia on Unicode](http://en.wikipedia.org/wiki/Unicode).*
+[Wikipedia on Unicode](https://en.wikipedia.org/wiki/Unicode).*
 
 
 ### 2.9 - Is GLFW thread safe?
 
 Some parts are, specifically those needed to allow rendering and Vulkan object
 creation from secondary threads.  See [Thread
-Safety](http://www.glfw.org/docs/latest/intro.html#thread_safety) in the
+Safety](https://www.glfw.org/docs/latest/intro.html#thread_safety) in the
 documentation for details.
 
 
@@ -337,7 +337,7 @@ for both MinGW and the most recent versions of Visual C++.
 ### 3.2 - Why do I get link errors when trying to build my program?
 
 See the
-[Building programs that use GLFW](http://www.glfw.org/docs/latest/build.html)
+[Building programs that use GLFW](https://www.glfw.org/docs/latest/build.html)
 guide for details on how to compile and link programs on various platforms.
 
 
@@ -351,7 +351,7 @@ is enabled, `glfwSwapInterval` will have no effect.
 ### 3.4 - What libraries should I link with?
 
 See the
-[Building programs that use GLFW](http://www.glfw.org/docs/latest/build.html)
+[Building programs that use GLFW](https://www.glfw.org/docs/latest/build.html)
 guide for details.                 
 
 
@@ -397,7 +397,7 @@ as well as any valid OpenGL version in between.
 ### 4.2 - What libraries should I link with?
 
 See the
-[Building programs that use GLFW](http://www.glfw.org/docs/latest/build.html)
+[Building programs that use GLFW](https://www.glfw.org/docs/latest/build.html)
 guide for details.                 
 
 
@@ -408,7 +408,7 @@ You are passing the window size, which is in screen coordinates, to
 possibly on other platforms in the future, screen coordinates and pixels do not
 map 1:1.  Use the framebuffer size, which is in pixels, instead of the window
 size.  See the
-[Window handling guide](http://www.glfw.org/docs/latest/window.html) for
+[Window handling guide](https://www.glfw.org/docs/latest/window.html) for
 details.
 
 
@@ -419,6 +419,6 @@ details.
 ### 5.1 - What libraries should I link with?
 
 See the
-[Building programs that use GLFW](http://www.glfw.org/docs/latest/build.html)
+[Building programs that use GLFW](https://www.glfw.org/docs/latest/build.html)
 guide for details.                 
 

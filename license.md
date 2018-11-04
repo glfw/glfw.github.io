@@ -6,7 +6,7 @@ title: License
 ## License
 
 GLFW is licensed under the
-[zlib/libpng](http://www.opensource.org/licenses/zlib-license.php) license,
+[zlib/libpng](https://www.opensource.org/licenses/zlib-license.php) license,
 a BSD-like license that allows static linking with closed source software.  It
 is reproduced in its entirety below.
 
