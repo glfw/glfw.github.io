@@ -49,6 +49,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Nim         | Erik Andersson      | [nim-glfw](https://github.com/EXetoC/nim-glfw) |
 | Node.js     | M. Damian Mulligan  | [node-glfw-bindings](https://github.com/glek/node-glfw-bindings) |
 | Node.js     | Mikaël Sévenier     | [node-glfw](https://github.com/mikeseven/node-glfw) |
+| OCaml       | Sylvain Boilard     | [GLFW-OCaml](https://github.com/SylvainBoilard/GLFW-OCaml) |
 | Perl        | Chris Marshall      | [OpenGL::GLFW](https://metacpan.org/pod/OpenGL::GLFW) |
 | Python      | Florian Rhiem       | [pyGLFW](https://github.com/FlorianRhiem/pyGLFW) |
 | Python      | Nicolas P. Rougier  | [pyglfw](https://github.com/rougier/pyglfw) |
