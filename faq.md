@@ -98,7 +98,7 @@ managing OpenGL contexts, windows and input.
 
 Currently, GLFW supports Windows (XP and later), macOS (10.7 Lion and later) and
 Unix-like operating systems with the X Window System, such as Linux, FreeBSD and
-Cygwin.  Support for Wayland and Mir is available but not yet feature complete.
+Cygwin.  Support for Wayland is available but not yet feature complete.
 
 GLFW is designed to be as portable as possible, and the code has been written
 with portability in mind.
@@ -239,7 +239,7 @@ On Windows, the `QueryPerformanceCounter` API is used if available, with
 
 On macOS, the Mach `mach_absolute_time` time source is used.
 
-On Unix-like operating systems using the X11, Wayland and Mir ports, the POSIX
+On Unix-like operating systems using the X11 and Wayland ports, the POSIX
 `CLOCK_MONOTONIC` time source is used if available, with `gettimeofday` as
 a fallback.
 
@@ -257,9 +257,6 @@ and input management, and GLX or EGL to create OpenGL and OpenGL ES contexts.
 
 On Linux systems using Wayland, the Wayland API is used for window and input
 management, and EGL to create OpenGL and OpenGL ES contexts.
-
-On Linux systems using Mir, the Mir API is used for window and input management,
-and EGL to create OpenGL and OpenGL ES contexts.
 
 
 ### 2.13 - Why doesn't your gl.h have the functions I need?
