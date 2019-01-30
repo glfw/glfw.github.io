@@ -81,6 +81,7 @@ one should be added or removed.
 | [NimGL](https://nimgl.org)                    | Nim      | [GitHub](https://github.com/lmariscal/nimgl)
 | [openFrameworks](https://openframeworks.cc/)  | C++      | [GitHub](https://github.com/openframeworks/openFrameworks/)
 | [Orx](https://orx-project.org/)               | C, C++   | [GitHub](https://github.com/orx/orx)
+| [raylib](https://www.raylib.com/)             | C, C++   | [GitHub](https://github.com/raysan5/raylib)
 
 ### Wrappers
 
