@@ -36,7 +36,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | C#          | Zachary Snow        | [GLFWDotNet](https://github.com/smack0007/GLFWDotNet) |
 | Common Lisp | Alex Charlton       | [cl-glfw3](https://github.com/AlexCharlton/cl-glfw3) |
 | Crystal     | Caleb Harrison      | [LibGLFW](https://github.com/calebuharrison/LibGLFW) |
-| D           | Mike Parker         | [DerelictGLFW3](https://github.com/DerelictOrg/DerelictGLFW3) |
+| D           | Mike Parker         | [bindbc-glfw](https://github.com/BindBC/bindbc-glfw) |
 | Dart        | Harry Stern         | [dart-glfw](https://github.com/google/dart-glfw) |
 | Duktape     | Laurent Zubiaur     | [duk-glfw](https://github.com/lzubiaur/duk-glfw) |
 | Go          | Coşku Baş           | [glfw](https://github.com/go-gl/glfw) |
