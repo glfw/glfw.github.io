@@ -32,6 +32,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Language    | Maintainer          | Source |
 | ----------- | ------------------- | ------- |
 | Ada         | Felix Krause        | [OpenGLAda](https://github.com/flyx/OpenGLAda) |
+| C#          | Eric Freed          | [GLFW.NET](https://github.com/ForeverZer0/glfw-net)
 | C#          | Andy Korth          | [Pencil.Gaming](https://github.com/andykorth/Pencil.Gaming) |
 | C#          | Zachary Snow        | [GLFWDotNet](https://github.com/smack0007/GLFWDotNet) |
 | Common Lisp | Alex Charlton       | [cl-glfw3](https://github.com/AlexCharlton/cl-glfw3) |
@@ -92,7 +93,6 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 
 | Language | Maintainer      | Source |
 | -------- | --------------- | ------ |
-| C#       | Eric Freed      | [GLFW.NET](https://github.com/ForeverZer0/glfw-net)
 | C++      | Giorgio Marcias | [GLFWM](https://github.com/giorgiomarcias/glfwm)
 
 {% endcol %}
