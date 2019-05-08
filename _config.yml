@@ -1,3 +1,6 @@
 permalink: /:title.html
 highlighter: rouge
 exclude: [README.md]
+
+plugins:
+  - jekyll-sitemap
