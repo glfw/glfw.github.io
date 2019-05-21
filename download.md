@@ -10,7 +10,7 @@ title: Download
 
 The current version is **{{ glfwversion }}**, which was released on
 <strong>{% include time.html date=releasedate %}</strong>.
-See the [version history](changelog.html) for a list of changes.
+See the [release notes](docs/latest/news.html) for details.
 
 ### Source package
 
