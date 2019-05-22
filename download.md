@@ -20,8 +20,9 @@ This package contains the complete source code with CMake build files,
 [documentation](docs/latest/), examples and test programs. It
 is the recommended download for all platforms and offers the most control.
 
-The latest version of the source code, including tags for all releases,
-is always available in our Git repository.
+All development is done on GitHub.  The `master` branch is our integration
+branch for the next feature release while the `3.3-stable` branch only adds bug
+fixes for patch releases.
 {% endcol %}
 {% col 1-3 %}
 {% button https://github.com/glfw/glfw/releases/download/{{ glfwversion }}/glfw-{{ glfwversion }}.zip %}
