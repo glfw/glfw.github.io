@@ -33,5 +33,5 @@ is reproduced in its entirety below.
 > 3. This notice may not be removed or altered from any source
 >    distribution.
 
-You will find this license in the file `COPYING.txt` of the GLFW distribution
+You can find this license in the file `LICENSE.md` of the GLFW source tree
 and in the comment header of each source file.
