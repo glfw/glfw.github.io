@@ -16,8 +16,8 @@ See the [release notes](docs/latest/news.html) for details.
 
 {% row %}
 {% col 2-3 %}
-This package contains the complete source code, CMake build files,
-[documentation](documentation.html), examples and test programs. It
+This package contains the complete source code with CMake build files,
+[documentation](docs/latest/), examples and test programs. It
 is the recommended download for all platforms and offers the most control.
 
 The latest version of the source code, including tags for all releases,
@@ -37,10 +37,12 @@ GitHub repository
 
 {% row %}
 {% col 2-3 %}
-These packages contain complete GLFW header file,
-[documentation](documentation.html) and release mode DLL and static
-library binaries for Visual C++ 2010 (32-bit only), Visual C++ 2012, Visual C++
-2013, Visual C++ 2015, MinGW (32-bit only) and MinGW-w64.
+These packages contain the GLFW header files, [documentation](docs/latest/) and
+release mode static libraries, DLLs and import libraries for Visual C++
+2010-2019, MinGW-w64 and plain MinGW.
+
+Binaries for Visual C++ 2010 and plain MinGW are only available in the 32-bit
+package.
 {% endcol %}
 {% col 1-3 %}
 {% button https://github.com/glfw/glfw/releases/download/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.WIN32.zip %}
@@ -52,12 +54,12 @@ library binaries for Visual C++ 2010 (32-bit only), Visual C++ 2012, Visual C++
 {% endcol %}
 {% endrow %}
 
-### Linux and macOS binaries
+### macOS and Linux binaries
 
-Please download and compile the source package above.  There is a [guide for
-compiling GLFW](/docs/latest/compile.html) in the documentation.
+Check if your package system provides GLFW {{ glfwversion }} or another version
+new enough to be useful to you.
 
-Some package systems, for example NuGet, MacPorts and Arch Linux include
-relatively up-to-date GLFW packages, but most sadly do not.  If you intend to
-use a GLFW package, please verify that its version fits your needs.
+If not, please download and [compile GLFW from
+source](docs/latest/compile.html).  A source package is available above, or you
+could [clone it from GitHub](https://github.com/glfw/glfw).
 
