@@ -14,8 +14,8 @@ title: An OpenGL library
 Vulkan development on the desktop.  It provides a simple API for creating
 windows, contexts and surfaces, receiving input and events.
 
-GLFW is written in C and has native support for Windows, macOS and many
-Unix-like systems using the X Window System, such as Linux and FreeBSD.
+GLFW is written in C and supports Windows, macOS, the X Window System and the
+Wayland protocol.
 
 GLFW is licensed under the [zlib/libpng license](license.html).
 {% endcol %}
