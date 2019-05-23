@@ -5,19 +5,23 @@ title: Community
 
 ## Community
 
-The [Discourse forum](http://discourse.glfw.org/) is a good place for support
+Our [Discourse forum](http://discourse.glfw.org/) is the best place for support
 questions and general discussions.
 
-The IRC channel `#glfw` on
-[Freenode](https://webchat.freenode.net?randomnick=1&channels=%23glfw) is both
-for support questions and for following or helping out with the day-to-day
-development.
+If you are on IRC, the channel `#glfw` on
+[Freenode](https://webchat.freenode.net?randomnick=1&channels=%23glfw) can also
+help with support questions.
 
-The [library issue tracker](https://github.com/glfw/glfw/issues) is where to
-post issues for the library and its documentation.
+The library and documentation are developed in our [main
+repository](https://github.com/glfw/glfw) on GitHub.  This is where to report
+a bug, request a feature or submit a pull request.  Our [contribution
+guide](https://github.com/glfw/glfw/blob/master/docs/CONTRIBUTING.md) may be
+a useful resource to get started.
 
-The [website issue tracker](https://github.com/glfw/website/issues) is where to
-post issues for this website, except for anything in `/docs/`.
+This site (except for the `docs` subdirectory) is developed in the [website
+repository](https://github.com/glfw/website) on GitHub.  This is where to report
+bugs and mistakes on the site, request additions or removals of community
+projects, etc.
 
 {% row %}
 
