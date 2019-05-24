@@ -8,9 +8,8 @@ title: Community
 Our [Discourse forum](http://discourse.glfw.org/) is the best place for support
 questions and general discussions.
 
-If you are on IRC, the channel `#glfw` on
-[Freenode](https://webchat.freenode.net?randomnick=1&channels=%23glfw) can also
-help with support questions.
+If you are on IRC, the channel `#glfw` on Freenode can also help with support
+questions.
 
 The library and documentation are developed in our [main
 repository](https://github.com/glfw/glfw) on GitHub.  This is where to report
