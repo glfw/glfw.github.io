@@ -38,6 +38,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Common Lisp | Alex Charlton       | [cl-glfw3](https://github.com/AlexCharlton/cl-glfw3) |
 | Crystal     | Caleb Harrison      | [LibGLFW](https://github.com/calebuharrison/LibGLFW) |
 | D           | Mike Parker         | [bindbc-glfw](https://github.com/BindBC/bindbc-glfw) |
+| Delphi      | Erik van Bilsen     | [DelphiGlfw](https://github.com/neslib/DelphiGlfw) |
 | Dart        | Harry Stern         | [dart-glfw](https://github.com/google/dart-glfw) |
 | Duktape     | Laurent Zubiaur     | [duk-glfw](https://github.com/lzubiaur/duk-glfw) |
 | Go          | Coşku Baş           | [glfw](https://github.com/go-gl/glfw) |
