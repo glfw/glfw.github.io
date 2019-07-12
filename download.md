@@ -55,7 +55,21 @@ package.
 {% endcol %}
 {% endrow %}
 
-### macOS and Linux binaries
+### macOS pre-compiled binaries
+
+{% row %}
+{% col 2-3 %}
+This package contains the GLFW header files, [documentation](docs/latest/) and
+release mode static and dynamic libraries for macOS 10.8 and later.
+{% endcol %}
+{% col 1-3 %}
+{% button https://github.com/glfw/glfw/releases/download/{{ glfwversion }}/glfw-{{ glfwversion }}.bin.MACOS.zip %}
+64-bit macOS binaries
+{% endbutton %}
+{% endcol %}
+{% endrow %}
+
+### Linux and BSD binaries
 
 Check if your package system provides GLFW {{ glfwversion }} or another version
 new enough to be useful to you.
