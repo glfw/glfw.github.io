@@ -5,7 +5,7 @@ title: Community
 
 ## Community
 
-Our [Discourse forum](http://discourse.glfw.org/) is the best place for support
+Our [Discourse forum](https://discourse.glfw.org/) is the best place for support
 questions and general discussions.
 
 If you are on IRC, the channel `#glfw` on Freenode can also help with support
