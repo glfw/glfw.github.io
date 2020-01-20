@@ -1,6 +1,7 @@
 permalink: /:title.html
 highlighter: rouge
 exclude: [README.md]
+url: https://www.glfw.org
 collections:
     changelogs:
         sort_by: date
