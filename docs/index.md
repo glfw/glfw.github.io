@@ -5,8 +5,9 @@ title: Documentation index
 
 ## Documentation index
 
-The [latest docs](/docs/latest/) is the recommended version, unless you need to
-use an older version of the library.
+The **[latest documentation](/docs/latest/) for {{ site.changelogs.last.title
+}}** is the recommended version, unless you need to use an older version of the
+library.
 
 There is also archived documentation for every previous release of GLFW 3:
 
