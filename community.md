@@ -84,6 +84,7 @@ one should be added or removed.
 | [Falcor](https://developer.nvidia.com/falcor) | C++      | [GitHub](https://github.com/nvidiagameworks/falcor)
 | [libGDX](https://libgdx.badlogicgames.com/)   | Java     | [GitHub](https://github.com/libgdx/libgdx/)
 | [LWJGL](https://www.lwjgl.org/)               | Java     | [GitHub](https://github.com/LWJGL/lwjgl3/)
+| [nCine](https://ncine.github.io/)             | C++      | [GitHub](https://github.com/nCine/nCine)
 | [NimGL](https://nimgl.dev)                    | Nim      | [GitHub](https://github.com/nimgl/nimgl)
 | [openFrameworks](https://openframeworks.cc/)  | C++      | [GitHub](https://github.com/openframeworks/openFrameworks/)
 | [Orx](https://orx-project.org/)               | C, C++   | [GitHub](https://github.com/orx/orx)
