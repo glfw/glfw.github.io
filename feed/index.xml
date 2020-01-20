@@ -10,6 +10,7 @@ layout: null
 	<link rel="self" href="https://www.glfw.org/feed/index.xml" type="application/atom+xml" />
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>https://www.glfw.org/</id>
+	<icon>/favicon.ico</icon>
 	<author>
 		<name>GLFW</name>
 		<email>webmaster@glfw.org</email>
