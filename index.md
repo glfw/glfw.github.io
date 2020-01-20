@@ -3,8 +3,8 @@ layout: frontpage
 title: An OpenGL library
 ---
 
-{% assign glfwversion = site.tags.changelog.first.title %}
-{% assign releasedate = site.tags.changelog.first.date %}
+{% assign glfwversion = site.changelogs.last.title %}
+{% assign releasedate = site.changelogs.last.date %}
 
 {% row %}
 

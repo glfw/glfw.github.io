@@ -9,7 +9,7 @@ This is the complete log of user-visible changes for each version since the
 project started.  For a task oriented view of changes and additions in recent
 versions, see the [release notes](/docs/latest/news.html).
 
-{% for post in site.tags.changelog %}
+{% for post in site.changelogs reversed %}
 
 <article>
 <header>

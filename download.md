@@ -3,8 +3,8 @@ layout: default
 title: Download
 ---
 
-{% assign glfwversion = site.tags.changelog.first.title %}
-{% assign releasedate = site.tags.changelog.first.date | date: "%Y-%m-%d" %}
+{% assign glfwversion = site.changelogs.last.title %}
+{% assign releasedate = site.changelogs.last.date | date: "%Y-%m-%d" %}
 
 ## Download
 

@@ -1,6 +1,10 @@
 permalink: /:title.html
 highlighter: rouge
 exclude: [README.md]
+collections:
+    changelogs:
+        sort_by: date
+        output: false
 
 plugins:
   - jekyll-sitemap
