@@ -53,6 +53,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | LuaJIT      | Oleg Dudka          | [luajit-glfw](https://github.com/Playermet/luajit-glfw) |
 | .NET        | Victor P. R. Müller | [GLFW3.NET](https://github.com/realvictorprm/GLFW3.NET) |
 | Nim         | Erik Andersson      | [nim-glfw](https://github.com/EXetoC/nim-glfw) |
+| Node.js     | Artem Kunets        | [glfwJS](https://github.com/Reon90/glfwJS) |
 | Node.js     | Mikaël Sévenier     | [node-glfw](https://github.com/mikeseven/node-glfw) |
 | OCaml       | Sylvain Boilard     | [GLFW-OCaml](https://github.com/SylvainBoilard/GLFW-OCaml) |
 | Perl        | Chris Marshall      | [OpenGL::GLFW](https://metacpan.org/pod/OpenGL::GLFW) |
