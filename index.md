@@ -1,15 +1,19 @@
 ---
-layout: frontpage
+layout: default
 title: An OpenGL library
 ---
 
-{% assign glfwversion = site.changelogs.last.title %}
-{% assign releasedate = site.changelogs.last.date %}
+{% assign glfw_version = site.changelogs.last.title %}
+{% assign release_date = site.changelogs.last.date %}
 
-{% row %}
+{% assign url_repo = "https://github.com/glfw/glfw" %}
 
-{% col 2-3 %}
+{% capture url_dist_src %}
+{{ url_repo  }}/releases/download/{{ glfw_version }}/glfw-{{ glfw_version }}.zip
+{% endcapture %}
 
+<div class="pure-g">
+<div class="pure-u-1 pure-u-md-2-3" markdown="1">
 **GLFW** is an Open Source, multi-platform library for OpenGL, OpenGL ES and
 Vulkan development on the desktop.  It provides a simple API for creating
 windows, contexts and surfaces, receiving input and events.
@@ -17,31 +21,28 @@ windows, contexts and surfaces, receiving input and events.
 GLFW is written in C and supports Windows, macOS, X11 and Wayland.
 
 GLFW is licensed under the [zlib/libpng license](license.html).
-{% endcol %}
 
-{% col 1-3 %}
+</div>
+<div class="pure-u-1 pure-u-md-1-3" markdown="1">
 
-{% button https://github.com/glfw/glfw/releases/download/{{ glfwversion }}/glfw-{{ glfwversion }}.zip %}
-Download GLFW {{ glfwversion }}
+{% capture dl_btn_label %}
+Download GLFW {{ glfw_version }}
 <br>
-<small>Released on {% include time.html date=releasedate %}</small>
-{% endbutton %}
+<small>Released on {% include time.html date=release_date %}</small>
+{% endcapture %}
+{% include button.html link=url_dist_src label=dl_btn_label %}
 
-{% button https://github.com/glfw/glfw %}
-Clone on GitHub
-{% endbutton %}
+{% include button.html link=url_repo label="Clone on GitHub" %}
 
 {% include milestone.html %}
 
-{% endcol %}
-
-{% endrow %}
+</div>
+</div>
 
 <br/>
 
-{% row %}
-
-{% col 2-3 %}
+<div class="pure-g">
+<div class="pure-u-1 pure-u-md-2-3" markdown="1">
 
 {% include features.html %}
 
@@ -49,9 +50,8 @@ No library can be perfect for everyone.  If GLFW isn't what you're looking for,
 there are
 [alternatives](https://www.opengl.org/wiki/Related_toolkits_and_APIs).
 
-{% endcol %}
-
-{% col 1-3 %}
+</div>
+<div class="pure-u-1 pure-u-md-1-3" markdown="1">
 
 {% for post in site.tags.news limit:3 %}
 <article>
@@ -71,6 +71,5 @@ Posted on {% include time.html date=post.date %}
 
 See the [news archive](news.html) for older posts.
 
-{% endcol %}
-
-{% endrow %}
+</div>
+</div>
