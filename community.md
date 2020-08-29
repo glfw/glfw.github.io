@@ -22,9 +22,9 @@ repository](https://github.com/glfw/website) on GitHub.  This is where to report
 bugs and mistakes on the site, request additions or removals of community
 projects, etc.
 
-{% row %}
+<div class="pure-g">
 
-{% col 3-5 %}
+<div class="pure-u-1 pure-u-md-2-3" markdown="1">
 
 ### Bindings
 
@@ -67,9 +67,9 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Rust        | Brendan Zabarauskas | [glfw-rs](https://github.com/bjz/glfw-rs) |
 | Scheme      | Tomas Möre          | [gambit-GLFW](https://github.com/black0range/gambit-GLFW) |
 
-{% endcol %}
+</div>
 
-{% col 2-5 %}
+<div class="pure-u-1 pure-u-md-1-3" markdown="1">
 
 ### Frameworks
 
@@ -101,7 +101,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | -------- | --------------- | ------ |
 | C++      | Giorgio Marcias | [GLFWM](https://github.com/giorgiomarcias/glfwm)
 
-{% endcol %}
+</div>
 
-{% endrow %}
+</div>
 

@@ -1,6 +1,10 @@
 ---
 ---
 
+@import (inline) '/css/base-min.css';
+@import (inline) '/css/grids-min.css';
+@import (inline) '/css/grids-responsive-min.css';
+
 // Page body background color
 @body-background-color: hsl(0, 0%, 95%);
 
@@ -104,10 +108,17 @@
 
 #progress {
 	font-size: 2em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
 }
 
 body {
 	color: @default-text-color;
+	line-height: 1.8em;
 }
 
 h1, h2, h3, h4, h5, h6, strong, em {
@@ -141,6 +152,7 @@ code {
 table {
 	border-collapse: inherit;
 	border: 2px solid @button-shade1;
+	border-spacing: 0;
 }
 
 td, th {
@@ -180,8 +192,7 @@ body, table, blockquote, code {
 }
 
 header.main {
-	height: @header-footer-height;
-	min-width: 800px;
+	min-height: @header-footer-height;
 }
 
 #glfw_home {
@@ -222,17 +233,17 @@ footer ul, #markdown-toc {
 	text-align: center;
 }
 
-figure img {
-	max-width: 100%;
-}
-
 // This is going to give spacing between grid columns
 .box {
 	padding-right: 1em;
 }
 
 .feature {
-	padding: .75em 0;
+	padding: .75em .5em;
+}
+
+.feature img {
+	margin: auto;
 }
 
 .wrapper {
