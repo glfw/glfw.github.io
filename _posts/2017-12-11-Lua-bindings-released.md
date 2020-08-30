@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Lua bindings released
+description: New GLFW binding announcement.
 tags: news
 ---
 

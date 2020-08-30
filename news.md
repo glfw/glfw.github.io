@@ -1,6 +1,7 @@
 ---
 layout: default
 title: News archive
+description: GLFW news archive.
 ---
 
 ## News archive

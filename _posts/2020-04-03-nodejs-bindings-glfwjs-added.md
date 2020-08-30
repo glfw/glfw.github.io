@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Node.js bindings glfwJS added
+description: New GLFW release announcement.
 tags: news
 ---
 

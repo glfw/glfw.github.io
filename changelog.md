@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Version history
+description: Complete log of user-visible changes since the project started.
 ---
 
 ## Version history
@@ -14,7 +15,7 @@ versions, see the [release notes](/docs/latest/news.html).
 <article>
 <header>
 
-<h3>Version {{ post.title }}</h3>
+<h3>Version {{ post.version }}</h3>
 <small>Released on {% include time.html date=post.date %}</small>
 
 </header>

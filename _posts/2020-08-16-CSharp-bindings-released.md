@@ -1,6 +1,7 @@
 ---
 layout: post
 title: C# bindings released
+description: New GLFW release announcement.
 tags: news
 ---
 

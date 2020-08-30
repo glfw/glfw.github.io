@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Revamped website launched
+description: New GLFW website announcement.
 tags: news
 ---
 

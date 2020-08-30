@@ -1,6 +1,7 @@
 ---
 layout: default
 title: FAQ
+description: Answers to frequently asked questions about GLFW.
 ---
 
 ## Frequently Asked Questions

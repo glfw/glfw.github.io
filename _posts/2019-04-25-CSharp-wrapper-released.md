@@ -1,6 +1,7 @@
 ---
 layout: post
 title: C# wrapper released
+description: New GLFW binding announcement.
 tags: news
 ---
 

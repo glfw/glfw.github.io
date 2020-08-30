@@ -1,6 +1,7 @@
 ---
 layout: default
 title : 2.7.8 Release Notes
+description: GLFW 2.7.8 release notes.
 ---
 
 ## GLFW 2.7.8 release notes

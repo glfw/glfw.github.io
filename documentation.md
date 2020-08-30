@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Documentation
+description: GLFW API documentation.
 ---
 
 ## Documentation
