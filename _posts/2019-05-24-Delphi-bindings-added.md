@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Delphi bindings added
+description: New GLFW binding announcement.
 tags: news
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Documentation index
+description: GLFW documentation archive.
 ---
 
 ## Documentation index

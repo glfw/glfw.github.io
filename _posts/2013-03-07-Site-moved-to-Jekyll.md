@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Site moved to Jekyll
+description: New GLFW website announcement.
 tags: news
 ---
 

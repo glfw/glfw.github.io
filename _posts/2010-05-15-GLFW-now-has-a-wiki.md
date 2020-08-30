@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GLFW now has a wiki
+description: New GLFW wiki announcement.
 tags: news
 ---
 

@@ -1,9 +1,10 @@
 ---
 layout: default
 title: An OpenGL library
+description: GLFW project home page.
 ---
 
-{% assign glfw_version = site.changelogs.last.title %}
+{% assign glfw_version = site.changelogs.last.version %}
 {% assign release_date = site.changelogs.last.date %}
 
 {% assign url_repo = "https://github.com/glfw/glfw" %}

@@ -1,11 +1,43 @@
-permalink: /:title.html
-highlighter: rouge
-exclude: [README.md]
 url: https://www.glfw.org
+permalink: /:title.html
+
+highlighter: rouge
+markdown: kramdown
+
+exclude: [README.md, css/base-min.css, css/grids-min.css, css/grids-responsive-min.css]
+
 collections:
     changelogs:
         sort_by: date
         output: false
 
 plugins:
+  - jekyll-minifier
+  - jekyll-seo-tag
   - jekyll-sitemap
+
+# Uglifier (JavaScript minifier) ES6 support
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+
+# jekyll-seo-tag specific
+
+# Your site's title (e.g., Ben's Awesome Site, The GitHub Blog, etc.), used as
+# part of the title tag like Home | Ben's Awesome Site.
+title: GLFW
+
+# A short description (e.g., A blog dedicated to reviewing cat gifs), used as
+# part of the title tag like Ben's Awesome Site | A blog dedicated to reviewing
+# cat gifs instead of Ben's Awesome Site | Long description about a blog
+# dedicated to reviewing cat gifs that would be used when page.title is not
+# defined.
+tagline: An OpenGL library
+
+# A longer description used for the description meta tag. Also used as fallback
+# for pages that don't provide their own description, and also as part of the
+# page's title tag if neither page.title nor site.tagline has been defined.
+description: GLFW is an Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan development on the desktop.
+
+# URL to a site-wide logo (e.g., /assets/your-company-logo.png)
+logo: img/favicon/favicon-196x196.png

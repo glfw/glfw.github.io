@@ -1,6 +1,7 @@
 ---
 layout: default
 title: License
+description: GLFW license terms.
 ---
 
 ## License

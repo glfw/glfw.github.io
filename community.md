@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Community
+description: GLFW community resources and support channels.
 ---
 
 ## Community

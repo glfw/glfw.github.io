@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GLFW repositories moved to GitHub
+description: Project status update.
 tags: news
 ---
 

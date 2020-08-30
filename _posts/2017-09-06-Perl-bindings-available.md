@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Perl bindings released
+description: New GLFW binding announcement.
 tags: news
 ---
 

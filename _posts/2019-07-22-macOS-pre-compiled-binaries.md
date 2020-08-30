@@ -1,6 +1,7 @@
 ---
 layout: post
 title: macOS pre-compiled binaries
+description: Project status update.
 tags: news
 ---
 

@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Download
+description: GLFW source code and binary distribution download links.
 ---
 
-{% assign glfw_version = site.changelogs.last.title %}
+{% assign glfw_version = site.changelogs.last.version %}
 {% assign release_date = site.changelogs.last.date | date: "%Y-%m-%d" %}
 
 {% assign url_repo = "https://github.com/glfw/glfw" %}
