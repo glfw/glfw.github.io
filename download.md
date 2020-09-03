@@ -34,7 +34,7 @@ See the [release notes](docs/latest/news.html) for details.
 ### Source package
 
 <div class="pure-g">
-<div class="pure-u-1 pure-u-md-2-3" markdown="1">
+<div class="pure-u-1 pure-u-md-15-24" markdown="1">
 This package contains the complete source code with CMake build files,
 [documentation](docs/latest/), examples and test programs. It
 is the recommended download for all platforms and offers the most control.
@@ -43,7 +43,8 @@ All development is done on GitHub.  The `master` branch is our integration
 branch for the next feature release while the `3.3-stable` branch only adds bug
 fixes for patch releases.
 </div>
-<div class="pure-u-1 pure-u-md-1-3" markdown="1">
+<div class="pure-u-1 pure-u-md-1-24"></div>
+<div class="pure-u-1 pure-u-md-8-24" markdown="1">
 {% include button.html link=url_dist_src label="Source package" %}
 {% include button.html link=url_repo label="GitHub repository" %}
 </div>
@@ -52,7 +53,7 @@ fixes for patch releases.
 ### Windows pre-compiled binaries
 
 <div class="pure-g">
-<div class="pure-u-1 pure-u-md-2-3" markdown="1">
+<div class="pure-u-1 pure-u-md-15-24" markdown="1">
 These packages contain the GLFW header files, [documentation](docs/latest/) and
 release mode static libraries, DLLs and import libraries for Visual C++
 2010-2019, MinGW-w64 and plain MinGW.
@@ -60,7 +61,8 @@ release mode static libraries, DLLs and import libraries for Visual C++
 Binaries for Visual C++ 2010 and plain MinGW are only available in the 32-bit
 package.
 </div>
-<div class="pure-u-1 pure-u-md-1-3" markdown="1">
+<div class="pure-u-1 pure-u-md-1-24"></div>
+<div class="pure-u-1 pure-u-md-8-24" markdown="1">
 {% include button.html link=url_dist_bin_win64 label="64-bit Windows binaries" %}
 {% include button.html link=url_dist_bin_win32 label="32-bit Windows binaries" %}
 </div>
@@ -69,11 +71,12 @@ package.
 ### macOS pre-compiled binaries
 
 <div class="pure-g">
-<div class="pure-u-1 pure-u-md-2-3" markdown="1">
+<div class="pure-u-1 pure-u-md-15-24" markdown="1">
 This package contains the GLFW header files, [documentation](docs/latest/) and
 release mode static and dynamic libraries for macOS 10.8 and later.
 </div>
-<div class="pure-u-1 pure-u-md-1-3" markdown="1">
+<div class="pure-u-1 pure-u-md-1-24"></div>
+<div class="pure-u-1 pure-u-md-8-24" markdown="1">
 {% include button.html link=url_dist_bin_macos label="64-bit macOS binaries" %}
 </div>
 </div>
