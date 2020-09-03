@@ -10,10 +10,6 @@ It requires Jekyll and several other Ruby gems to build.
 __SET `JEKYLL_ENV=production` ENVIRONMENT VARIABLE BEFORE PRODUCTION BUILDS__
 
  - jekyll
- - jekyll-minifier
  - jekyll-seo-tag
  - jekyll-sitemap
- - less
  - rouge
- - therubyracer
-

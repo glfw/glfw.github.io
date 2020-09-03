@@ -1,85 +1,85 @@
 ---
 ---
 
-@import (inline) '/css/base-min.css';
-@import (inline) '/css/grids-min.css';
-@import (inline) '/css/grids-responsive-min.css';
+@import 'css/base-min';
+@import 'css/grids-min';
+@import 'css/grids-responsive-min';
 
 // Page body background color
-@body-background-color: hsl(0, 0%, 95%);
+$body-background-color: hsl(0, 0%, 95%);
 
 // Block quotes and code blocks border color
-@code-block-border-color: hsl(0, 0%, 80%);
+$code-block-border-color: hsl(0, 0%, 80%);
 
 // Highlighted code blocks background color
-@code-block-background-color: hsl(0, 0%, 95%);
+$code-block-background-color: hsl(0, 0%, 95%);
 
 // Page horizontal rule, code block, table and block quote background color
-@page-background-color: hsl(0, 0%, 95%);
+$page-background-color: hsl(0, 0%, 95%);
 
 // Section (content) and table even rows background color
-@section-background-color: hsl(0, 0%, 100%);
+$section-background-color: hsl(0, 0%, 100%);
 
 // Navigation bar and footer text color
-@nav-footer-color: hsl(0, 0%, 40%);
+$nav-footer-color: hsl(0, 0%, 40%);
 
 // Default text color
-@default-text-color: hsl(0, 0%, 30%);
+$default-text-color: hsl(0, 0%, 30%);
 
 // Default text color for headers, bold and italic texts
-@default-header-color: hsl(0, 0%, 10%);
+$default-header-color: hsl(0, 0%, 10%);
 
 // Base color used for links and buttons
-@base-hue: 24;
+$base-hue: 24;
 
 // Tables, download and view buttons background and hover colors
-@button-shade1: hsl(@base-hue, 100%, 50%);
-@button-shade2: hsl((@base-hue + 10), 100%, 60%);
-@button-shadow: hsl(0, 0%, 60%);
-@button-text-shadow: darken(@button-shade1, 10%);
+$button-shade1: hsl($base-hue, 100%, 50%);
+$button-shade2: hsl(($base-hue + 10), 100%, 60%);
+$button-shadow: hsl(0, 0%, 60%);
+$button-text-shadow: darken($button-shade1, 10%);
 
 // Progress bar colors
-@prog-body-shade1: hsl(0, 0%, 90%);
-@prog-body-shade2: hsl(0, 0%, 95%);
-@prog-body-shadow1: hsl(0, 0%, 90%);
-@prog-body-shadow2: @button-shadow;
-@prog-out-shade1: hsl(0, 0%, 75%);
-@prog-out-shade2: hsl(0, 0%, 80%);
-@prog-out-shadow1: hsl(0, 0%, 60%);
-@prog-out-shadow2: hsl(0, 0%, 100%);
-@prog-bar-shade1: @button-shade1;
-@prog-bar-shade2: hsl((@base-hue + 15), 100%, 60%);
-@prog-bar-shadow1: hsla(0, 0%, 100%, 0.4);
-@prog-bar-shadow2: @button-shade1;
+$prog-body-shade1: hsl(0, 0%, 90%);
+$prog-body-shade2: hsl(0, 0%, 95%);
+$prog-body-shadow1: hsl(0, 0%, 90%);
+$prog-body-shadow2: $button-shadow;
+$prog-out-shade1: hsl(0, 0%, 75%);
+$prog-out-shade2: hsl(0, 0%, 80%);
+$prog-out-shadow1: hsl(0, 0%, 60%);
+$prog-out-shadow2: hsl(0, 0%, 100%);
+$prog-bar-shade1: $button-shade1;
+$prog-bar-shade2: hsl(($base-hue + 15), 100%, 60%);
+$prog-bar-shadow1: hsla(0, 0%, 100%, 0.4);
+$prog-bar-shadow2: $button-shade1;
 
 // Navigation, links and table cells default and hover colors
-@link-color: hsl(@base-hue, 100%, 50%);
+$link-color: hsl($base-hue, 100%, 50%);
 
 // Page header and footer links hover and shadow colors
-@nav-footer-hover-color: hsl(@base-hue, 100%, 60%);
+$nav-footer-hover-color: hsl($base-hue, 100%, 60%);
 
 // Page header and footer height
-@header-footer-height: 64px;
+$header-footer-height: 64px;
 
 .button {
 	color: #fff;
 	font-weight: bold;
-	box-shadow: inset 0 0 32px @button-shade1, 0 0 2px @button-shadow;
-	text-shadow: 0 -1px 1px @button-text-shadow;
+	box-shadow: inset 0 0 32px $button-shade1, 0 0 2px $button-shadow;
+	text-shadow: 0 -1px 1px $button-text-shadow;
 }
 
 .button, th {
-	background: linear-gradient(@button-shade2 0%,@button-shade1 100%);
+	background: linear-gradient($button-shade2 0%,$button-shade1 100%);
 }
 
 .button:hover {
-	box-shadow: inset 0 0 32px @button-shade2, 0 0 2px @button-shadow;
+	box-shadow: inset 0 0 32px $button-shade2, 0 0 2px $button-shadow;
 }
 
 #milestone-container {
-	color: @default-text-color;
-	background: linear-gradient(@prog-body-shade2 0%,@prog-body-shade1 100%);
-	box-shadow: inset 0 0 32px @prog-body-shadow1, 0 0 2px @prog-body-shadow2;
+	color: $default-text-color;
+	background: linear-gradient($prog-body-shade2 0%,$prog-body-shade1 100%);
+	box-shadow: inset 0 0 32px $prog-body-shadow1, 0 0 2px $prog-body-shadow2;
 	text-shadow: 0 1px 1px hsl(0, 0%, 100%);
 	opacity: 0;
 }
@@ -91,16 +91,16 @@
 }
 
 #progress-bar {
-	//background: linear-gradient(@prog-out-shade1 0%, @prog-out-shade2 100%);
-	//box-shadow: inset 0 1px 4px @prog-out-shadow1, inset 0 -1px 1px @prog-out-shadow2;
+	//background: linear-gradient($prog-out-shade1 0%, $prog-out-shade2 100%);
+	//box-shadow: inset 0 1px 4px $prog-out-shadow1, inset 0 -1px 1px $prog-out-shadow2;
 	// Faking the inset box-shadow effect with a simple linear gradient
-	background: linear-gradient(@prog-out-shadow1 0%, @prog-out-shade1 30%, @prog-out-shade2 95%, @prog-out-shadow2 100%);
+	background: linear-gradient($prog-out-shadow1 0%, $prog-out-shade1 30%, $prog-out-shade2 95%, $prog-out-shadow2 100%);
 	margin-top: .5em;
 }
 
 #progress-bar-inner {
-	background: linear-gradient(to left, @prog-bar-shade2 10%,@prog-bar-shade1 100%);
-	box-shadow: inset 0 4px 1px @prog-bar-shadow1, inset 0 0 1px @prog-bar-shadow2;
+	background: linear-gradient(to left, $prog-bar-shade2 10%,$prog-bar-shade1 100%);
+	box-shadow: inset 0 4px 1px $prog-bar-shadow1, inset 0 0 1px $prog-bar-shadow2;
 	width: 100%;
 	display: block;
 	height: 8px;
@@ -117,26 +117,26 @@
 }
 
 body {
-	color: @default-text-color;
+	color: $default-text-color;
 	line-height: 1.8em;
 }
 
 h1, h2, h3, h4, h5, h6, strong, em {
-	color: @default-header-color;
+	color: $default-header-color;
 }
 
 hr {
 	height: 6px;
 	margin: 3em auto;
 	border: 0;
-	background: linear-gradient(to left, @section-background-color 0%,@page-background-color 50%,@section-background-color 100%);
+	background: linear-gradient(to left, $section-background-color 0%,$page-background-color 50%,$section-background-color 100%);
 }
 
 blockquote, .highlight {
 	padding: .5em 2em;
 	border-width: 0 0 0 4px;
 	border-style: solid;
-	border-color: @code-block-border-color;
+	border-color: $code-block-border-color;
 	overflow: auto;
 }
 
@@ -151,7 +151,7 @@ code {
 
 table {
 	border-collapse: inherit;
-	border: 2px solid @button-shade1;
+	border: 2px solid $button-shade1;
 	border-spacing: 0;
 }
 
@@ -160,23 +160,23 @@ td, th {
 }
 
 th {
-	box-shadow: inset 0 0 32px @button-shade1;
-	text-shadow: 0 -1px 1px @button-text-shadow;
+	box-shadow: inset 0 0 32px $button-shade1;
+	text-shadow: 0 -1px 1px $button-text-shadow;
 	text-align: left;
 	color: #fff;
 }
 
 section, tr:nth-child(even) {
-	background-color: @section-background-color;
+	background-color: $section-background-color;
 }
 
 a {
-	color: @link-color;
+	color: $link-color;
 	text-decoration: none;
 }
 
 header a, footer a {
-	color: @nav-footer-color;
+	color: $nav-footer-color;
 	display: inline-block;
 }
 
@@ -189,19 +189,19 @@ header a, footer a, .button {
 }
 
 header a:hover, footer a:hover {
-	color: @nav-footer-hover-color;
+	color: $nav-footer-hover-color;
 }
 
 body, table, blockquote, code {
-	background-color: @page-background-color;
+	background-color: $page-background-color;
 }
 
 header.main {
-	min-height: @header-footer-height;
+	min-height: $header-footer-height;
 }
 
 #glfw_home {
-	line-height: @header-footer-height;
+	line-height: $header-footer-height;
 	padding-right: 48px;
 	float: left;
 	font-size: 2.5em;
@@ -214,7 +214,7 @@ nav {
 
 nav a {
 	margin-left: 2em;
-	line-height: @header-footer-height;
+	line-height: $header-footer-height;
 }
 
 section {
@@ -261,7 +261,7 @@ figure.highlight {
 // Syntax Highlighting
 
 .highlight, .highlight code {
-	background-color: @code-block-background-color;
+	background-color: $code-block-background-color;
 }
 
 .gs, .o, .kn, .nt, .ow, .k, .kc, .kd, .kp, .kr, .kt, .no {
@@ -282,7 +282,7 @@ figure.highlight {
 }
 
 .k, .kc, .kd, .kp, .kr, .kt, .no {
-	color: darken(@default-text-color, 5%);
+	color: darken($default-text-color, 5%);
 }
 
 .l, .m, .mf, .mh, .mi, .mo, .se, .il {
@@ -298,5 +298,6 @@ figure.highlight {
 }
 
 .n, .p, .w, .nb, .ni, .nl, .nn, .py, .nv, .bp, .vc, .vg, .vi {
-	color: @default-text-color;
+	color: $default-text-color;
 }
+ 
