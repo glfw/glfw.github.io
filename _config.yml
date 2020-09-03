@@ -12,14 +12,11 @@ collections:
         output: false
 
 plugins:
-  - jekyll-minifier
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Uglifier (JavaScript minifier) ES6 support
-jekyll-minifier:
-  uglifier_args:
-    harmony: true
+sass:
+  style: compressed
 
 # jekyll-seo-tag specific
 
