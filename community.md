@@ -25,7 +25,7 @@ projects, etc.
 
 <div class="pure-g">
 
-<div class="pure-u-1 pure-u-md-2-3" markdown="1">
+<div class="pure-u-1 pure-u-md-15-24" markdown="1">
 
 ### Bindings
 
@@ -69,8 +69,8 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Scheme      | Tomas Möre          | [gambit-GLFW](https://github.com/black0range/gambit-GLFW) |
 
 </div>
-
-<div class="pure-u-1 pure-u-md-1-3" markdown="1">
+<div class="pure-u-1 pure-u-md-1-24"></div>
+<div class="pure-u-1 pure-u-md-8-24" markdown="1">
 
 ### Frameworks
 

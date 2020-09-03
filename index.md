@@ -14,7 +14,7 @@ description: GLFW project home page.
 {% endcapture %}
 
 <div class="pure-g">
-<div class="pure-u-1 pure-u-md-2-3" markdown="1">
+<div class="pure-u-1 pure-u-md-15-24" markdown="1">
 **GLFW** is an Open Source, multi-platform library for OpenGL, OpenGL ES and
 Vulkan development on the desktop.  It provides a simple API for creating
 windows, contexts and surfaces, receiving input and events.
@@ -24,7 +24,8 @@ GLFW is written in C and supports Windows, macOS, X11 and Wayland.
 GLFW is licensed under the [zlib/libpng license](license.html).
 
 </div>
-<div class="pure-u-1 pure-u-md-1-3" markdown="1">
+<div class="pure-u-1 pure-u-md-1-24"></div>
+<div class="pure-u-1 pure-u-md-8-24" markdown="1">
 
 {% capture dl_btn_label %}
 Download GLFW {{ glfw_version }}
@@ -43,7 +44,7 @@ Download GLFW {{ glfw_version }}
 <br/>
 
 <div class="pure-g">
-<div class="pure-u-1 pure-u-md-2-3" markdown="1">
+<div class="pure-u-1 pure-u-md-15-24" markdown="1">
 
 {% include features.html %}
 
@@ -52,7 +53,8 @@ there are
 [alternatives](https://www.opengl.org/wiki/Related_toolkits_and_APIs).
 
 </div>
-<div class="pure-u-1 pure-u-md-1-3" markdown="1">
+<div class="pure-u-1 pure-u-md-1-24"></div>
+<div class="pure-u-1 pure-u-md-8-24" markdown="1">
 
 {% for post in site.tags.news limit:3 %}
 <article>
