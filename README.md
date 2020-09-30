@@ -3,7 +3,7 @@
 This is the Jekyll source for the [glfw.org](https://www.glfw.org/) website.
 
 The sources for this website are under the [zlib/libpng
-license](https://opensource.org/licenses/Zlib), same as the library.
+license](https://opensource.org/licenses/Zlib), the same as the library.
 
 It requires Jekyll and several other Ruby gems to build.
 
