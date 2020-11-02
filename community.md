@@ -54,7 +54,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Lua         | Stefano Trettel     | [MoonGLFW](https://github.com/stetre/moonglfw) |
 | LuaJIT      | Oleg Dudka          | [luajit-glfw](https://github.com/Playermet/luajit-glfw) |
 | .NET        | Victor P. R. Müller | [GLFW3.NET](https://github.com/realvictorprm/GLFW3.NET) |
-| Nim         | Erik Andersson      | [nim-glfw](https://github.com/EXetoC/nim-glfw) |
+| Nim         | John Novak          | [nim-glfw](https://github.com/johnnovak/nim-glfw) |
 | Node.js     | Artem Kunets        | [glfwJS](https://github.com/Reon90/glfwJS) |
 | Node.js     | Mikaël Sévenier     | [node-glfw](https://github.com/mikeseven/node-glfw) |
 | OCaml       | Sylvain Boilard     | [GLFW-OCaml](https://github.com/SylvainBoilard/GLFW-OCaml) |
