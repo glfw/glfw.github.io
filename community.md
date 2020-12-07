@@ -55,6 +55,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | LuaJIT      | Oleg Dudka          | [luajit-glfw](https://github.com/Playermet/luajit-glfw) |
 | .NET        | Victor P. R. Müller | [GLFW3.NET](https://github.com/realvictorprm/GLFW3.NET) |
 | Nim         | John Novak          | [nim-glfw](https://github.com/johnnovak/nim-glfw) |
+| Node.js     | Luis Blanco         | [glfw-raub](https://github.com/node-3d/glfw-raub) |
 | Node.js     | Artem Kunets        | [glfwJS](https://github.com/Reon90/glfwJS) |
 | Node.js     | Mikaël Sévenier     | [node-glfw](https://github.com/mikeseven/node-glfw) |
 | OCaml       | Sylvain Boilard     | [GLFW-OCaml](https://github.com/SylvainBoilard/GLFW-OCaml) |
