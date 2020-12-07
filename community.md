@@ -101,6 +101,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 
 | Language | Maintainer      | Source |
 | -------- | --------------- | ------ |
+| C++      | Jan Bielak      | [GLFWPP](https://github.com/janekb04/glfwpp)
 | C++      | Giorgio Marcias | [GLFWM](https://github.com/giorgiomarcias/glfwm)
 
 </div>
