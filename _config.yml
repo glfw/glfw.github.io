@@ -4,7 +4,7 @@ permalink: /:title.html
 highlighter: rouge
 markdown: kramdown
 
-exclude: [README.md, css/base-min.css, css/grids-min.css, css/grids-responsive-min.css]
+exclude: [README.md]
 
 collections:
     changelogs:
@@ -16,6 +16,7 @@ plugins:
   - jekyll-sitemap
 
 sass:
+  sass_dir: css
   style: compressed
 
 # jekyll-seo-tag specific
