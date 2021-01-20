@@ -36,7 +36,8 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Language    | Maintainer          | Source |
 | ----------- | ------------------- | ------- |
 | Ada         | Felix Krause        | [OpenGLAda](https://github.com/flyx/OpenGLAda) |
-| C#          | Eric Freed          | [GLFW.NET](https://github.com/ForeverZer0/glfw-net)
+| C++         | Cvelth              | [VKFW](https://github.com/Cvelth/vkfw) |
+| C#          | Eric Freed          | [GLFW.NET](https://github.com/ForeverZer0/glfw-net) |
 | C#          | Andy Korth          | [Pencil.Gaming](https://github.com/andykorth/Pencil.Gaming) |
 | C#          | Ruben Labruyere     | [Arqan](https://github.com/TheBoneJarmer/Arqan) |
 | C#          | Zachary Snow        | [GLFWDotNet](https://github.com/smack0007/GLFWDotNet) |
@@ -81,17 +82,17 @@ one should be added or removed.
 
 | Name                                          | Language | Source |
 | --------------------------------------------- | -------- | ---------------- |
-| [Cinder](https://libcinder.org/)              | C++      | [GitHub](https://github.com/cinder/Cinder)
-| [Cocos2d-x](http://cocos2d-x.org/cocos2dx)    | C++, Lua | [GitHub](https://github.com/cocos2d/cocos2d-x)
-| [Emscripten](http://emscripten.org/)          | C, C++   | [GitHub](https://github.com/kripken/emscripten)
-| [Falcor](https://developer.nvidia.com/falcor) | C++      | [GitHub](https://github.com/nvidiagameworks/falcor)
-| [libGDX](https://libgdx.badlogicgames.com/)   | Java     | [GitHub](https://github.com/libgdx/libgdx/)
-| [LWJGL](https://www.lwjgl.org/)               | Java     | [GitHub](https://github.com/LWJGL/lwjgl3/)
-| [nCine](https://ncine.github.io/)             | C++      | [GitHub](https://github.com/nCine/nCine)
-| [NimGL](https://nimgl.dev)                    | Nim      | [GitHub](https://github.com/nimgl/nimgl)
-| [openFrameworks](https://openframeworks.cc/)  | C++      | [GitHub](https://github.com/openframeworks/openFrameworks/)
-| [Orx](https://orx-project.org/)               | C, C++   | [GitHub](https://github.com/orx/orx)
-| [raylib](https://www.raylib.com/)             | C, C++   | [GitHub](https://github.com/raysan5/raylib)
+| [Cinder](https://libcinder.org/)              | C++      | [GitHub](https://github.com/cinder/Cinder) |
+| [Cocos2d-x](http://cocos2d-x.org/cocos2dx)    | C++, Lua | [GitHub](https://github.com/cocos2d/cocos2d-x) |
+| [Emscripten](http://emscripten.org/)          | C, C++   | [GitHub](https://github.com/kripken/emscripten) |
+| [Falcor](https://developer.nvidia.com/falcor) | C++      | [GitHub](https://github.com/nvidiagameworks/falcor) |
+| [libGDX](https://libgdx.badlogicgames.com/)   | Java     | [GitHub](https://github.com/libgdx/libgdx/) |
+| [LWJGL](https://www.lwjgl.org/)               | Java     | [GitHub](https://github.com/LWJGL/lwjgl3/) |
+| [nCine](https://ncine.github.io/)             | C++      | [GitHub](https://github.com/nCine/nCine) |
+| [NimGL](https://nimgl.dev)                    | Nim      | [GitHub](https://github.com/nimgl/nimgl) |
+| [openFrameworks](https://openframeworks.cc/)  | C++      | [GitHub](https://github.com/openframeworks/openFrameworks/) |
+| [Orx](https://orx-project.org/)               | C, C++   | [GitHub](https://github.com/orx/orx) |
+| [raylib](https://www.raylib.com/)             | C, C++   | [GitHub](https://github.com/raysan5/raylib) |
 
 ### Wrappers
 
@@ -101,8 +102,8 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 
 | Language | Maintainer      | Source |
 | -------- | --------------- | ------ |
-| C++      | Jan Bielak      | [GLFWPP](https://github.com/janekb04/glfwpp)
-| C++      | Giorgio Marcias | [GLFWM](https://github.com/giorgiomarcias/glfwm)
+| C++      | Jan Bielak      | [GLFWPP](https://github.com/janekb04/glfwpp) |
+| C++      | Giorgio Marcias | [GLFWM](https://github.com/giorgiomarcias/glfwm) |
 
 </div>
 
