@@ -73,7 +73,8 @@ package.
 <div class="pure-g">
 <div class="pure-u-1 pure-u-md-15-24" markdown="1">
 This package contains the GLFW header files, [documentation](docs/latest/) and
-release mode static and dynamic libraries for macOS 10.8 and later.
+release mode static and dynamic libraries for macOS 10.8 and later.  Both Intel,
+ARM and Universal binaries are included.
 </div>
 <div class="pure-u-1 pure-u-md-1-24"></div>
 <div class="pure-u-1 pure-u-md-8-24" markdown="1">
