@@ -48,6 +48,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Delphi      | Erik van Bilsen     | [DelphiGlfw](https://github.com/neslib/DelphiGlfw) |
 | Duktape     | Laurent Zubiaur     | [duk-glfw](https://github.com/lzubiaur/duk-glfw) |
 | Go          | Coşku Baş           | [glfw](https://github.com/go-gl/glfw) |
+| Harbour     | Rafał Jopek         | [HB-GLFW](https://github.com/rjopek/hb-glfw) |
 | Haskell     | Brian Lewis         | [GLFW-b](https://github.com/bsl/GLFW-b) |
 | Java        | Nathan Sweet        | [jglfw](https://github.com/badlogic/jglfw) |
 | Julia       | Jay Weisskopf       | [GLFW.jl](https://github.com/JuliaGL/GLFW.jl) |
