@@ -564,7 +564,7 @@ useful for OpenGL development.
 If you have questions related to the use of GLFW, we have a
 [user's web forum](https://sourceforge.net/forum/forum.php?forum_id=247562),
 on SF.net, and the registered IRC channel `#glfw` on
-[Freenode](http://freenode.net/).
+[Libera.Chat](https://libera.chat/).
 
 If you have a bug to report, a patch to submit or a feature you'd like to
 request, please file it in the
