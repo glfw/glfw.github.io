@@ -55,6 +55,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Julia       | Jay Weisskopf       | [GLFW.jl](https://github.com/JuliaGL/GLFW.jl) |
 | Lua         | Stefano Trettel     | [MoonGLFW](https://github.com/stetre/moonglfw) |
 | LuaJIT      | Oleg Dudka          | [luajit-glfw](https://github.com/Playermet/luajit-glfw) |
+| MATLAB      | Mark Cafaro         | [matlab-glfw](https://github.com/cafarm/matlab-glfw) |
 | .NET        | Victor P. R. Müller | [GLFW3.NET](https://github.com/realvictorprm/GLFW3.NET) |
 | Nim         | John Novak          | [nim-glfw](https://github.com/johnnovak/nim-glfw) |
 | Node.js     | Luis Blanco         | [glfw-raub](https://github.com/node-3d/glfw-raub) |
