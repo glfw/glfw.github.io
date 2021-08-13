@@ -111,7 +111,7 @@ Querying for Vulkan support</h1>
 <div class="line">    <span class="comment">// Vulkan is available, at least for compute</span></div>
 <div class="line">}</div>
 </div><!-- fragment --><p>This function returns <code>GLFW_TRUE</code> if the Vulkan loader and any minimally functional ICD was found.</p>
-<p>If if one or both were not found, calling any other Vulkan related GLFW function will generate a <a class="el" href="group__errors.html#ga56882b290db23261cc6c053c40c2d08e">GLFW_API_UNAVAILABLE</a> error.</p>
+<p>If one or both were not found, calling any other Vulkan related GLFW function will generate a <a class="el" href="group__errors.html#ga56882b290db23261cc6c053c40c2d08e">GLFW_API_UNAVAILABLE</a> error.</p>
 <h2><a class="anchor" id="vulkan_proc"></a>
 Querying Vulkan function pointers</h2>
 <p>To load any Vulkan core or extension function from the found loader, call <a class="el" href="group__vulkan.html#gadf228fac94c5fd8f12423ec9af9ff1e9">glfwGetInstanceProcAddress</a>. To load functions needed for instance creation, pass <code>NULL</code> as the instance.</p>
@@ -169,19 +169,19 @@ Creating a Vulkan window surface</h1>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <div class="ttc" id="aglfw3_8h_html"><div class="ttname"><a href="glfw3_8h.html">glfw3.h</a></div><div class="ttdoc">The header of the GLFW 3 API.</div></div>
-<div class="ttc" id="agroup__window_html_ga3c96d80d363e67d13a41b5d1821f3242"><div class="ttname"><a href="group__window.html#ga3c96d80d363e67d13a41b5d1821f3242">GLFWwindow</a></div><div class="ttdeci">struct GLFWwindow GLFWwindow</div><div class="ttdoc">Opaque window object.</div><div class="ttdef"><b>Definition:</b> glfw3.h:1177</div></div>
+<div class="ttc" id="agroup__window_html_ga3c96d80d363e67d13a41b5d1821f3242"><div class="ttname"><a href="group__window.html#ga3c96d80d363e67d13a41b5d1821f3242">GLFWwindow</a></div><div class="ttdeci">struct GLFWwindow GLFWwindow</div><div class="ttdoc">Opaque window object.</div><div class="ttdef"><b>Definition:</b> glfw3.h:1178</div></div>
 <div class="ttc" id="agroup__vulkan_html_ga1abcbe61033958f22f63ef82008874b1"><div class="ttname"><a href="group__vulkan.html#ga1abcbe61033958f22f63ef82008874b1">glfwGetRequiredInstanceExtensions</a></div><div class="ttdeci">const char ** glfwGetRequiredInstanceExtensions(uint32_t *count)</div><div class="ttdoc">Returns the Vulkan instance extensions required by GLFW.</div></div>
 <div class="ttc" id="agroup__vulkan_html_ga2e7f30931e02464b5bc8d0d4b6f9fe2b"><div class="ttname"><a href="group__vulkan.html#ga2e7f30931e02464b5bc8d0d4b6f9fe2b">glfwVulkanSupported</a></div><div class="ttdeci">int glfwVulkanSupported(void)</div><div class="ttdoc">Returns whether the Vulkan loader and an ICD have been found.</div></div>
 <div class="ttc" id="agroup__vulkan_html_ga1a24536bec3f80b08ead18e28e6ae965"><div class="ttname"><a href="group__vulkan.html#ga1a24536bec3f80b08ead18e28e6ae965">glfwCreateWindowSurface</a></div><div class="ttdeci">VkResult glfwCreateWindowSurface(VkInstance instance, GLFWwindow *window, const VkAllocationCallbacks *allocator, VkSurfaceKHR *surface)</div><div class="ttdoc">Creates a Vulkan surface for the specified window.</div></div>
-<div class="ttc" id="aglfw3_8h_html_a8f6dcdc968d214ff14779564f1389264"><div class="ttname"><a href="glfw3_8h.html#a8f6dcdc968d214ff14779564f1389264">GLFW_NO_API</a></div><div class="ttdeci">#define GLFW_NO_API</div><div class="ttdef"><b>Definition:</b> glfw3.h:1029</div></div>
-<div class="ttc" id="agroup__window_html_ga649309cf72a3d3de5b1348ca7936c95b"><div class="ttname"><a href="group__window.html#ga649309cf72a3d3de5b1348ca7936c95b">GLFW_CLIENT_API</a></div><div class="ttdeci">#define GLFW_CLIENT_API</div><div class="ttdoc">Context client API hint and attribute.</div><div class="ttdef"><b>Definition:</b> glfw3.h:942</div></div>
+<div class="ttc" id="aglfw3_8h_html_a8f6dcdc968d214ff14779564f1389264"><div class="ttname"><a href="glfw3_8h.html#a8f6dcdc968d214ff14779564f1389264">GLFW_NO_API</a></div><div class="ttdeci">#define GLFW_NO_API</div><div class="ttdef"><b>Definition:</b> glfw3.h:1030</div></div>
+<div class="ttc" id="agroup__window_html_ga649309cf72a3d3de5b1348ca7936c95b"><div class="ttname"><a href="group__window.html#ga649309cf72a3d3de5b1348ca7936c95b">GLFW_CLIENT_API</a></div><div class="ttdeci">#define GLFW_CLIENT_API</div><div class="ttdoc">Context client API hint and attribute.</div><div class="ttdef"><b>Definition:</b> glfw3.h:943</div></div>
 <div class="ttc" id="agroup__window_html_ga5c336fddf2cbb5b92f65f10fb6043344"><div class="ttname"><a href="group__window.html#ga5c336fddf2cbb5b92f65f10fb6043344">glfwCreateWindow</a></div><div class="ttdeci">GLFWwindow * glfwCreateWindow(int width, int height, const char *title, GLFWmonitor *monitor, GLFWwindow *share)</div><div class="ttdoc">Creates a window and its associated context.</div></div>
 <div class="ttc" id="agroup__window_html_ga7d9c8c62384b1e2821c4dc48952d2033"><div class="ttname"><a href="group__window.html#ga7d9c8c62384b1e2821c4dc48952d2033">glfwWindowHint</a></div><div class="ttdeci">void glfwWindowHint(int hint, int value)</div><div class="ttdoc">Sets the specified window hint to the desired value.</div></div>
 <div class="ttc" id="agroup__vulkan_html_gaff3823355cdd7e2f3f9f4d9ea9518d92"><div class="ttname"><a href="group__vulkan.html#gaff3823355cdd7e2f3f9f4d9ea9518d92">glfwGetPhysicalDevicePresentationSupport</a></div><div class="ttdeci">int glfwGetPhysicalDevicePresentationSupport(VkInstance instance, VkPhysicalDevice device, uint32_t queuefamily)</div><div class="ttdoc">Returns whether the specified queue family can present images.</div></div>
 <div class="ttc" id="agroup__vulkan_html_gadf228fac94c5fd8f12423ec9af9ff1e9"><div class="ttname"><a href="group__vulkan.html#gadf228fac94c5fd8f12423ec9af9ff1e9">glfwGetInstanceProcAddress</a></div><div class="ttdeci">GLFWvkproc glfwGetInstanceProcAddress(VkInstance instance, const char *procname)</div><div class="ttdoc">Returns the address of the specified Vulkan instance function.</div></div>
 <address class="footer">
 <p>
-Last update on Wed Sep 16 2020 for GLFW 3.3.3
+Last update on Fri Aug 13 2021 for GLFW 3.3.5
 </p>
 </address>
 </body>

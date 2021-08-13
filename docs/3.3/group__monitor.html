@@ -655,7 +655,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function returns an array of all video modes supported by the specified monitor. The returned array is sorted in ascending order, first by color bit depth (the sum of all channel depths) and then by resolution area (the product of width and height).</p>
+<p>This function returns an array of all video modes supported by the specified monitor. The returned array is sorted in ascending order, first by color bit depth (the sum of all channel depths), then by resolution area (the product of width and height), then resolution width and finally by refresh rate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">monitor</td><td>The monitor to query. </td></tr>
@@ -831,10 +831,10 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="agroup__monitor_html_ga8d9efd1cde9426692c73fe40437d0ae3"><div class="ttname"><a href="group__monitor.html#ga8d9efd1cde9426692c73fe40437d0ae3">GLFWmonitor</a></div><div class="ttdeci">struct GLFWmonitor GLFWmonitor</div><div class="ttdoc">Opaque monitor object.</div><div class="ttdef"><b>Definition:</b> glfw3.h:1165</div></div>
+<div class="ttc" id="agroup__monitor_html_ga8d9efd1cde9426692c73fe40437d0ae3"><div class="ttname"><a href="group__monitor.html#ga8d9efd1cde9426692c73fe40437d0ae3">GLFWmonitor</a></div><div class="ttdeci">struct GLFWmonitor GLFWmonitor</div><div class="ttdoc">Opaque monitor object.</div><div class="ttdef"><b>Definition:</b> glfw3.h:1166</div></div>
 <address class="footer">
 <p>
-Last update on Wed Sep 16 2020 for GLFW 3.3.3
+Last update on Fri Aug 13 2021 for GLFW 3.3.5
 </p>
 </address>
 </body>
