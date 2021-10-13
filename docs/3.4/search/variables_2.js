@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['green_715',['green',['../structGLFWgammaramp.html#affccc6f5df47820b6562d709da3a5a3a',1,'GLFWgammaramp']]],
-  ['greenbits_716',['greenBits',['../structGLFWvidmode.html#a292fdd281f3485fb3ff102a5bda43faa',1,'GLFWvidmode']]]
+  ['deallocate_0',['deallocate',['../structGLFWallocator.html#ab74cf9a969e73e6eb65a6112a591a988',1,'GLFWallocator']]]
 ];

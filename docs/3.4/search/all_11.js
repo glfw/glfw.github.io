@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['width_544',['width',['../structGLFWvidmode.html#a698dcb200562051a7249cb6ae154c71d',1,'GLFWvidmode::width()'],['../structGLFWimage.html#af6a71cc999fe6d3aea31dd7e9687d835',1,'GLFWimage::width()']]],
-  ['window_20guide_545',['Window guide',['../window_guide.html',1,'']]],
-  ['window_20reference_546',['Window reference',['../group__window.html',1,'']]],
-  ['window_2edox_547',['window.dox',['../window_8dox.html',1,'']]]
+  ['vulkan_20guide_0',['Vulkan guide',['../vulkan_guide.html',1,'']]],
+  ['vulkan_20support_20reference_1',['Vulkan support reference',['../group__vulkan.html',1,'']]],
+  ['vulkan_2edox_2',['vulkan.dox',['../vulkan_8dox.html',1,'']]]
 ];

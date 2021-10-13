@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['vulkan_20guide_541',['Vulkan guide',['../vulkan_guide.html',1,'']]],
-  ['vulkan_20support_20reference_542',['Vulkan support reference',['../group__vulkan.html',1,'']]],
-  ['vulkan_2edox_543',['vulkan.dox',['../vulkan_8dox.html',1,'']]]
+  ['user_0',['user',['../structGLFWallocator.html#af6153be74dbaf7f0a7e8bd3bfc039910',1,'GLFWallocator']]]
 ];
