@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
-<title>GLFW: GLFWgammaramp Struct Reference</title>
+<title>GLFW: GLFWallocator Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,92 +63,82 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">GLFWgammaramp Struct Reference<div class="ingroups"><a class="el" href="group__monitor.html">Monitor reference</a></div></div></div>
+  <div class="headertitle"><div class="title">GLFWallocator Struct Reference<div class="ingroups"><a class="el" href="group__init.html">Initialization, version and error reference</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Gamma ramp.  
- <a href="structGLFWgammaramp.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="glfw3_8h_source.html">glfw3.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a2cce5d968734b685623eef913e635138"><td class="memItemLeft" align="right" valign="top">unsigned short *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGLFWgammaramp.html#a2cce5d968734b685623eef913e635138">red</a></td></tr>
-<tr class="separator:a2cce5d968734b685623eef913e635138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affccc6f5df47820b6562d709da3a5a3a"><td class="memItemLeft" align="right" valign="top">unsigned short *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGLFWgammaramp.html#affccc6f5df47820b6562d709da3a5a3a">green</a></td></tr>
-<tr class="separator:affccc6f5df47820b6562d709da3a5a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf0c836d0efe29c392fe8d1a1042744b"><td class="memItemLeft" align="right" valign="top">unsigned short *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGLFWgammaramp.html#acf0c836d0efe29c392fe8d1a1042744b">blue</a></td></tr>
-<tr class="separator:acf0c836d0efe29c392fe8d1a1042744b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad620e1cffbff9a32c51bca46301b59a5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGLFWgammaramp.html#ad620e1cffbff9a32c51bca46301b59a5">size</a></td></tr>
-<tr class="separator:ad620e1cffbff9a32c51bca46301b59a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a798136f17a9cb105be18312193bf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__init.html#ga4306a564e9f60f4de8cc8f31731a3120">GLFWallocatefun</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGLFWallocator.html#a18a798136f17a9cb105be18312193bf7">allocate</a></td></tr>
+<tr class="separator:a18a798136f17a9cb105be18312193bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a674af9e170095b968f467233437be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__init.html#ga3e88a829615d8efe8bec1746f7309c63">GLFWreallocatefun</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGLFWallocator.html#af5a674af9e170095b968f467233437be">reallocate</a></td></tr>
+<tr class="separator:af5a674af9e170095b968f467233437be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74cf9a969e73e6eb65a6112a591a988"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__init.html#ga7181615eda94c4b07bd72bdcee39fa28">GLFWdeallocatefun</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGLFWallocator.html#ab74cf9a969e73e6eb65a6112a591a988">deallocate</a></td></tr>
+<tr class="separator:ab74cf9a969e73e6eb65a6112a591a988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6153be74dbaf7f0a7e8bd3bfc039910"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGLFWallocator.html#af6153be74dbaf7f0a7e8bd3bfc039910">user</a></td></tr>
+<tr class="separator:af6153be74dbaf7f0a7e8bd3bfc039910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This describes the gamma ramp for a monitor.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="monitor_guide.html#monitor_gamma">Gamma ramp</a> </dd>
+<div class="textblock"><dl class="section see"><dt>See also</dt><dd><a class="el" href="intro_guide.html#init_allocator">Custom heap memory allocator</a> </dd>
 <dd>
-<a class="el" href="group__monitor.html#ga76ba90debcf0062b5c4b73052b24f96f">glfwGetGammaRamp</a> </dd>
-<dd>
-<a class="el" href="group__monitor.html#ga583f0ffd0d29613d8cd172b996bbf0dd">glfwSetGammaRamp</a></dd></dl>
-<dl class="section since"><dt>Since</dt><dd>Added in version 3.0. </dd></dl>
+<a class="el" href="group__init.html#ga9dde93e9891fa7dd17e4194c9f3ae7c6">glfwInitAllocator</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Added in version 3.4. </dd></dl>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a2cce5d968734b685623eef913e635138" name="a2cce5d968734b685623eef913e635138"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cce5d968734b685623eef913e635138">&#9670;&nbsp;</a></span>red</h2>
+<a id="a18a798136f17a9cb105be18312193bf7" name="a18a798136f17a9cb105be18312193bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a798136f17a9cb105be18312193bf7">&#9670;&nbsp;</a></span>allocate</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned short* GLFWgammaramp::red</td>
+          <td class="memname"><a class="el" href="group__init.html#ga4306a564e9f60f4de8cc8f31731a3120">GLFWallocatefun</a> GLFWallocator::allocate</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >An array of value describing the response of the red channel. </p>
 
 </div>
 </div>
-<a id="affccc6f5df47820b6562d709da3a5a3a" name="affccc6f5df47820b6562d709da3a5a3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affccc6f5df47820b6562d709da3a5a3a">&#9670;&nbsp;</a></span>green</h2>
+<a id="af5a674af9e170095b968f467233437be" name="af5a674af9e170095b968f467233437be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a674af9e170095b968f467233437be">&#9670;&nbsp;</a></span>reallocate</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned short* GLFWgammaramp::green</td>
+          <td class="memname"><a class="el" href="group__init.html#ga3e88a829615d8efe8bec1746f7309c63">GLFWreallocatefun</a> GLFWallocator::reallocate</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >An array of value describing the response of the green channel. </p>
 
 </div>
 </div>
-<a id="acf0c836d0efe29c392fe8d1a1042744b" name="acf0c836d0efe29c392fe8d1a1042744b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf0c836d0efe29c392fe8d1a1042744b">&#9670;&nbsp;</a></span>blue</h2>
+<a id="ab74cf9a969e73e6eb65a6112a591a988" name="ab74cf9a969e73e6eb65a6112a591a988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74cf9a969e73e6eb65a6112a591a988">&#9670;&nbsp;</a></span>deallocate</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned short* GLFWgammaramp::blue</td>
+          <td class="memname"><a class="el" href="group__init.html#ga7181615eda94c4b07bd72bdcee39fa28">GLFWdeallocatefun</a> GLFWallocator::deallocate</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >An array of value describing the response of the blue channel. </p>
 
 </div>
 </div>
-<a id="ad620e1cffbff9a32c51bca46301b59a5" name="ad620e1cffbff9a32c51bca46301b59a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad620e1cffbff9a32c51bca46301b59a5">&#9670;&nbsp;</a></span>size</h2>
+<a id="af6153be74dbaf7f0a7e8bd3bfc039910" name="af6153be74dbaf7f0a7e8bd3bfc039910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6153be74dbaf7f0a7e8bd3bfc039910">&#9670;&nbsp;</a></span>user</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int GLFWgammaramp::size</td>
+          <td class="memname">void* GLFWallocator::user</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >The number of elements in each array. </p>
 
 </div>
 </div>

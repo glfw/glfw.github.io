@@ -149,6 +149,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9dde93e9891fa7dd17e4194c9f3ae7c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__init.html#ga9dde93e9891fa7dd17e4194c9f3ae7c6">glfwInitAllocator</a> (const <a class="el" href="structGLFWallocator.html">GLFWallocator</a> *allocator)</td></tr>
 <tr class="memdesc:ga9dde93e9891fa7dd17e4194c9f3ae7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the init allocator to the desired value.  <a href="group__init.html#ga9dde93e9891fa7dd17e4194c9f3ae7c6">More...</a><br /></td></tr>
 <tr class="separator:ga9dde93e9891fa7dd17e4194c9f3ae7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76af552d0307bb5f7791f245417d4752"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__init.html#ga76af552d0307bb5f7791f245417d4752">glfwInitVulkanLoader</a> (PFN_vkGetInstanceProcAddr loader)</td></tr>
+<tr class="memdesc:ga76af552d0307bb5f7791f245417d4752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the desired Vulkan <code>vkGetInstanceProcAddr</code> function.  <a href="group__init.html#ga76af552d0307bb5f7791f245417d4752">More...</a><br /></td></tr>
+<tr class="separator:ga76af552d0307bb5f7791f245417d4752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9f8ffaacf3c269cc48eafbf8b9b71197"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__init.html#ga9f8ffaacf3c269cc48eafbf8b9b71197">glfwGetVersion</a> (int *major, int *minor, int *rev)</td></tr>
 <tr class="memdesc:ga9f8ffaacf3c269cc48eafbf8b9b71197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the version of the GLFW library.  <a href="group__init.html#ga9f8ffaacf3c269cc48eafbf8b9b71197">More...</a><br /></td></tr>
 <tr class="separator:ga9f8ffaacf3c269cc48eafbf8b9b71197"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -713,6 +716,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga76af552d0307bb5f7791f245417d4752" name="ga76af552d0307bb5f7791f245417d4752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76af552d0307bb5f7791f245417d4752">&#9670;&nbsp;</a></span>glfwInitVulkanLoader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void glfwInitVulkanLoader </td>
+          <td>(</td>
+          <td class="paramtype">PFN_vkGetInstanceProcAddr&#160;</td>
+          <td class="paramname"><em>loader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >This function sets the <code>vkGetInstanceProcAddr</code> function that GLFW will use for all Vulkan related entry point queries.</p>
+<p >This feature is mostly useful on macOS, if your copy of the Vulkan loader is in a location where GLFW cannot find it through dynamic loading, or if you are still using the static library version of the loader.</p>
+<p >If set to <code>NULL</code>, GLFW will try to load the Vulkan loader dynamically by its standard name and get this function from there. This is the default behavior.</p>
+<p >The standard name of the loader is <code>vulkan-1.dll</code> on Windows, <code>libvulkan.so.1</code> on Linux and other Unix-like systems and <code>libvulkan.1.dylib</code> on macOS. If your code is also loading it via these names then you probably don't need to use this function.</p>
+<p >The function address you set is never reset by GLFW, but it only takes effect during initialization. Once GLFW has been initialized, any updates will be ignored until the library is terminated and initialized again.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">loader</td><td>The address of the function to use, or <code>NULL</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Loader function signature</dt><dd><div class="fragment"><div class="line">PFN_vkVoidFunction vkGetInstanceProcAddr(VkInstance instance, <span class="keyword">const</span> <span class="keywordtype">char</span>* name)</div>
+</div><!-- fragment --> For more information about this function, see the <a href="https://www.khronos.org/registry/vulkan/">Vulkan Registry</a>.</dd></dl>
+<dl class="section user"><dt>Errors</dt><dd>None.</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function may be called before <a class="el" href="group__init.html#ga317aac130a235ab08c6db0834907d85e">glfwInit</a>.</dd></dl>
+<dl class="section user"><dt>Thread safety</dt><dd>This function must only be called from the main thread.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="vulkan_guide.html#vulkan_loader">Finding the Vulkan loader</a> </dd>
+<dd>
+<a class="el" href="group__init.html#ga317aac130a235ab08c6db0834907d85e">glfwInit</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Added in version 3.4. </dd></dl>
+
+</div>
+</div>
 <a id="ga9f8ffaacf3c269cc48eafbf8b9b71197" name="ga9f8ffaacf3c269cc48eafbf8b9b71197"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9f8ffaacf3c269cc48eafbf8b9b71197">&#9670;&nbsp;</a></span>glfwGetVersion()</h2>
 
@@ -929,7 +970,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <address class="footer">
 <p>
-Last update on Wed Oct 13 2021 for GLFW 3.4.0
+Last update on Wed Oct 27 2021 for GLFW 3.4.0
 </p>
 </address>
 </body>

@@ -83,7 +83,8 @@ $(function() {
 </ul>
 </li>
 <li class="level2"><a href="#deprecations_34">Deprecations in version 3.4</a></li>
-<li class="level2"><a href="#removals_34">Removals in 3.4</a><ul><li class="level3"><a href="#osmesa_option_34">GLFW_USE_OSMESA CMake option has been removed</a></li>
+<li class="level2"><a href="#removals_34">Removals in 3.4</a><ul><li class="level3"><a href="#vulkan_static_34">GLFW_VULKAN_STATIC CMake option has been removed</a></li>
+<li class="level3"><a href="#osmesa_option_34">GLFW_USE_OSMESA CMake option has been removed</a></li>
 <li class="level3"><a href="#wl_shell_34">Support for the wl_shell protocol has been removed</a></li>
 </ul>
 </li>
@@ -155,6 +156,10 @@ Framebuffer transparency requires DWM transparency</h3>
 Deprecations in version 3.4</h2>
 <h2><a class="anchor" id="removals_34"></a>
 Removals in 3.4</h2>
+<h3><a class="anchor" id="vulkan_static_34"></a>
+GLFW_VULKAN_STATIC CMake option has been removed</h3>
+<p >This option was used to compile GLFW directly linked with the Vulkan loader, instead of using dynamic loading to get hold of <code>vkGetInstanceProcAddr</code> at initialization. This is now done by calling the <a class="el" href="group__init.html#ga76af552d0307bb5f7791f245417d4752">glfwInitVulkanLoader</a> function before initialization.</p>
+<p >If you need backward compatibility, this macro can still be defined for GLFW 3.4 and will have no effect. The call to <a class="el" href="group__init.html#ga76af552d0307bb5f7791f245417d4752">glfwInitVulkanLoader</a> can be conditionally enabled in your code by checking the <a class="el" href="group__init.html#ga6337d9ea43b22fc529b2bba066b4a576">GLFW_VERSION_MAJOR</a> and <a class="el" href="group__init.html#gaf80d40f0aea7088ff337606e9c48f7a3">GLFW_VERSION_MINOR</a> macros.</p>
 <h3><a class="anchor" id="osmesa_option_34"></a>
 GLFW_USE_OSMESA CMake option has been removed</h3>
 <p >This option was used to compile GLFW for the Null platform. The Null platform is now always supported. To produce a library binary that only supports this platform, the way this CMake option used to do, you will instead need to disable the default platform for the target OS. This means setting the <a class="el" href="compile_guide.html#GLFW_BUILD_WIN32">GLFW_BUILD_WIN32</a>, <a class="el" href="compile_guide.html#GLFW_BUILD_COCOA">GLFW_BUILD_COCOA</a> or <a class="el" href="compile_guide.html#GLFW_BUILD_X11">GLFW_BUILD_X11</a> CMake option to false.</p>
@@ -170,6 +175,7 @@ New functions in version 3.4</h3>
 <li><a class="el" href="group__init.html#ga9dde93e9891fa7dd17e4194c9f3ae7c6">glfwInitAllocator</a></li>
 <li><a class="el" href="group__init.html#ga6d6a983d38bd4e8fd786d7a9061d399e">glfwGetPlatform</a></li>
 <li><a class="el" href="group__init.html#ga8785d2b6b36632368d803e78079d38ed">glfwPlatformSupported</a></li>
+<li><a class="el" href="group__init.html#ga76af552d0307bb5f7791f245417d4752">glfwInitVulkanLoader</a></li>
 </ul>
 <h3><a class="anchor" id="types_34"></a>
 New types in version 3.4</h3>
@@ -225,7 +231,7 @@ Release notes for earlier versions</h1>
 </div><!-- PageDoc -->
 <address class="footer">
 <p>
-Last update on Wed Oct 13 2021 for GLFW 3.4.0
+Last update on Wed Oct 27 2021 for GLFW 3.4.0
 </p>
 </address>
 </body>

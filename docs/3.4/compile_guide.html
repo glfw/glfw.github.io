@@ -65,19 +65,19 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#compile_cmake">Using CMake</a><ul><li class="level2"><a href="#compile_deps">Installing dependencies</a><ul><li class="level3"><a href="#compile_deps_x11">Dependencies for X11 on Unix-like systems</a></li>
-<li class="level3"><a href="#compile_deps_wayland">Dependencies for Wayland and X11 on Unix-like systems</a></li>
+<ul><li class="level1"><a href="#compile_cmake">Using CMake</a><ul><li class="level2"><a href="#compile_deps">Installing dependencies</a><ul><li class="level3"><a href="#compile_deps_x11">Dependencies for X11</a></li>
+<li class="level3"><a href="#compile_deps_wayland">Dependencies for Wayland and X11</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#compile_generate">Generating build files with CMake</a><ul><li class="level3"><a href="#compile_generate_gui">Generating files with the CMake GUI</a></li>
-<li class="level3"><a href="#compile_generate_cli">Generating files with the CMake command-line tool</a></li>
+<li class="level2"><a href="#compile_generate">Generating build files with CMake</a><ul><li class="level3"><a href="#compile_generate_gui">Generating with the CMake GUI</a></li>
+<li class="level3"><a href="#compile_generate_cli">Generating with command-line CMake</a></li>
 </ul>
 </li>
 <li class="level2"><a href="#compile_compile">Compiling the library</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#compile_options">CMake options</a><ul><li class="level2"><a href="#compile_options_shared">Shared CMake options</a></li>
-<li class="level2"><a href="#compile_options_win32">Windows specific CMake options</a></li>
+<li class="level2"><a href="#compile_options_win32">Win32 specific CMake options</a></li>
 <li class="level2"><a href="#compile_options_macos">macOS specific CMake options</a></li>
 <li class="level2"><a href="#compile_options_unix">Unix-like system specific CMake options</a></li>
 </ul>
@@ -89,8 +89,8 @@ $(function() {
 <div class="textblock"><p >This is about compiling the GLFW library itself. For information on how to build applications that use GLFW, see <a class="el" href="build_guide.html">Building applications</a>.</p>
 <h1><a class="anchor" id="compile_cmake"></a>
 Using CMake</h1>
-<dl class="section note"><dt>Note</dt><dd>GLFW behaves like most other libraries that use CMake so this guide mostly describes the basic configure/generate/compile sequence. If you are already familiar with this from other projects, you may want to focus on the <a class="el" href="compile_guide.html#compile_deps">Installing dependencies</a> and <a class="el" href="compile_guide.html#compile_options">CMake options</a> sections for GLFW-specific information.</dd></dl>
-<p>GLFW uses <a href="https://cmake.org/">CMake</a> to generate project files or makefiles for your chosen development environment. To compile GLFW, first generate these files with CMake and then use them to compile the GLFW library.</p>
+<p >GLFW behaves like most other libraries that use CMake so this guide mostly describes the standard configure, generate and compile sequence. If you are already familiar with this from other projects, you may want to focus on the <a class="el" href="compile_guide.html#compile_deps">Installing dependencies</a> and <a class="el" href="compile_guide.html#compile_options">CMake options</a> sections for GLFW-specific information.</p>
+<p >GLFW uses <a href="https://cmake.org/">CMake</a> to generate project files or makefiles for your chosen development environment. To compile GLFW, first generate these files with CMake and then use them to compile the GLFW library.</p>
 <p >If you are on Windows and macOS you can <a href="https://cmake.org/download/">download CMake</a> from their site.</p>
 <p >If you are on a Unix-like system such as Linux, FreeBSD or Cygwin or have a package system like Fink, MacPorts or Homebrew, you can install its CMake package.</p>
 <p >CMake is a complex tool and this guide will only show a few of the possible ways to set up and compile GLFW. The CMake project has their own much more detailed <a href="https://cmake.org/cmake/help/latest/guide/user-interaction/">CMake user guide</a> that includes everything in this guide not specific to GLFW. It may be a useful companion to this one.</p>
@@ -98,7 +98,7 @@ Using CMake</h1>
 Installing dependencies</h2>
 <p >The C/C++ development environments in Visual Studio, Xcode and MinGW come with all necessary dependencies for compiling GLFW, but on Unix-like systems like Linux and FreeBSD you will need a few extra packages.</p>
 <h3><a class="anchor" id="compile_deps_x11"></a>
-Dependencies for X11 on Unix-like systems</h3>
+Dependencies for X11</h3>
 <p >To compile GLFW for X11, you need to have the X11 development packages installed. They are not needed to build or run programs that use GLFW.</p>
 <p >On Debian and derivates like Ubuntu and Linux Mint the <code>xorg-dev</code> meta-package pulls in the development packages for all of X11.</p>
 <div class="fragment"><div class="line">sudo apt install xorg-dev</div>
@@ -109,7 +109,7 @@ Dependencies for X11 on Unix-like systems</h3>
 </div><!-- fragment --><p >On Cygwin the <code>xorgproto</code> package in the Devel section of the GUI installer will install the headers and other development related files for all of X11.</p>
 <p >Once you have the required dependencies, move on to <a class="el" href="compile_guide.html#compile_generate">Generating build files with CMake</a>.</p>
 <h3><a class="anchor" id="compile_deps_wayland"></a>
-Dependencies for Wayland and X11 on Unix-like systems</h3>
+Dependencies for Wayland and X11</h3>
 <p >To compile GLFW for both Wayland and X11, you need to have the X11, Wayland and xkbcommon development packages installed. They are not needed to build or run programs that use GLFW. You will also need to set the <a class="el" href="compile_guide.html#GLFW_BUILD_WAYLAND">GLFW_BUILD_WAYLAND</a> CMake option in the next step when generating build files.</p>
 <p >On Debian and derivates like Ubuntu and Linux Mint you will need the <code>libwayland-dev</code>, <code>libxkbcommon-dev</code> and <code>wayland-protocols</code> packages and the <code>xorg-dev</code> meta-package. These will pull in all other dependencies.</p>
 <div class="fragment"><div class="line">sudo apt install libwayland-dev libxkbcommon-dev wayland-protocols xorg-dev</div>
@@ -129,13 +129,13 @@ Generating build files with CMake</h2>
 <p >Out-of-tree builds are recommended as they avoid cluttering up the source tree. They also allow you to have several build directories for different configurations all using the same source tree.</p>
 <p >A common pattern when building a single configuration is to have a build directory named <code>build</code> in the root of the source tree.</p>
 <h3><a class="anchor" id="compile_generate_gui"></a>
-Generating files with the CMake GUI</h3>
+Generating with the CMake GUI</h3>
 <p >Start the CMake GUI and set the paths to the source and build directories described above. Then press <em>Configure</em> and <em>Generate</em>.</p>
 <p >If you wish change any CMake variables in the list, press <em>Configure</em> and then <em>Generate</em> to have the new values take effect. The variable list will be populated after the first configure step.</p>
 <p >By default GLFW will use X11 on Linux and other Unix-like systems other than macOS. To include support for Wayland as well, set the <a class="el" href="compile_guide.html#GLFW_BUILD_WAYLAND">GLFW_BUILD_WAYLAND</a> option in the GLFW section of the variable list, then apply the new value as described above.</p>
 <p >Once you have generated the project files or makefiles for your chosen development environment, move on to <a class="el" href="compile_guide.html#compile_compile">Compiling the library</a>.</p>
 <h3><a class="anchor" id="compile_generate_cli"></a>
-Generating files with the CMake command-line tool</h3>
+Generating with command-line CMake</h3>
 <p >To make a build directory, pass the source and build directories to the <code>cmake</code> command. These can be relative or absolute paths. The build directory is created if it doesn't already exist.</p>
 <div class="fragment"><div class="line">cmake -S path/to/glfw -B path/to/build</div>
 </div><!-- fragment --><p >It is common to name the build directory <code>build</code> and place it in the root of the source tree when only planning to build a single configuration.</p>
@@ -173,9 +173,8 @@ Shared CMake options</h2>
 <p ><a class="anchor" id="GLFW_BUILD_EXAMPLES"></a><b>GLFW_BUILD_EXAMPLES</b> determines whether the GLFW examples are built along with the library. This is enabled by default unless GLFW is being built as a sub-project of a larger CMake project.</p>
 <p ><a class="anchor" id="GLFW_BUILD_TESTS"></a><b>GLFW_BUILD_TESTS</b> determines whether the GLFW test programs are built along with the library. This is enabled by default unless GLFW is being built as a sub-project of a larger CMake project.</p>
 <p ><a class="anchor" id="GLFW_BUILD_DOCS"></a><b>GLFW_BUILD_DOCS</b> determines whether the GLFW documentation is built along with the library. This is enabled by default if <a href="https://www.doxygen.nl/">Doxygen</a> is found by CMake during configuration.</p>
-<p ><a class="anchor" id="GLFW_VULKAN_STATIC"></a><b>GLFW_VULKAN_STATIC</b> determines whether to use the Vulkan loader linked directly with the application. This is disabled by default.</p>
 <h2><a class="anchor" id="compile_options_win32"></a>
-Windows specific CMake options</h2>
+Win32 specific CMake options</h2>
 <p ><a class="anchor" id="GLFW_BUILD_WIN32"></a><b>GLFW_BUILD_WIN32</b> determines whether to include support for Win32 when compiling the library. This option is only available when compiling for Windows. This is enabled by default.</p>
 <p ><a class="anchor" id="USE_MSVC_RUNTIME_LIBRARY_DLL"></a><b>USE_MSVC_RUNTIME_LIBRARY_DLL</b> determines whether to use the DLL version or the static library version of the Visual C++ runtime library. When enabled, the DLL version of the Visual C++ library is used. This is enabled by default.</p>
 <p >On CMake 3.15 and later you can set the standard CMake <a href="https://cmake.org/cmake/help/latest/variable/CMAKE_MSVC_RUNTIME_LIBRARY.html">CMAKE_MSVC_RUNTIME_LIBRARY</a> variable instead of this GLFW-specific option.</p>
@@ -209,14 +208,13 @@ Compiling GLFW manually</h1>
 </ul>
 <p >The <b>_GLFW_WAYLAND</b> and <b>_GLFW_X11</b> macros may be combined and produces a library that attempts to detect the appropriate platform at initialization.</p>
 <p >If you are building GLFW as a shared library / dynamic library / DLL then you must also define <b>_GLFW_BUILD_DLL</b>. Otherwise, you must not define it.</p>
-<p >If you are linking the Vulkan loader directly with your application then you must also define <b>_GLFW_VULKAN_STATIC</b>. Otherwise, GLFW will attempt to use the external version.</p>
 <p >If you are using a custom name for the Vulkan, EGL, GLX, OSMesa, OpenGL, GLESv1 or GLESv2 library, you can override the default names by defining those you need of <b>_GLFW_VULKAN_LIBRARY</b>, <b>_GLFW_EGL_LIBRARY</b>, <b>_GLFW_GLX_LIBRARY</b>, <b>_GLFW_OSMESA_LIBRARY</b>, <b>_GLFW_OPENGL_LIBRARY</b>, <b>_GLFW_GLESV1_LIBRARY</b> and <b>_GLFW_GLESV2_LIBRARY</b>. Otherwise, GLFW will use the built-in default names.</p>
 <dl class="section note"><dt>Note</dt><dd>None of the <a class="el" href="build_guide.html#build_macros">GLFW header option macros</a> may be defined during the compilation of GLFW. If you define any of these in your build files, make sure they are not applied to the GLFW sources. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <address class="footer">
 <p>
-Last update on Wed Oct 13 2021 for GLFW 3.4.0
+Last update on Wed Oct 27 2021 for GLFW 3.4.0
 </p>
 </address>
 </body>
