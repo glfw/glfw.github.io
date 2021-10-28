@@ -56,7 +56,7 @@ fixes for patch releases.
 <div class="pure-u-1 pure-u-md-15-24" markdown="1">
 These packages contain the GLFW header files, [documentation](docs/latest/) and
 release mode static libraries, DLLs and import libraries for Visual C++
-2010-2019, MinGW-w64 and plain MinGW.
+2010-2019 and the 2022 preview, MinGW-w64 and plain MinGW.
 
 Binaries for Visual C++ 2010 and plain MinGW are only available in the 32-bit
 package.
