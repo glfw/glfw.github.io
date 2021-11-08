@@ -73,6 +73,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Ruby        | Noel Cower          | [ruby-glfw3](https://github.com/nilium/ruby-glfw3) |
 | Rust        | Brendan Zabarauskas | [glfw-rs](https://github.com/bjz/glfw-rs) |
 | Scheme      | Tomas Möre          | [gambit-GLFW](https://github.com/black0range/gambit-GLFW) |
+| Zig         | Stephen Gutekanst   | [mach/glfw](https://github.com/hexops/mach-glfw) |
 
 </div>
 <div class="pure-u-1 pure-u-md-1-24"></div>
