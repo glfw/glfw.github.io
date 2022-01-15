@@ -64,6 +64,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Node.js     | Mikaël Sévenier     | [node-glfw](https://github.com/mikeseven/node-glfw) |
 | OCaml       | Sylvain Boilard     | [GLFW-OCaml](https://github.com/SylvainBoilard/GLFW-OCaml) |
 | Odin        | vassvik             | [odin-glfw](https://github.com/vassvik/odin-glfw) |
+| Pascal      | Jarrod Davis        | [GLFW](https://github.com/tinyBigGAMES/GLFW) |
 | Pascal      | Jorge Turiel        | [GLFW](https://github.com/Blueicaro/GLFW) |
 | Perl        | Chris Marshall      | [OpenGL::GLFW](https://metacpan.org/pod/OpenGL::GLFW) |
 | Python      | Florian Rhiem       | [pyGLFW](https://github.com/FlorianRhiem/pyGLFW) |
