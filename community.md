@@ -93,7 +93,7 @@ one should be added or removed.
 | [Cocos2d-x](http://cocos2d-x.org/cocos2dx)    | C++, Lua | [GitHub](https://github.com/cocos2d/cocos2d-x) |
 | [Emscripten](http://emscripten.org/)          | C, C++   | [GitHub](https://github.com/kripken/emscripten) |
 | [Falcor](https://developer.nvidia.com/falcor) | C++      | [GitHub](https://github.com/nvidiagameworks/falcor) |
-| [libGDX](https://libgdx.badlogicgames.com/)   | Java     | [GitHub](https://github.com/libgdx/libgdx/) |
+| [libGDX](https://libgdx.com/)                 | Java     | [GitHub](https://github.com/libgdx/libgdx/) |
 | [LWJGL](https://www.lwjgl.org/)               | Java     | [GitHub](https://github.com/LWJGL/lwjgl3/) |
 | [nCine](https://ncine.github.io/)             | C++      | [GitHub](https://github.com/nCine/nCine) |
 | [NimGL](https://nimgl.dev)                    | Nim      | [GitHub](https://github.com/nimgl/nimgl) |
