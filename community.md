@@ -67,6 +67,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Odin        | vassvik             | [odin-glfw](https://github.com/vassvik/odin-glfw) |
 | Pascal      | Jorge Turiel        | [GLFW](https://github.com/Blueicaro/GLFW) |
 | Perl        | Chris Marshall      | [OpenGL::GLFW](https://metacpan.org/pod/OpenGL::GLFW) |
+| PHP         | Mario Döring        | [php-glfw](https://github.com/mario-deluna/php-glfw) |
 | Python      | Florian Rhiem       | [pyGLFW](https://github.com/FlorianRhiem/pyGLFW) |
 | Python      | Nicolas P. Rougier  | [pyglfw](https://github.com/rougier/pyglfw) |
 | Rebol       | François Jouen      | [glfw-rebol](https://github.com/ldci/glfw-rebol) |
