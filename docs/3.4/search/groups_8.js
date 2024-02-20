@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['standard_20cursor_20shapes_0',['Standard cursor shapes',['../group__shapes.html',1,'']]]
+  ['joystick_20hat_20states_0',['Joystick hat states',['../group__hat__state.html',1,'']]],
+  ['joysticks_1',['Joysticks',['../group__joysticks.html',1,'']]]
 ];

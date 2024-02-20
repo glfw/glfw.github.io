@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['gamepad_20axes_0',['Gamepad axes',['../group__gamepad__axes.html',1,'']]],
-  ['gamepad_20buttons_1',['Gamepad buttons',['../group__gamepad__buttons.html',1,'']]]
+  ['codes_0',['Error codes',['../group__errors.html',1,'']]],
+  ['context_20reference_1',['Context reference',['../group__context.html',1,'']]],
+  ['cursor_20shapes_2',['Standard cursor shapes',['../group__shapes.html',1,'']]]
 ];

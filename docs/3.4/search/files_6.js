@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quick_2edox_0',['quick.dox',['../quick_8dox.html',1,'']]]
+  ['quick_2emd_0',['quick.md',['../quick_8md.html',1,'']]]
 ];

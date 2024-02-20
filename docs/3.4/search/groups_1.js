@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error_20codes_0',['Error codes',['../group__errors.html',1,'']]]
+  ['buttons_0',['buttons',['../group__gamepad__buttons.html',1,'Gamepad buttons'],['../group__buttons.html',1,'Mouse buttons']]]
 ];

@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['compat_2edox_0',['compat.dox',['../compat_8dox.html',1,'']]],
-  ['compile_2edox_1',['compile.dox',['../compile_8dox.html',1,'']]],
-  ['compiling_20glfw_2',['Compiling GLFW',['../compile_guide.html',1,'']]],
-  ['context_20guide_3',['Context guide',['../context_guide.html',1,'']]],
-  ['context_20reference_4',['Context reference',['../group__context.html',1,'']]],
-  ['context_2edox_5',['context.dox',['../context_8dox.html',1,'']]]
+  ['4_0',['4',['../news.html#caveats',1,'Caveats for version 3.4'],['../news.html#deprecations_34',1,'Deprecations in version 3.4'],['../news.html#constants_34',1,'New constants in version 3.4'],['../news.html#features_34',1,'New features in version 3.4'],['../news.html#functions_34',1,'New functions in version 3.4'],['../news.html#symbols_34',1,'New symbols in version 3.4'],['../news.html#types_34',1,'New types in version 3.4'],['../news.html#news_34',1,'Release notes for version 3.4'],['../news.html#removals_34',1,'Removals in 3.4']]]
 ];
