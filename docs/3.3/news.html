@@ -104,7 +104,7 @@ $(function() {
 <li class="level3"><a href="#cmake_version_33">CMake 3.0 or later is required</a></li>
 <li class="level3"><a href="#caveat_fbtransparency_33">Framebuffer transparency requires DWM transparency</a></li>
 <li class="level3"><a href="#emptyevents_33">Empty events on X11 no longer roundtrip to server</a></li>
-<li class="level3"><a href="#wayland_alpha_34">Frambuffer may lack alpha channel on older Wayland systems</a></li>
+<li class="level3"><a href="#wayland_alpha_33">Framebuffer may lack alpha channel on older Wayland systems</a></li>
 </ul>
 </li>
 <li class="level2"><a href="#deprecations_33">Deprecations in version 3.3</a><ul><li class="level3"><a href="#charmods_callback_33">Character with modifiers callback</a></li>
@@ -314,8 +314,8 @@ Framebuffer transparency requires DWM transparency</h3>
 <h3><a class="anchor" id="emptyevents_33"></a>
 Empty events on X11 no longer roundtrip to server</h3>
 <p>Starting with GLFW 3.3.7, events posted with <a class="el" href="group__window.html#gab5997a25187e9fd5c6f2ecbbc8dfd7e9">glfwPostEmptyEvent</a> now use a separate unnamed pipe instead of sending an X11 client event to the helper window.</p>
-<h3><a class="anchor" id="wayland_alpha_34"></a>
-Frambuffer may lack alpha channel on older Wayland systems</h3>
+<h3><a class="anchor" id="wayland_alpha_33"></a>
+Framebuffer may lack alpha channel on older Wayland systems</h3>
 <p>On Wayland, when creating an EGL context on a machine lacking the new <code>EGL_EXT_present_opaque</code> extension, the <a class="el" href="window_guide.html#GLFW_ALPHA_BITS">GLFW_ALPHA_BITS</a> window hint will be ignored and the framebuffer will have no alpha channel. This is because some Wayland compositors treat any buffer with an alpha channel as per-pixel transparent.</p>
 <p>If you want a per-pixel transparent window, see the <a class="el" href="window_guide.html#GLFW_TRANSPARENT_FRAMEBUFFER_hint">GLFW_TRANSPARENT_FRAMEBUFFER</a> window hint.</p>
 <h2><a class="anchor" id="deprecations_33"></a>
@@ -627,7 +627,7 @@ Doxygen documentation</h3>
 </div><!-- PageDoc -->
 <address class="footer">
 <p>
-Last update on Wed Dec 13 2023 for GLFW 3.3.9
+Last update on Wed Feb 21 2024 for GLFW 3.3.10
 </p>
 </address>
 </body>

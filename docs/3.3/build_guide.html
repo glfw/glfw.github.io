@@ -75,12 +75,13 @@ $(function() {
 <ul><li class="level1"><a href="#build_include">Including the GLFW header file</a><ul><li class="level2"><a href="#build_macros">GLFW header option macros</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#build_link">Link with the right libraries</a><ul><li class="level2"><a href="#build_link_win32">With MinGW or Visual C++ on Windows</a></li>
+<li class="level1"><a href="#build_link">Link with the right libraries</a><ul><li class="level2"><a href="#build_link_win32">With Visual C++ and GLFW binaries</a></li>
+<li class="level2"><a href="#build_link_mingw">With MinGW-w64 and GLFW binaries</a></li>
 <li class="level2"><a href="#build_link_cmake_source">With CMake and GLFW source</a></li>
 <li class="level2"><a href="#build_link_cmake_package">With CMake and installed GLFW binaries</a></li>
-<li class="level2"><a href="#build_link_pkgconfig">With makefiles and pkg-config on Unix</a></li>
+<li class="level2"><a href="#build_link_pkgconfig">With pkg-config and GLFW binaries on Unix</a></li>
 <li class="level2"><a href="#build_link_xcode">With Xcode on macOS</a></li>
-<li class="level2"><a href="#build_link_osx">With command-line on macOS</a></li>
+<li class="level2"><a href="#build_link_osx">With command-line or makefile on macOS</a></li>
 </ul>
 </li>
 </ul>
@@ -133,11 +134,31 @@ Link with the right libraries</h1>
 <p>On Windows and macOS, the list of system libraries is static and can be hard-coded into your build environment. See the section for your development environment below. On Linux and other Unix-like operating systems, the list varies but can be retrieved in various ways as described below.</p>
 <p>A good general introduction to linking is <a href="https://www.lurklurk.org/linkers/linkers.html">Beginner's Guide to Linkers</a> by David Drysdale.</p>
 <h2><a class="anchor" id="build_link_win32"></a>
-With MinGW or Visual C++ on Windows</h2>
-<p>The static version of the GLFW library is named <code>glfw3</code>. When using this version, it is also necessary to link with some libraries that GLFW uses.</p>
-<p>When using MinGW to link an application with the static version of GLFW, you must also explicitly link with <code>gdi32</code>. Other toolchains including MinGW-w64 include it in the set of default libraries along with other dependencies like <code>user32</code> and <code>kernel32</code>.</p>
-<p>The link library for the GLFW DLL is named <code>glfw3dll</code>. When compiling an application that uses the DLL version of GLFW, you need to define the <a class="el" href="build_guide.html#GLFW_DLL">GLFW_DLL</a> macro <em>before</em> any inclusion of the GLFW header. This can be done either with a compiler switch or by defining it in your source code.</p>
-<h2><a class="anchor" id="build_link_cmake_source"></a>
+With Visual C++ and GLFW binaries</h2>
+<p>If you are using a downloaded <a href="https://www.glfw.org/download.html">binary archive</a>, first make sure you have the archive matching the architecture you are building for (32-bit or 64-bit), or you will get link errors. Also make sure you are using the binaries for your version of Visual C++ or you may get other link errors.</p>
+<p>There are two version of the static GLFW library in the binary archive, because it needs to use the same base run-time library variant as the rest of your executable.</p>
+<p>One is named <code>glfw3.lib</code> and is for projects with the <em>Runtime Library</em> project option set to <em>Multi-threaded DLL</em> or <em>Multi-threaded Debug DLL</em>. The other is named <code>glfw3_mt.lib</code> and is for projects with <em>Runtime Library</em> set to <em>Multi-threaded</em> or <em>Multi-threaded Debug</em>. To use the static GLFW library you will need to add <code>path/to/glfw3.lib</code> or <code>path/to/glfw3_mt.lib</code> to the <em>Additional Dependencies</em> project option.</p>
+<p>If you compiled a GLFW static library yourself then there will only be one, named <code>glfw3.lib</code>, and you have to make sure the run-time library variant matches.</p>
+<p>The DLL version of the GLFW library is named <code>glfw3.dll</code>, but you will be linking against the <code>glfw3dll.lib</code> link library. To use the DLL you will need to add <code>path/to/glfw3dll.lib</code> to the <em>Additional Dependencies</em> project option. All of its dependencies are already listed there by default, but when building with the DLL version of GLFW, you also need to define the <a class="el" href="build_guide.html#GLFW_DLL">GLFW_DLL</a>. This can be done either in the <em>Preprocessor Definitions</em> project option or by defining it in your source code before including the GLFW header.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#define GLFW_DLL</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="glfw3_8h.html">GLFW/glfw3.h</a>&gt;</span></div>
+</div><!-- fragment --><p>All link-time dependencies for GLFW are already listed in the <em>Additional Dependencies</em> option by default.</p>
+<h2><a class="anchor" id="build_link_mingw"></a>
+With MinGW-w64 and GLFW binaries</h2>
+<p>This is intended for building a program from the command-line or by writing a makefile, on Windows with <a href="https://www.mingw-w64.org/">MinGW-w64</a> and GLFW binaries. These can be from a downloaded and extracted <a href="https://www.glfw.org/download.html">binary archive</a> or by compiling GLFW yourself. The paths below assume a binary archive is used.</p>
+<p>If you are using a downloaded binary archive, first make sure you have the archive matching the architecture you are building for (32-bit or 64-bit) or you will get link errors.</p>
+<p>Note that the order of source files and libraries matter for GCC. Dependencies must be listed after the files that depend on them. Any source files that depend on GLFW must be listed before the GLFW library. GLFW in turn depends on <code>gdi32</code> and must be listed before it.</p>
+<p>If you are using the static version of the GLFW library, which is named <code>libglfw3.a</code>, do:</p>
+<div class="fragment"><div class="line">gcc -o myprog myprog.c -I path/to/glfw/include path/to/glfw/lib-mingw-w64/libglfw3.a -lgdi32</div>
+</div><!-- fragment --><p>If you are using the DLL version of the GLFW library, which is named <code>glfw3.dll</code>, you will need to use the <code>libglfw3dll.a</code> link library.</p>
+<div class="fragment"><div class="line">gcc -o myprog myprog.c -I path/to/glfw/include path/to/glfw/lib-mingw-w64/libglfw3dll.a -lgdi32</div>
+</div><!-- fragment --><p>The resulting executable will need to find <code>glfw3.dll</code> to run, typically by keeping both files in the same directory.</p>
+<p>When you are building with the DLL version of GLFW, you will also need to define the <a class="el" href="build_guide.html#GLFW_DLL">GLFW_DLL</a> macro. This can be done in your source files, as long as it done before including the GLFW header:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#define GLFW_DLL</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="glfw3_8h.html">GLFW/glfw3.h</a>&gt;</span></div>
+</div><!-- fragment --><p>It can also be done on the command-line:</p>
+<div class="fragment"><div class="line">gcc -o myprog myprog.c -D GLFW_DLL -I path/to/glfw/include path/to/glfw/lib-mingw-w64/libglfw3dll.a -lgdi32</div>
+</div><!-- fragment --><h2><a class="anchor" id="build_link_cmake_source"></a>
 With CMake and GLFW source</h2>
 <p>This section is about using CMake to compile and link GLFW along with your application. If you want to use an installed binary instead, see <a class="el" href="build_guide.html#build_link_cmake_package">With CMake and installed GLFW binaries</a>.</p>
 <p>With a few changes to your <code>CMakeLists.txt</code> you can have the GLFW source tree built along with your application.</p>
@@ -166,7 +187,8 @@ With CMake and installed GLFW binaries</h2>
 </div><!-- fragment --><p>If OpenGL is found, the <code>OpenGL::GL</code> target is added to your project, containing library and include directory paths. Link against this like any other library.</p>
 <div class="fragment"><div class="line">target_link_libraries(myapp OpenGL::GL)</div>
 </div><!-- fragment --><h2><a class="anchor" id="build_link_pkgconfig"></a>
-With makefiles and pkg-config on Unix</h2>
+With pkg-config and GLFW binaries on Unix</h2>
+<p>This is intended for building a program from the command-line or by writing a makefile, on macOS or any Unix-like system like Linux, FreeBSD and Cygwin.</p>
 <p>GLFW supports <a href="https://www.freedesktop.org/wiki/Software/pkg-config/">pkg-config</a>, and the <code>glfw3.pc</code> pkg-config file is generated when the GLFW library is built and is installed along with it. A pkg-config file describes all necessary compile-time and link-time flags and dependencies needed to use a library. When they are updated or if they differ between systems, you will get the correct ones automatically.</p>
 <p>A typical compile and link command-line when using the static version of the GLFW library may look like this:</p>
 <div class="fragment"><div class="line">cc $(pkg-config --cflags glfw3) -o myprog myprog.c $(pkg-config --static --libs glfw3)</div>
@@ -181,8 +203,8 @@ With Xcode on macOS</h2>
 <p>If you are using the dynamic library version of GLFW, add it to the project dependencies.</p>
 <p>If you are using the static library version of GLFW, add it and the Cocoa, OpenGL and IOKit frameworks to the project as dependencies. They can all be found in <code>/System/Library/Frameworks</code>.</p>
 <h2><a class="anchor" id="build_link_osx"></a>
-With command-line on macOS</h2>
-<p>It is recommended that you use <a class="el" href="build_guide.html#build_link_pkgconfig">pkg-config</a> when building from the command line on macOS. That way you will get any new dependencies added automatically. If you still wish to build manually, you need to add the required frameworks and libraries to your command-line yourself using the <code>-l</code> and <code>-framework</code> switches.</p>
+With command-line or makefile on macOS</h2>
+<p>It is recommended that you use <a class="el" href="build_guide.html#build_link_pkgconfig">pkg-config</a> when using installed GLFW binaries from the command line on macOS. That way you will get any new dependencies added automatically. If you still wish to build manually, you need to add the required frameworks and libraries to your command-line yourself using the <code>-l</code> and <code>-framework</code> switches.</p>
 <p>If you are using the dynamic GLFW library, which is named <code>libglfw.3.dylib</code>, do:</p>
 <div class="fragment"><div class="line">cc -o myprog myprog.c -lglfw -framework Cocoa -framework OpenGL -framework IOKit</div>
 </div><!-- fragment --><p>If you are using the static library, named <code>libglfw3.a</code>, substitute <code>-lglfw3</code> for <code>-lglfw</code>.</p>
@@ -192,7 +214,7 @@ With command-line on macOS</h2>
 </div><!-- PageDoc -->
 <address class="footer">
 <p>
-Last update on Wed Dec 13 2023 for GLFW 3.3.9
+Last update on Wed Feb 21 2024 for GLFW 3.3.10
 </p>
 </address>
 </body>

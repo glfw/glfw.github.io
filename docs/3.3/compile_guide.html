@@ -121,8 +121,8 @@ Dependencies for Wayland on Unix-like systems</h3>
 <div class="fragment"><div class="line">sudo apt install libwayland-dev libxkbcommon-dev wayland-protocols extra-cmake-modules</div>
 </div><!-- fragment --><p>On Fedora and derivatives like Red Hat you will need the <code>wayland-devel</code>, <code>libxkbcommon-devel</code>, <code>wayland-protocols-devel</code> and <code>extra-cmake-modules</code> packages.</p>
 <div class="fragment"><div class="line">sudo dnf install wayland-devel libxkbcommon-devel wayland-protocols-devel extra-cmake-modules</div>
-</div><!-- fragment --><p>On FreeBSD you will need the <code>wayland</code>, <code>libxkbcommon</code>, <code>wayland-protocols</code> and <code>kf5-extra-cmake-modules</code> packages.</p>
-<div class="fragment"><div class="line">pkg install wayland libxkbcommon wayland-protocols kf5-extra-cmake-modules</div>
+</div><!-- fragment --><p>On FreeBSD you will need the <code>wayland</code>, <code>libxkbcommon</code>, <code>wayland-protocols</code>, <code>evdev-proto</code> and <code>kf5-extra-cmake-modules</code> packages.</p>
+<div class="fragment"><div class="line">pkg install wayland libxkbcommon wayland-protocols evdev-proto kf5-extra-cmake-modules</div>
 </div><!-- fragment --><p>Once you have the required depdendencies, move on to <a class="el" href="compile_guide.html#compile_generate">Generating build files with CMake</a>.</p>
 <h2><a class="anchor" id="compile_generate"></a>
 Generating build files with CMake</h2>
@@ -216,7 +216,7 @@ Compiling GLFW manually</h1>
 </div><!-- PageDoc -->
 <address class="footer">
 <p>
-Last update on Wed Dec 13 2023 for GLFW 3.3.9
+Last update on Wed Feb 21 2024 for GLFW 3.3.10
 </p>
 </address>
 </body>

@@ -1527,7 +1527,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The handle of the created window, or <code>NULL</code> if an <a class="el" href="intro_guide.html#error_handling">error</a> occurred.</dd></dl>
-<dl class="section user"><dt>Errors</dt><dd>Possible errors include <a class="el" href="group__errors.html#ga2374ee02c177f12e1fa76ff3ed15e14a">GLFW_NOT_INITIALIZED</a>, <a class="el" href="group__errors.html#ga76f6bb9c4eea73db675f096b404593ce">GLFW_INVALID_ENUM</a>, <a class="el" href="group__errors.html#gaaf2ef9aa8202c2b82ac2d921e554c687">GLFW_INVALID_VALUE</a>, <a class="el" href="group__errors.html#ga56882b290db23261cc6c053c40c2d08e">GLFW_API_UNAVAILABLE</a>, <a class="el" href="group__errors.html#gad16c5565b4a69f9c2a9ac2c0dbc89462">GLFW_VERSION_UNAVAILABLE</a>, <a class="el" href="group__errors.html#ga196e125ef261d94184e2b55c05762f14">GLFW_FORMAT_UNAVAILABLE</a> and <a class="el" href="group__errors.html#gad44162d78100ea5e87cdd38426b8c7a1">GLFW_PLATFORM_ERROR</a>.</dd></dl>
+<dl class="section user"><dt>Errors</dt><dd>Possible errors include <a class="el" href="group__errors.html#ga2374ee02c177f12e1fa76ff3ed15e14a">GLFW_NOT_INITIALIZED</a>, <a class="el" href="group__errors.html#ga76f6bb9c4eea73db675f096b404593ce">GLFW_INVALID_ENUM</a>, <a class="el" href="group__errors.html#gaaf2ef9aa8202c2b82ac2d921e554c687">GLFW_INVALID_VALUE</a>, <a class="el" href="group__errors.html#ga56882b290db23261cc6c053c40c2d08e">GLFW_API_UNAVAILABLE</a>, <a class="el" href="group__errors.html#gad16c5565b4a69f9c2a9ac2c0dbc89462">GLFW_VERSION_UNAVAILABLE</a>, <a class="el" href="group__errors.html#ga196e125ef261d94184e2b55c05762f14">GLFW_FORMAT_UNAVAILABLE</a>, <a class="el" href="group__errors.html#gacff24d2757da752ae4c80bf452356487">GLFW_NO_WINDOW_CONTEXT</a> and <a class="el" href="group__errors.html#gad44162d78100ea5e87cdd38426b8c7a1">GLFW_PLATFORM_ERROR</a>.</dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd><b>Windows:</b> Window creation will fail if the Microsoft GDI software OpenGL implementation is the only one available.</dd>
 <dd>
 <b>Windows:</b> If the executable has an icon resource named <code>GLFW_ICON,</code> it will be set as the initial icon for the window. If no such icon is present, the <code>IDI_APPLICATION</code> icon will be used instead. To set a different icon, see <a class="el" href="group__window.html#gadd7ccd39fe7a7d1f0904666ae5932dc5">glfwSetWindowIcon</a>.</dd>
@@ -2782,8 +2782,10 @@ Zero is a valid value for many window and context related attributes so you cann
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Errors</dt><dd>Possible errors include <a class="el" href="group__errors.html#ga2374ee02c177f12e1fa76ff3ed15e14a">GLFW_NOT_INITIALIZED</a>, <a class="el" href="group__errors.html#ga76f6bb9c4eea73db675f096b404593ce">GLFW_INVALID_ENUM</a>, <a class="el" href="group__errors.html#gaaf2ef9aa8202c2b82ac2d921e554c687">GLFW_INVALID_VALUE</a> and <a class="el" href="group__errors.html#gad44162d78100ea5e87cdd38426b8c7a1">GLFW_PLATFORM_ERROR</a>.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Calling <a class="el" href="group__window.html#gacccb29947ea4b16860ebef42c2cb9337">glfwGetWindowAttrib</a> will always return the latest value, even if that value is ignored by the current mode of the window.</dd></dl>
+<dl class="section user"><dt>Errors</dt><dd>Possible errors include <a class="el" href="group__errors.html#ga2374ee02c177f12e1fa76ff3ed15e14a">GLFW_NOT_INITIALIZED</a>, <a class="el" href="group__errors.html#ga76f6bb9c4eea73db675f096b404593ce">GLFW_INVALID_ENUM</a>, <a class="el" href="group__errors.html#gaaf2ef9aa8202c2b82ac2d921e554c687">GLFW_INVALID_VALUE</a>, <a class="el" href="group__errors.html#gad44162d78100ea5e87cdd38426b8c7a1">GLFW_PLATFORM_ERROR</a>.</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Calling <a class="el" href="group__window.html#gacccb29947ea4b16860ebef42c2cb9337">glfwGetWindowAttrib</a> will always return the latest value, even if that value is ignored by the current mode of the window.</dd>
+<dd>
+<b>Wayland:</b> The <a class="el" href="window_guide.html#GLFW_FLOATING_attrib">GLFW_FLOATING</a> window attribute is not supported. Setting this will emit <a class="el" href="group__errors.html#gad44162d78100ea5e87cdd38426b8c7a1">GLFW_PLATFORM_ERROR</a>.</dd></dl>
 <dl class="section user"><dt>Thread safety</dt><dd>This function must only be called from the main thread.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="window_guide.html#window_attribs">Window attributes</a> </dd>
 <dd>
@@ -3427,7 +3429,7 @@ Zero is a valid value for many window and context related attributes so you cann
 </div><!-- contents -->
 <address class="footer">
 <p>
-Last update on Wed Dec 13 2023 for GLFW 3.3.9
+Last update on Wed Feb 21 2024 for GLFW 3.3.10
 </p>
 </address>
 </body>
