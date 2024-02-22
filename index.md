@@ -19,7 +19,7 @@ description: GLFW project home page.
 Vulkan development on the desktop.  It provides a simple API for creating
 windows, contexts and surfaces, receiving input and events.
 
-GLFW is written in C and supports Windows, macOS, X11 and Wayland.
+GLFW is written in C and supports Windows, macOS, Wayland and X11.
 
 GLFW is licensed under the [zlib/libpng license](license.html).
 

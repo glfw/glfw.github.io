@@ -37,11 +37,7 @@ See the [release notes](docs/latest/news.html) for details.
 <div class="pure-u-1 pure-u-md-15-24" markdown="1">
 This package contains the complete source code with CMake build files,
 [documentation](docs/latest/), examples and test programs. It
-is the recommended download for all platforms and offers the most control.
-
-All development is done on GitHub.  The `master` branch is our integration
-branch for the next feature release while the `3.3-stable` branch only adds bug
-fixes for patch releases.
+is the recommended download for all platforms and offers the most options.
 </div>
 <div class="pure-u-1 pure-u-md-1-24"></div>
 <div class="pure-u-1 pure-u-md-8-24" markdown="1">
