@@ -9,9 +9,6 @@ description: GLFW API documentation.
 The [HTML documentation](/docs/latest/) contains both tutorials, guides for
 different topics and an API reference.
 
-The [FAQ](faq.html) answers many commonly asked questions about the design,
-implementation and use of GLFW.
-
 ### License
 
 GLFW is under the [zlib/libpng license](license.html), which permits modification,
