@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['api_0',['Introduction to the API',['../intro_guide.html',1,'']]],
-  ['applications_1',['Building applications',['../build_guide.html',1,'']]]
+  ['4_0',['Release notes for version 3.4',['../news.html',1,'']]]
 ];

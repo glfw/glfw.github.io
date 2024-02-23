@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['2_20to_203_0',['Moving from GLFW 2 to 3',['../moving_guide.html',1,'']]]
+  ['1_209_208_20or_20later_0',['Documentation generation requires Doxygen 1.9.8 or later',['../news.html#docs_target_caveat',1,'']]]
 ];

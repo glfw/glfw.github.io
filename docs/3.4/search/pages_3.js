@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['building_20applications_0',['Building applications',['../build_guide.html',1,'']]]
+  ['api_0',['Introduction to the API',['../intro_guide.html',1,'']]],
+  ['applications_1',['Building applications',['../build_guide.html',1,'']]]
 ];
