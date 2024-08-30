@@ -35,6 +35,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Ada         | Felix Krause        | [OpenGLAda](https://github.com/flyx/OpenGLAda) |
 | Beef        | MineGame159         | [Glfw-Beef](https://github.com/MineGame159/glfw-beef) |
 | C++         | Cvelth              | [VKFW](https://github.com/Cvelth/vkfw) |
+| C#          | dcronqvist          | [DotGLFW](https://github.com/dcronqvist/DotGLFW) |
 | C#          | Eric Freed          | [GLFW.NET](https://github.com/ForeverZer0/glfw-net) |
 | C#          | Andy Korth          | [Pencil.Gaming](https://github.com/andykorth/Pencil.Gaming) |
 | C#          | Ruben Labruyere     | [Arqan](https://github.com/TheBoneJarmer/Arqan) |
