@@ -51,6 +51,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Dart        | Harry Stern         | [dart-glfw](https://github.com/google/dart-glfw) |
 | Delphi      | Erik van Bilsen     | [DelphiGlfw](https://github.com/neslib/DelphiGlfw) |
 | Duktape     | Laurent Zubiaur     | [duk-glfw](https://github.com/lzubiaur/duk-glfw) |
+| Fortran     | Gaétan J.A.M. Jalin | [GLF90W](https://github.com/AarnoldGad/glf90w) |
 | Go          | Coşku Baş           | [glfw](https://github.com/go-gl/glfw) |
 | Haskell     | Brian Lewis         | [GLFW-b](https://github.com/bsl/GLFW-b) |
 | Java        | Nathan Sweet        | [jglfw](https://github.com/badlogic/jglfw) |
