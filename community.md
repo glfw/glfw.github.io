@@ -35,12 +35,14 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Ada         | Felix Krause        | [OpenGLAda](https://github.com/flyx/OpenGLAda) |
 | Beef        | MineGame159         | [Glfw-Beef](https://github.com/MineGame159/glfw-beef) |
 | C++         | Cvelth              | [VKFW](https://github.com/Cvelth/vkfw) |
+| C++/Wasm    | pongasoft           | [emscripten-glfw](https://github.com/pongasoft/emscripten-glfw) |
 | C#          | Eric Freed          | [GLFW.NET](https://github.com/ForeverZer0/glfw-net) |
 | C#          | Andy Korth          | [Pencil.Gaming](https://github.com/andykorth/Pencil.Gaming) |
 | C#          | Ruben Labruyere     | [Arqan](https://github.com/TheBoneJarmer/Arqan) |
 | C#          | Dylan Perks         | [Silk.NET](https://github.com/dotnet/Silk.NET) |
 | C#          | Damien Royer        | [GlfwNet](https://github.com/droyer57/GlfwNet) |
 | C#          | Zachary Snow        | [GLFWDotNet](https://github.com/smack0007/GLFWDotNet) |
+| C#          | dcronqvist          | [DotGLFW](https://github.com/dcronqvist/DotGLFW) |
 | C3          | Polymorphic Heart   | [glfw-c3](https://github.com/PolymorphicHeart/glfw-c3) |
 | Common Lisp | Alex Charlton       | [cl-glfw3](https://github.com/AlexCharlton/cl-glfw3) |
 | Crystal     | Michael Miller      | [Espresso](https://github.com/icy-arctic-fox/espresso) |
