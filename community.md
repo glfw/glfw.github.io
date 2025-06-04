@@ -99,6 +99,7 @@ one should be added or removed.
 | [Falcor](https://developer.nvidia.com/falcor)                                | C++      | [GitHub](https://github.com/nvidiagameworks/falcor)          |
 | [libGDX](https://libgdx.com/)                                                | Java     | [GitHub](https://github.com/libgdx/libgdx/)                  |
 | [LWJGL](https://www.lwjgl.org/)                                              | Java     | [GitHub](https://github.com/LWJGL/lwjgl3/)                   |
+| [Vulkan4j](https://vulkan4j.doki7.club/)                                     | Java     | [GitHub](https://github.com/chuigda/vulkan4j/)               |
 | [nCine](https://ncine.github.io/)                                            | C++      | [GitHub](https://github.com/nCine/nCine)                     |
 | [NimGL](https://nimgl.dev)                                                   | Nim      | [GitHub](https://github.com/nimgl/nimgl)                     |
 | [openFrameworks](https://openframeworks.cc/)                                 | C++      | [GitHub](https://github.com/openframeworks/openFrameworks/)  |
