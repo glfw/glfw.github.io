@@ -43,7 +43,6 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | C#          | Damien Royer        | [GlfwNet](https://github.com/droyer57/GlfwNet) |
 | C#          | Zachary Snow        | [GLFWDotNet](https://github.com/smack0007/GLFWDotNet) |
 | C#          | dcronqvist          | [DotGLFW](https://github.com/dcronqvist/DotGLFW) |
-| C3          | Polymorphic Heart   | [glfw-c3](https://github.com/PolymorphicHeart/glfw-c3) |
 | Common Lisp | Alex Charlton       | [cl-glfw3](https://github.com/AlexCharlton/cl-glfw3) |
 | Crystal     | Michael Miller      | [Espresso](https://github.com/icy-arctic-fox/espresso) |
 | Crystal     | Caleb Harrison      | [LibGLFW](https://github.com/calebuharrison/LibGLFW) |
