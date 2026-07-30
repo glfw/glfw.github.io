@@ -36,12 +36,10 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Beef        | MineGame159         | [Glfw-Beef](https://github.com/MineGame159/glfw-beef) |
 | C++         | Cvelth              | [VKFW](https://github.com/Cvelth/vkfw) |
 | C++/Wasm    | pongasoft           | [emscripten-glfw](https://github.com/pongasoft/emscripten-glfw) |
-| C#          | Eric Freed          | [GLFW.NET](https://github.com/ForeverZer0/glfw-net) |
 | C#          | Andy Korth          | [Pencil.Gaming](https://github.com/andykorth/Pencil.Gaming) |
 | C#          | Ruben Labruyere     | [Arqan](https://github.com/TheBoneJarmer/Arqan) |
 | C#          | Dylan Perks         | [Silk.NET](https://github.com/dotnet/Silk.NET) |
 | C#          | Damien Royer        | [GlfwNet](https://github.com/droyer57/GlfwNet) |
-| C#          | Zachary Snow        | [GLFWDotNet](https://github.com/smack0007/GLFWDotNet) |
 | C#          | dcronqvist          | [DotGLFW](https://github.com/dcronqvist/DotGLFW) |
 | Common Lisp | Alex Charlton       | [cl-glfw3](https://github.com/AlexCharlton/cl-glfw3) |
 | Crystal     | Michael Miller      | [Espresso](https://github.com/icy-arctic-fox/espresso) |
@@ -65,7 +63,6 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Node.js     | Mikaël Sévenier     | [node-glfw](https://github.com/mikeseven/node-glfw) |
 | OCaml       | Sylvain Boilard     | [GLFW-OCaml](https://github.com/SylvainBoilard/GLFW-OCaml) |
 | Odin        | Odin                | [glfw](https://github.com/odin-lang/Odin/tree/master/vendor/glfw) |
-| Odin        | flysand7            | [glfw3](https://github.com/flysand7/our/tree/main/packages/glfw3) |
 | Odin        | vassvik             | [odin-glfw](https://github.com/vassvik/odin-glfw) |
 | Pascal      | Jorge Turiel        | [GLFW](https://github.com/Blueicaro/GLFW) |
 | Pascal      | Gunko Vadim         | [LazGLFW](https://github.com/GuvaCode/LazGLFW) |
