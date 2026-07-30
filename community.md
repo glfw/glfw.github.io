@@ -78,7 +78,7 @@ know](https://github.com/glfw/website/issues) if one should be added or removed.
 | Red         | Oldes               | [glfw](https://github.com/red/code/tree/master/Library/GLFW) |
 | Rust        | Brendan Zabarauskas | [glfw-rs](https://github.com/bjz/glfw-rs) |
 | Scheme      | Tomas Möre          | [gambit-GLFW](https://github.com/black0range/gambit-GLFW) |
-| Zig         | Stephen Gutekanst   | [mach/glfw](https://github.com/hexops/mach-glfw) |
+| Zig         | FalsePattern        | [zig-glfw](https://github.com/FalsePattern/zig-glfw) |
 | Zig         | Nathan Bourgeois    | [zglfw](https://github.com/IridescenceTech/zglfw) |
 
 </div>
